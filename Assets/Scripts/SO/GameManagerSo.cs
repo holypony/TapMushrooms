@@ -14,9 +14,6 @@ public class GameManagerSo : ScriptableObject
     [SerializeField] private float mushLifeTime;
     [SerializeField] private float timeBetweenSpawn;
     [SerializeField] private float defaultTimeBetweenSpawn;
-    [SerializeField] private int multiplier = 1;
-    [SerializeField] private int bombSpawnChance = 13;
- 
 
     private void Awake()
     {
@@ -27,9 +24,7 @@ public class GameManagerSo : ScriptableObject
     {
 
         MushLifeTime = 1.5f;
-        BombSpawnChance = 13;
         defaultTimeBetweenSpawn = 0.75f;
-        Multiplier = 1;
         TimeBetweenSpawn = defaultTimeBetweenSpawn;
         Score = 0;
         Hp = 3;
@@ -37,20 +32,7 @@ public class GameManagerSo : ScriptableObject
         
     }
     
-    
-    public int Multiplier
-    {
-        get => multiplier;
-        set
-        {
-            if (value < 1)
-                value = 1;
-            multiplier = value;
-            TimeBetweenSpawn = defaultTimeBetweenSpawn / multiplier;
-            OnMultiplierChange?.Invoke();
-        }
-    }
-    
+
     public float MushLifeTime
     {
         get => mushLifeTime;
@@ -91,7 +73,7 @@ public class GameManagerSo : ScriptableObject
 
     public void AddScore(int addScore)
     {
-        Score += addScore * (int)Multiplier;
+        Score += addScore;
     }
 
     public int Hp
@@ -118,22 +100,9 @@ public class GameManagerSo : ScriptableObject
         }
 
     }
-    
-    public int BombSpawnChance
-    {
-        get => bombSpawnChance;
-        set
-        {
-            bombSpawnChance = value;
-        }
-
-    }
-
-    
 
 
     public event Action OnGameOverChange;
-    public event Action OnMultiplierChange;
     public event Action OnScoreChange;
     public event Action OnBestScoreChange;
     public event Action OnHpChange;

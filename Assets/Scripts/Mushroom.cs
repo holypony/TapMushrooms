@@ -61,7 +61,7 @@ public class Mushroom : MonoBehaviour
         _clicked = false;
         _lifeTime = gameManagerSo.MushLifeTime;
         
-        if (GetRandom(gameManagerSo.BombSpawnChance))
+        if (GetRandom(13))
         {
             _isBomb = true;
             _renderer.material = matirialBlack;
@@ -70,60 +70,64 @@ public class Mushroom : MonoBehaviour
         {
             _renderer.material = matirials[Random.Range(0, matirials.Length)];
         }
-        StartCoroutine(MushroomLife());
+        StartCoroutine(MushroomRutine());
         _animator.SetTrigger("Start");
         
     }
 
-    private IEnumerator MushroomLife()
+    private IEnumerator MushroomRutine()
     {
         while (_lifeTime > 0)
         {
-            if (_clicked && !_isBomb)
+            if (_clicked)
             {
+                if(_isBomb)
+                {
+                    gameManagerSo.Hp--;
+                    _animator.SetTrigger("Die");
+                    yield return new WaitForSeconds(0.15f);
+                    _isActive = false;
+                    yield break;
+                }
+
+                
+                _animator.SetTrigger("Die");
+                yield return new WaitForSeconds(0.15f);
                 gameManagerSo.AddScore(10);
-                _animator.SetTrigger("Die");
-                yield return new WaitForSeconds(0.1f);
                 _isActive = false;
-                break;
+                yield break;
+                
             }
-
-            if (_clicked && _isBomb)
-            {
-                gameManagerSo.Hp--;
-                _animator.SetTrigger("Die");
-                yield return new WaitForSeconds(0.1f);
-                break;
-            }
-
+            
             if (gameManagerSo.GameOver)
             {
-                _animator.SetTrigger("Die");
+                _animator.SetTrigger("Hide");
                 _isActive = false;
                 yield break;
             }
+
             _lifeTime -= 0.01f;
             yield return new WaitForSeconds(0.01f);
         }
         
-        if (!_clicked)
+        if (_isBomb)
         {
-            if (_isBomb)
-            {
-                _animator.SetTrigger("Hide");
-                yield return new WaitForSeconds(0.1f);
-                _isActive = false;
-            }
-            else
-            {
-                _animator.SetTrigger("Hide");
-                gameManagerSo.Hp--;
-                yield return new WaitForSeconds(0.1f);
-                _isActive = false;
-            }
+            _animator.SetTrigger("Hide");
+            yield return new WaitForSeconds(0.15f);
+            _isActive = false;
+        }
+        else
+        {
+            gameManagerSo.Hp--;
+            _animator.SetTrigger("Hide");
+            yield return new WaitForSeconds(0.15f);
+            _isActive = false;
         }
     }
+
     
+
+ 
     private bool GetRandom(float setChance)
     {
         var drop = Random.Range(0, 101);

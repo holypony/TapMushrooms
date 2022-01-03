@@ -8,7 +8,8 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameManagerSo gameSo;
     [SerializeField] private Mushroom[] mushrooms;
-
+    private int lastMushIndex = 99;
+    private bool _isBonusTime = false;
     public void InitializeGameField()
     {
         gameSo.InitializeGameSo();
@@ -18,65 +19,59 @@ public class GameManager : MonoBehaviour
             t.mushroomState(false);
         }
         StopAllCoroutines();
-        StartCoroutine(Game());
+        StartCoroutine(GameRoutine());
     }
 
-    private IEnumerator Game()
+    private IEnumerator GameRoutine()
     {
         while(!gameSo.GameOver)
         {
-            var mushIndex = Random.Range(0, mushrooms.Length);
-            if (!mushrooms[mushIndex].IsMushroomDeactivated())
+            while (!useFreeMushroom())
             {
-                mushrooms[mushIndex].mushroomState(true);
+                yield return null;
             }
 
-            if (GetRandom(20 / gameSo.Multiplier))
+            if (!_isBonusTime)
             {
-                if (!_isMulti)
+                if (GetRandom(20))
                 {
-                    StartCoroutine(addMulti());
+                    StartCoroutine(bonusTime(2));
                 }
                 else
                 {
-                    _multiTime += 3f;
-                    gameSo.Multiplier++;
-
+                    if (GetRandom(5)) StartCoroutine(bonusTime(4));
                 }
             }
+            
             yield return new WaitForSeconds(gameSo.TimeBetweenSpawn);
         }
     }
 
-  
-    private bool _isMulti = false;
-    private float _multiTime = 0;
-    IEnumerator addMulti()
+    
+    bool useFreeMushroom()
     {
-        _isMulti = true;
+        var mushIndex = Random.Range(0, mushrooms.Length);
+        
+        if (mushIndex == lastMushIndex) return false;
+        
 
+        if (mushrooms[mushIndex].IsMushroomDeactivated()) return false;
+        lastMushIndex = mushIndex;
+        mushrooms[mushIndex].mushroomState(true);
+        return true;
 
-        _multiTime = 3f;
-        gameSo.Multiplier++;
-        float timer = 0f;
-        while (_multiTime > 0)
-        {
-            timer += 0.1f;
-            if ((Math.Round(timer) / 3) >= 1)
-            {
-                timer = 0;
-                gameSo.Multiplier--;
-            }
-            _multiTime -= 0.1f;
-            yield return new WaitForSeconds(0.1f);
-        }
-        _isMulti = false;
     }
     
+    private IEnumerator bonusTime(int multiplier)
+    {
+        _isBonusTime = true;
+        gameSo.TimeBetweenSpawn /= multiplier;
+        yield return new WaitForSeconds(5f);
+        gameSo.TimeBetweenSpawn  *= multiplier;
+        _isBonusTime = false;
+    }
     
-    
-    
-
+  
     private bool GetRandom(float setChance)
     {
         int drop = Random.Range(0, 101);

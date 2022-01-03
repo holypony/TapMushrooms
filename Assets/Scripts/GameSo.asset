@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71ae6cc1fc437d44ba488777fe9fed60, type: 3}
   m_Name: GameSo
   m_EditorClassIdentifier: 
-  score: 1870
-  hp: 0
-  gameOver: 1
+  score: 170
+  bestScore: 2710
+  hp: 2
+  gameOver: 0
   mushLifeTime: 1.5
   timeBetweenSpawn: 0.75
   defaultTimeBetweenSpawn: 0.75
-  multiplier: 1
