@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dbfab735-f385-47d5-b446-03f41c754217" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/mushroom.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ImushState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SO/GameSO.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BtnMashroom.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MngMashroom.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SO/GameManagerSo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UImanager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/Android/proguard-user.txt" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GooglePlayServices.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Mushroom.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="230pPjm2uucZqMjzphqK74oggYB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dbfab735-f385-47d5-b446-03f41c754217" name="Default Changelist" comment="" />
+      <created>1640880840050</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1640880840050</updated>
+      <workItem from="1640880846320" duration="5659000" />
+      <workItem from="1640944765273" duration="2000" />
+      <workItem from="1640944899228" duration="603000" />
+      <workItem from="1641058680455" duration="7015000" />
+      <workItem from="1641075106860" duration="1759000" />
+      <workItem from="1641119722622" duration="24392000" />
+      <workItem from="1641211725726" duration="10818000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="533" y="190" key="SettingsEditor" timestamp="1640880885179">
+      <screen x="0" y="0" width="2048" height="1090" />
+    </state>
+    <state x="533" y="190" key="SettingsEditor/0.0.2048.1090/-1920.0.1536.834@0.0.2048.1090" timestamp="1640880885179" />
+  </component>
+</project>
