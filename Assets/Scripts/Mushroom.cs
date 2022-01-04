@@ -14,7 +14,7 @@ public class Mushroom : MonoBehaviour
     [SerializeField] private GameManagerSo gameManagerSo;
     [SerializeField] private Material[] matirials;
     [SerializeField] private Material matirialBlack;
-    
+    [SerializeField] private Animation animationDie;
     private float _lifeTime;
     private Animator _animator;
     private MeshRenderer _renderer;
@@ -85,14 +85,20 @@ public class Mushroom : MonoBehaviour
                 {
                     gameManagerSo.Hp--;
                     _animator.SetTrigger("Die");
-                    yield return new WaitForSeconds(0.15f);
+                    while (_animator.GetCurrentAnimatorStateInfo(0).IsName("Die"))
+                    {
+                        yield return null;
+                    }
                     _isActive = false;
                     yield break;
                 }
 
-                
                 _animator.SetTrigger("Die");
-                yield return new WaitForSeconds(0.15f);
+                while (_animator.GetCurrentAnimatorStateInfo(0).IsName("Die"))
+                {
+                    yield return null;
+                }
+                //yield return new WaitForSeconds(0.15f);
                 gameManagerSo.AddScore(10);
                 _isActive = false;
                 yield break;
@@ -113,14 +119,20 @@ public class Mushroom : MonoBehaviour
         if (_isBomb)
         {
             _animator.SetTrigger("Hide");
-            yield return new WaitForSeconds(0.15f);
+            while (_animator.GetCurrentAnimatorStateInfo(0).IsName("Hide"))
+            {
+                yield return null;
+            }
             _isActive = false;
         }
         else
         {
             gameManagerSo.Hp--;
             _animator.SetTrigger("Hide");
-            yield return new WaitForSeconds(0.15f);
+            while (_animator.GetCurrentAnimatorStateInfo(0).IsName("Hide"))
+            {
+                yield return null;
+            }
             _isActive = false;
         }
     }

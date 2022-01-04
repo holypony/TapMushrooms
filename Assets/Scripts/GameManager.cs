@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -10,6 +8,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Mushroom[] mushrooms;
     private int lastMushIndex = 99;
     private bool _isBonusTime = false;
+    
+    
     public void InitializeGameField()
     {
         gameSo.InitializeGameSo();
@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
                 }
                 else
                 {
-                    if (GetRandom(5)) StartCoroutine(bonusTime(4));
+                    if (GetRandom(5)) StartCoroutine(bonusTime(3));
                 }
             }
             
@@ -65,9 +65,11 @@ public class GameManager : MonoBehaviour
     private IEnumerator bonusTime(int multiplier)
     {
         _isBonusTime = true;
+        gameSo.Multiplier = multiplier;
         gameSo.TimeBetweenSpawn /= multiplier;
         yield return new WaitForSeconds(5f);
         gameSo.TimeBetweenSpawn  *= multiplier;
+        gameSo.Multiplier = 1;
         _isBonusTime = false;
     }
     

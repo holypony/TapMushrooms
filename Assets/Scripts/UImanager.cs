@@ -25,26 +25,41 @@ public class UImanager : MonoBehaviour
 
     private void OnEnable()
     {
-        gameSo.OnScoreChange += UpdateUI;
-        gameSo.OnHpChange += UpdateUI;
-        gameSo.OnGameOverChange += UpdateUI;
+        gameSo.OnScoreChange += updateUI;
+        gameSo.OnHpChange += updateUI;
+        gameSo.OnGameOverChange += updateUI;
+        gameSo.OnMultiplierChange += bonusTime;
         panelUIinGame.SetActive(true);
         panelStart.SetActive(true);
     }
 
     private void OnDisable()
     {
-        gameSo.OnScoreChange -= UpdateUI;
-        gameSo.OnHpChange -= UpdateUI;
-        gameSo.OnGameOverChange -= UpdateUI;
+        gameSo.OnScoreChange -= updateUI;
+        gameSo.OnHpChange -= updateUI;
+        gameSo.OnGameOverChange -= updateUI;
+        gameSo.OnMultiplierChange -= bonusTime;
     }
 
-    void StartGame()
+    private void bonusTime()
+    {
+        if (gameSo.Multiplier > 1)
+        {
+            textMultiplier.enabled = true;
+            textMultiplier.text = "X" + gameSo.Multiplier;
+        }
+        else
+        {
+            textMultiplier.enabled = false;
+        }
+    }
+
+    public void StartGame()
     {
         panelStart.SetActive(false);
     }
 
-    private void UpdateUI()
+    private void updateUI()
     {
         textInGameScore.text = "Score: " + gameSo.Score;
         textHp.text = "HP: " + gameSo.Hp;

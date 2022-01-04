@@ -13,9 +13,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Mushroom.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SO/GameManagerSo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UImanager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Mushroom.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       </list>
     </option>
@@ -60,6 +60,7 @@
       <option name="presentableId" value="Default" />
       <updated>1641245424183</updated>
       <workItem from="1641245435667" duration="7314000" />
+      <workItem from="1641303162975" duration="4096000" />
     </task>
     <servers />
   </component>
