@@ -1,27 +1,26 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
+
 
 public class UImanager : MonoBehaviour
 {
-
-    [SerializeField] private GameObject panelStart;
+    [Header("In game UI")]
     [SerializeField] private GameObject panelUIinGame;
     [SerializeField] private TMP_Text textInGameScore;
     [SerializeField] private TMP_Text textHp;
     [SerializeField] private TMP_Text textTimeBetweenSpawn;
     [SerializeField] private TMP_Text textMultiplier;
-
+    [SerializeField] private ParticleSystem psMultiplierEarth;
+    [SerializeField] private Animator animatorMultiplierText;
+    [Header("Game Over")]
     [SerializeField] private GameObject panelGameOver;
     [SerializeField] private TMP_Text textAfterGameScore;
+    [SerializeField] private GameObject panelStart;
     [SerializeField] private TMP_Text textBestScore;
-    
+    [Space(10)]
     [SerializeField] private GameManagerSo gameSo;
 
-  
 
     private void OnEnable()
     {
@@ -43,14 +42,22 @@ public class UImanager : MonoBehaviour
 
     private void bonusTime()
     {
-        if (gameSo.Multiplier > 1)
+        if (gameSo.Multiplier != 1)
         {
-            textMultiplier.enabled = true;
+            psMultiplierEarth.Play();
+            animatorMultiplierText.SetTrigger("Enable");
+            
+    
             textMultiplier.text = "X" + gameSo.Multiplier;
         }
-        else
+        if(gameSo.Multiplier == 1)
         {
-            textMultiplier.enabled = false;
+            psMultiplierEarth.Stop();
+            if (animatorMultiplierText.GetCurrentAnimatorStateInfo(0).IsName("Multipl_idle"))
+            {
+                animatorMultiplierText.SetTrigger("Disable");
+            }
+            
         }
     }
 

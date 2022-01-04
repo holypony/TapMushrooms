@@ -31,15 +31,15 @@ public class GameManager : MonoBehaviour
                 yield return null;
             }
 
-            if (!_isBonusTime)
+            if (!_isBonusTime && gameSo.Score > 100)
             {
-                if (GetRandom(20))
+                if (GetRandom(13))
                 {
                     StartCoroutine(bonusTime(2));
                 }
                 else
                 {
-                    if (GetRandom(5)) StartCoroutine(bonusTime(3));
+                    //if (GetRandom(5)) StartCoroutine(bonusTime(3));
                 }
             }
             
