@@ -3,29 +3,11 @@
     "m_SelectedPackage": {
         "deviceId": "22a0a620dd0d7ece",
         "name": "com.tapmushrooms",
-        "processId": 3153,
+        "processId": 16368,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
-        {
-            "deviceId": "22a0a620dd0d7ece",
-            "name": "com.sec.android.app.launcher",
-            "processId": 1902,
-            "exited": false
-        },
-        {
-            "deviceId": "22a0a620dd0d7ece",
-            "name": "com.tapmushrooms",
-            "processId": 22192,
-            "exited": true
-        },
-        {
-            "deviceId": "22a0a620dd0d7ece",
-            "name": "com.tapmushrooms",
-            "processId": 5847,
-            "exited": true
-        },
         {
             "deviceId": "22a0a620dd0d7ece",
             "name": "com.tapmushrooms",
@@ -48,12 +30,18 @@
             "deviceId": "22a0a620dd0d7ece",
             "name": "com.google.android.play.games",
             "processId": 3035,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "22a0a620dd0d7ece",
             "name": "com.tapmushrooms",
             "processId": 3153,
+            "exited": true
+        },
+        {
+            "deviceId": "22a0a620dd0d7ece",
+            "name": "com.tapmushrooms",
+            "processId": 16368,
             "exited": false
         }
     ],

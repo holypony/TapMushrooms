@@ -1,4 +1,6 @@
+using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -6,58 +8,75 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameManagerSo gameSo;
     [SerializeField] private Mushroom[] mushrooms;
+    private List<Mushroom> ReadyMushrooms;
+
     private int lastMushIndex = 99;
     private bool _isBonusTime = false;
-    
-    
-    public void InitializeGameField()
+
+    private void Awake()
+    {
+        InitializeGameField();
+    }
+
+    private void InitializeGameField()
+    {
+        
+        
+        ReadyMushrooms = new List<Mushroom>();
+        foreach (var mushroom in mushrooms)
+        {
+            mushroom.mushroomState(false);
+            if (!mushroom.CheckMushroomState())
+            {
+                ReadyMushrooms.Add(mushroom);
+            }
+        }
+    }
+
+
+
+    public void StartGame()
     {
         gameSo.InitializeGameSo();
-        
-        foreach (var t in mushrooms)
-        {
-            t.mushroomState(false);
-        }
         StopAllCoroutines();
         StartCoroutine(GameRoutine());
     }
+    
 
     private IEnumerator GameRoutine()
     {
-        while(!gameSo.GameOver)
+        while (!gameSo.GameOver)
         {
-            while (!useFreeMushroom())
+            foreach (var mushroom in mushrooms)
             {
-                yield return null;
+                if (!mushroom.CheckMushroomState())
+                {
+                    ReadyMushrooms.Add(mushroom);
+                }
             }
 
+            if (ReadyMushrooms.Count > 0)
+            {
+                int i = Random.Range(0, ReadyMushrooms.Count);
+                ReadyMushrooms[i].mushroomState(true);
+                ReadyMushrooms.Clear();
+            }
+            
+            
+            
             if (!_isBonusTime && gameSo.Score > 100)
             {
                 if (GetRandom(13))
                 {
                     StartCoroutine(bonusTime());
                 }
-                else
-                {
-                    //if (GetRandom(5)) StartCoroutine(bonusTime(3));
-                }
             }
-            
             yield return new WaitForSeconds(gameSo.TimeBetweenSpawn);
         }
+
+        InitializeGameField();
     }
 
-    
-    bool useFreeMushroom()
-    {
-        var mushIndex = Random.Range(0, mushrooms.Length);
-        if (mushIndex == lastMushIndex) return false;
-        if (mushrooms[mushIndex].IsMushroomDeactivated()) return false;
-        lastMushIndex = mushIndex;
-        mushrooms[mushIndex].mushroomState(true);
-        return true;
-    }
-    
     private IEnumerator bonusTime()
     {
         _isBonusTime = true;
@@ -68,8 +87,8 @@ public class GameManager : MonoBehaviour
         gameSo.Multiplier = 1;
         _isBonusTime = false;
     }
-    
-  
+
+
     private bool GetRandom(float setChance)
     {
         int drop = Random.Range(0, 101);

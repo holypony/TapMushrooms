@@ -6,40 +6,41 @@ using Random = UnityEngine.Random;
 
 public class Mushroom : MonoBehaviour
 {
-    private bool isActive = false;
+    private float _lifeTime;
+    [SerializeField] private bool isActive = false;
     private bool clicked = false;
     private bool isBomb = false;
-    
     
     [SerializeField] private GameManagerSo gameManagerSo;
     [SerializeField] private Material[] matirials;
     [SerializeField] private Material matirialBlack;
-    [SerializeField] private Animation animationDie;
-    private float _lifeTime;
+    
     private Animator _animator;
     private MeshRenderer _renderer;
 
-    
-
-    public bool IsMushroomDeactivated()
-    {
-        return isActive;
-    }
-    
     private void Awake()
     {
         _animator = GetComponentInChildren<Animator>();
         _renderer = GetComponentInChildren<MeshRenderer>();
+        
+        
     }
 
-    public void mushroomState(bool isActive)
+    public bool CheckMushroomState()
     {
-        isActive = isActive;
+        return isActive;
+        
+    }
+    
+   
+
+    public void mushroomState(bool _isActive)
+    {
+        isActive = _isActive;
         
         if (isActive)
         {
             InitMushroom();
-            
         }
         else
         {
@@ -72,7 +73,6 @@ public class Mushroom : MonoBehaviour
         }
         StartCoroutine(MushroomRutine());
         _animator.SetTrigger("Start");
-        
     }
 
     private IEnumerator MushroomRutine()
@@ -89,6 +89,7 @@ public class Mushroom : MonoBehaviour
                     {
                         yield return null;
                     }
+                    yield return new WaitForSeconds(0.1f);
                     isActive = false;
                     yield break;
                 }
@@ -100,6 +101,7 @@ public class Mushroom : MonoBehaviour
                 }
                 //yield return new WaitForSeconds(0.15f);
                 gameManagerSo.AddScore(10);
+                yield return new WaitForSeconds(0.1f);
                 isActive = false;
                 yield break;
                 
@@ -123,6 +125,7 @@ public class Mushroom : MonoBehaviour
             {
                 yield return null;
             }
+            yield return new WaitForSeconds(0.1f);
             isActive = false;
         }
         else
@@ -133,10 +136,16 @@ public class Mushroom : MonoBehaviour
             {
                 yield return null;
             }
+            yield return new WaitForSeconds(0.1f);
             isActive = false;
         }
     }
 
+    void disableMushroom()
+    {
+        isActive = false;
+       
+    }
     
 
  

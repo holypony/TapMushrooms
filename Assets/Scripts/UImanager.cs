@@ -46,18 +46,14 @@ public class UImanager : MonoBehaviour
         {
             psMultiplierEarth.Play();
             animatorMultiplierText.SetTrigger("Enable");
-            
-    
             textMultiplier.text = "X" + gameSo.Multiplier;
         }
-        if(gameSo.Multiplier == 1)
+
+        if (gameSo.Multiplier != 1) return;
+        psMultiplierEarth.Stop();
+        if (animatorMultiplierText.GetCurrentAnimatorStateInfo(0).IsName("Multipl_idle"))
         {
-            psMultiplierEarth.Stop();
-            if (animatorMultiplierText.GetCurrentAnimatorStateInfo(0).IsName("Multipl_idle"))
-            {
-                animatorMultiplierText.SetTrigger("Disable");
-            }
-            
+            animatorMultiplierText.SetTrigger("Disable");
         }
     }
 
@@ -71,9 +67,7 @@ public class UImanager : MonoBehaviour
         textInGameScore.text = "Score: " + gameSo.Score;
         textHp.text = "HP: " + gameSo.Hp;
         textTimeBetweenSpawn.text = "TbS: " + Math.Round(gameSo.TimeBetweenSpawn, 2) + " s";
-
         
-
 
         if (gameSo.GameOver)
         {

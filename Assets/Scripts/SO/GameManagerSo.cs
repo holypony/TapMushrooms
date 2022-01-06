@@ -1,5 +1,7 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 [CreateAssetMenu(menuName = "Data/GameSo")]
 public class GameManagerSo : ScriptableObject
@@ -15,12 +17,18 @@ public class GameManagerSo : ScriptableObject
     [SerializeField] private float mushLifeTime;
     [SerializeField] private float timeBetweenSpawn;
     [SerializeField] private float defaultTimeBetweenSpawn;
-
+    
+    
+   
+    
+    
     private void Awake()
     {
         InitializeGameSo();
     }
-
+    
+   
+    
     public void InitializeGameSo()
     {
         Multiplier = 1;
