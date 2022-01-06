@@ -70,7 +70,7 @@ public class UImanager : MonoBehaviour
     {
         textInGameScore.text = "Score: " + gameSo.Score;
         textHp.text = "HP: " + gameSo.Hp;
-        textTimeBetweenSpawn.text = "Time between spawn: " + Math.Round(gameSo.TimeBetweenSpawn, 2) + " s";
+        textTimeBetweenSpawn.text = "TbS: " + Math.Round(gameSo.TimeBetweenSpawn, 2) + " s";
 
         
 

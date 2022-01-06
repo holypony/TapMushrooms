@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "276560292292",
+    "project_id": "tap-mushrooms",
+    "storage_bucket": "tap-mushrooms.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:276560292292:android:229a800a646438a9d39c91",
+        "android_client_info": {
+          "package_name": "com.tapmushrooms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "276560292292-q4m4pao5fvfhfphf45nrmcognn6c104b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrg0Aj-nE1rCTSIvV3Yr46Pt8GKlcA7_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "276560292292-q4m4pao5fvfhfphf45nrmcognn6c104b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

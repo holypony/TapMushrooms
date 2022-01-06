@@ -6,9 +6,9 @@ using Random = UnityEngine.Random;
 
 public class Mushroom : MonoBehaviour
 {
-    private bool _isActive = false;
-    private bool _clicked = false;
-    private bool _isBomb = false;
+    private bool isActive = false;
+    private bool clicked = false;
+    private bool isBomb = false;
     
     
     [SerializeField] private GameManagerSo gameManagerSo;
@@ -23,7 +23,7 @@ public class Mushroom : MonoBehaviour
 
     public bool IsMushroomDeactivated()
     {
-        return _isActive;
+        return isActive;
     }
     
     private void Awake()
@@ -34,9 +34,9 @@ public class Mushroom : MonoBehaviour
 
     public void mushroomState(bool isActive)
     {
-        _isActive = isActive;
+        isActive = isActive;
         
-        if (_isActive)
+        if (isActive)
         {
             InitMushroom();
             
@@ -49,21 +49,21 @@ public class Mushroom : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if(!_clicked)
+        if(!clicked)
         {
-            _clicked = true;
+            clicked = true;
         }
     }
 
     void InitMushroom()
     {
-        _isBomb = false;
-        _clicked = false;
+        isBomb = false;
+        clicked = false;
         _lifeTime = gameManagerSo.MushLifeTime;
         
         if (GetRandom(13))
         {
-            _isBomb = true;
+            isBomb = true;
             _renderer.material = matirialBlack;
         }
         else
@@ -79,9 +79,9 @@ public class Mushroom : MonoBehaviour
     {
         while (_lifeTime > 0)
         {
-            if (_clicked)
+            if (clicked)
             {
-                if(_isBomb)
+                if(isBomb)
                 {
                     gameManagerSo.Hp--;
                     _animator.SetTrigger("Die");
@@ -89,7 +89,7 @@ public class Mushroom : MonoBehaviour
                     {
                         yield return null;
                     }
-                    _isActive = false;
+                    isActive = false;
                     yield break;
                 }
 
@@ -100,7 +100,7 @@ public class Mushroom : MonoBehaviour
                 }
                 //yield return new WaitForSeconds(0.15f);
                 gameManagerSo.AddScore(10);
-                _isActive = false;
+                isActive = false;
                 yield break;
                 
             }
@@ -108,7 +108,7 @@ public class Mushroom : MonoBehaviour
             if (gameManagerSo.GameOver)
             {
                 _animator.SetTrigger("Hide");
-                _isActive = false;
+                isActive = false;
                 yield break;
             }
 
@@ -116,14 +116,14 @@ public class Mushroom : MonoBehaviour
             yield return new WaitForSeconds(0.01f);
         }
         
-        if (_isBomb)
+        if (isBomb)
         {
             _animator.SetTrigger("Hide");
             while (_animator.GetCurrentAnimatorStateInfo(0).IsName("Hide"))
             {
                 yield return null;
             }
-            _isActive = false;
+            isActive = false;
         }
         else
         {
@@ -133,7 +133,7 @@ public class Mushroom : MonoBehaviour
             {
                 yield return null;
             }
-            _isActive = false;
+            isActive = false;
         }
     }
 

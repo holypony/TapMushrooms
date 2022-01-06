@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
             {
                 if (GetRandom(13))
                 {
-                    StartCoroutine(bonusTime(2));
+                    StartCoroutine(bonusTime());
                 }
                 else
                 {
@@ -51,24 +51,20 @@ public class GameManager : MonoBehaviour
     bool useFreeMushroom()
     {
         var mushIndex = Random.Range(0, mushrooms.Length);
-        
         if (mushIndex == lastMushIndex) return false;
-        
-
         if (mushrooms[mushIndex].IsMushroomDeactivated()) return false;
         lastMushIndex = mushIndex;
         mushrooms[mushIndex].mushroomState(true);
         return true;
-
     }
     
-    private IEnumerator bonusTime(int multiplier)
+    private IEnumerator bonusTime()
     {
         _isBonusTime = true;
-        gameSo.Multiplier = multiplier;
-        gameSo.TimeBetweenSpawn /= multiplier;
+        gameSo.Multiplier = 2;
+        gameSo.TimeBetweenSpawn -= Random.Range(0.05f, 0.15f);
         yield return new WaitForSeconds(5f);
-        gameSo.TimeBetweenSpawn  *= multiplier;
+        //gameSo.TimeBetweenSpawn  *= multiplier;
         gameSo.Multiplier = 1;
         _isBonusTime = false;
     }

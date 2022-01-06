@@ -6,6 +6,22 @@
     <e p="D:\GitHub\TapMushrooms\TapMushrooms" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Firebase" t="Include">
+          <e p="m2repository" t="Include">
+            <e p="com" t="Include">
+              <e p="google" t="Include">
+                <e p="Firebase" t="Include">
+                  <e p="firebase-analytics-unity" t="Include">
+                    <e p="maven-metadata.xml" t="Include" />
+                  </e>
+                  <e p="firebase-app-unity" t="Include">
+                    <e p="maven-metadata.xml" t="Include" />
+                  </e>
+                </e>
+              </e>
+            </e>
+          </e>
+        </e>
         <e p="GUI Kit Casual Game" t="Include">
           <e p="ResourcesData" t="Include">
             <e p="Shader &amp; Materials" t="Include">
