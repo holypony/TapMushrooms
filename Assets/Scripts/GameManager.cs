@@ -61,29 +61,30 @@ public class GameManager : MonoBehaviour
                 ReadyMushrooms[i].mushroomState(true);
                 ReadyMushrooms.Clear();
             }
-            
-            
+            gameSo.UpdateTimeBetweenSpawns();
             
             if (!_isBonusTime && gameSo.Score > 100)
             {
-                if (GetRandom(13))
+
+                if (GetRandom(9))
                 {
                     StartCoroutine(bonusTime());
                 }
             }
+
             yield return new WaitForSeconds(gameSo.TimeBetweenSpawn);
         }
 
         InitializeGameField();
     }
+    
+    
 
     private IEnumerator bonusTime()
     {
         _isBonusTime = true;
         gameSo.Multiplier = 2;
-        gameSo.TimeBetweenSpawn -= Random.Range(0.05f, 0.15f);
         yield return new WaitForSeconds(5f);
-        //gameSo.TimeBetweenSpawn  *= multiplier;
         gameSo.Multiplier = 1;
         _isBonusTime = false;
     }

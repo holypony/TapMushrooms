@@ -26,4 +26,10 @@ public class FirebaseAnalytics : MonoBehaviour
         
     }
 
+    public void AnalyticRestartBtn()
+    {
+        Firebase.Analytics.FirebaseAnalytics
+            .LogEvent("RestartBtn");
+    }
+    
 }

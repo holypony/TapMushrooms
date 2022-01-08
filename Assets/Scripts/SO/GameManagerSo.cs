@@ -17,7 +17,7 @@ public class GameManagerSo : ScriptableObject
     [SerializeField] private float mushLifeTime;
     [SerializeField] private float timeBetweenSpawn;
     [SerializeField] private float defaultTimeBetweenSpawn;
-    
+    [SerializeField] private float diffIndex;
     
    
     
@@ -36,12 +36,31 @@ public class GameManagerSo : ScriptableObject
         
         defaultTimeBetweenSpawn = 0.65f;
         TimeBetweenSpawn = defaultTimeBetweenSpawn;
+        DiffIndex = 0;
         
         Score = 0;
         Hp = 3;
         GameOver = false;
         
     }
+
+    private float multiplierTimeBonus;
+    public void UpdateTimeBetweenSpawns()
+    {
+        DiffIndex = -Score / 5000f;
+        
+        if (Multiplier > 1)
+        {
+            multiplierTimeBonus = -(defaultTimeBetweenSpawn + DiffIndex) / Multiplier;
+        }
+        else
+        {
+            multiplierTimeBonus = 0;
+        }
+        
+        TimeBetweenSpawn = defaultTimeBetweenSpawn + DiffIndex + multiplierTimeBonus;
+    }
+    
     
 
     public float MushLifeTime
@@ -59,7 +78,9 @@ public class GameManagerSo : ScriptableObject
             {
                 value = 0.15f;
             }
+
             timeBetweenSpawn = value;
+            
         }
     }
     public int Score
@@ -69,6 +90,15 @@ public class GameManagerSo : ScriptableObject
         {
             score = value;
             OnScoreChange?.Invoke();
+        }
+    }
+    
+    public float DiffIndex
+    {
+        get => diffIndex;
+        set
+        {
+            diffIndex = value;
         }
     }
     
@@ -119,7 +149,6 @@ public class GameManagerSo : ScriptableObject
             gameOver = value;
             OnGameOverChange?.Invoke();
         }
-
     }
 
 

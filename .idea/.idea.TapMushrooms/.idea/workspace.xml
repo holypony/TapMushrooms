@@ -16,10 +16,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/SO/GameManagerSo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Mushroom.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UImanager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SO/GameManagerSo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FirebaseAnalytics.cs" />
       </list>
     </option>
@@ -65,7 +65,11 @@
       <updated>1641245424183</updated>
       <workItem from="1641245435667" duration="7314000" />
       <workItem from="1641303162975" duration="11001000" />
-      <workItem from="1641480732551" duration="17387000" />
+      <workItem from="1641480732551" duration="17628000" />
+      <workItem from="1641567177199" duration="519000" />
+      <workItem from="1641586131711" duration="2311000" />
+      <workItem from="1641647351997" duration="1662000" />
+      <workItem from="1641667694432" duration="2918000" />
     </task>
     <servers />
   </component>
