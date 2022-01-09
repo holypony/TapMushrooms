@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
+        _isBonusTime = false;
         gameSo.InitializeGameSo();
         StopAllCoroutines();
         StartCoroutine(GameRoutine());

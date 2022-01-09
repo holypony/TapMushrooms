@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "22a0a620dd0d7ece",
         "name": "com.tapmushrooms",
-        "processId": 16368,
+        "processId": 19844,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -11,37 +11,37 @@
         {
             "deviceId": "22a0a620dd0d7ece",
             "name": "com.tapmushrooms",
-            "processId": 23460,
+            "processId": 18663,
             "exited": true
         },
         {
             "deviceId": "22a0a620dd0d7ece",
             "name": "com.tapmushrooms",
-            "processId": 29539,
+            "processId": 17571,
             "exited": true
         },
         {
             "deviceId": "22a0a620dd0d7ece",
             "name": "com.tapmushrooms",
-            "processId": 32133,
-            "exited": true
-        },
-        {
-            "deviceId": "22a0a620dd0d7ece",
-            "name": "com.google.android.play.games",
-            "processId": 3035,
+            "processId": 12288,
             "exited": true
         },
         {
             "deviceId": "22a0a620dd0d7ece",
             "name": "com.tapmushrooms",
-            "processId": 3153,
+            "processId": 13661,
             "exited": true
         },
         {
             "deviceId": "22a0a620dd0d7ece",
             "name": "com.tapmushrooms",
-            "processId": 16368,
+            "processId": 17744,
+            "exited": true
+        },
+        {
+            "deviceId": "22a0a620dd0d7ece",
+            "name": "com.tapmushrooms",
+            "processId": 19844,
             "exited": false
         }
     ],

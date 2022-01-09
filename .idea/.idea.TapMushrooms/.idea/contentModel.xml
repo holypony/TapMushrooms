@@ -17,6 +17,12 @@
                   <e p="firebase-app-unity" t="Include">
                     <e p="maven-metadata.xml" t="Include" />
                   </e>
+                  <e p="firebase-auth-unity" t="Include">
+                    <e p="maven-metadata.xml" t="Include" />
+                  </e>
+                  <e p="firebase-database-unity" t="Include">
+                    <e p="maven-metadata.xml" t="Include" />
+                  </e>
                 </e>
               </e>
             </e>
@@ -31,6 +37,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="datebase.cs" t="Include" />
           <e p="FirebaseAnalytics.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="Input" t="Include">

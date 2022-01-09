@@ -1,9 +1,30 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Firebase;
+using Firebase.Auth;
+using Firebase.Database;
 using UnityEngine;
-using Firebase.Analytics;
+
 public class FirebaseAnalytics : MonoBehaviour
 {
+    private FirebaseApp app;
+    private DatabaseReference reference;
+    [SerializeField] private GameManagerSo gameSo;
+    
+    Firebase.Auth.FirebaseAuth auth;
+    private Firebase.Auth.FirebaseUser newUser;
+
+    private void OnEnable()
+    {
+        gameSo.OnBestScoreChange += AddBestScore;
+    }
+    
+    private void OnDisable()
+    {
+        gameSo.OnBestScoreChange -= AddBestScore;
+    }
+
     private void Start()
     {
         Firebase.FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(task =>
@@ -11,8 +32,11 @@ public class FirebaseAnalytics : MonoBehaviour
             var dependencyStatus = task.Result;
             if (dependencyStatus == Firebase.DependencyStatus.Available)
             {
-                Firebase.FirebaseApp app = Firebase.FirebaseApp.DefaultInstance;
-           
+                app = Firebase.FirebaseApp.DefaultInstance;
+                auth = Firebase.Auth.FirebaseAuth.DefaultInstance;
+                reference = FirebaseDatabase.DefaultInstance.RootReference;
+                anonymousAuth();
+                
             }
             else
             {
@@ -21,11 +45,47 @@ public class FirebaseAnalytics : MonoBehaviour
             }
         });
         
-        Firebase.Analytics.FirebaseAnalytics
-            .LogEvent("NICE");
-        
     }
 
+    void anonymousAuth()
+    {
+        auth.SignInAnonymouslyAsync().ContinueWith(task => {
+            if (task.IsCanceled) {
+                Debug.LogError("SignInAnonymouslyAsync was canceled.");
+                return;
+            }
+            if (task.IsFaulted) {
+                Debug.LogError("SignInAnonymouslyAsync encountered an error: " + task.Exception);
+                return;
+            }
+         
+            newUser = task.Result;
+            Debug.LogFormat("User signed in successfully: {0} ({1})",
+                newUser.DisplayName, newUser.UserId);
+            
+            
+            //string json = JsonUtility.ToJson(9999);
+
+           
+        });
+    }
+
+    public  void AddBestScore()
+    {
+        reference.Child("Users").Child(newUser.UserId).Child("BestScore").SetValueAsync(gameSo.BestScore).ContinueWith(task =>
+        {
+            if (task.IsCompleted) 
+            {
+                Debug.Log("Db successful updated");
+            }
+            else
+            {
+                Debug.Log("db failed");
+            }
+        });
+    }
+    
+    
     public void AnalyticRestartBtn()
     {
         Firebase.Analytics.FirebaseAnalytics

@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "276560292292",
+    "firebase_url": "https://tap-mushrooms-default-rtdb.europe-west1.firebasedatabase.app",
     "project_id": "tap-mushrooms",
     "storage_bucket": "tap-mushrooms.appspot.com"
   },
