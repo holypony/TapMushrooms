@@ -24,19 +24,20 @@ public class UImanager : MonoBehaviour
 
     private void OnEnable()
     {
-        gameSo.OnScoreChange += updateUI;
-        gameSo.OnHpChange += updateUI;
-        gameSo.OnGameOverChange += updateUI;
+        gameSo.OnScoreChange += updateScore;
+        gameSo.OnHpChange += updateHp;
+        gameSo.OnGameOverChange += gameoverUI;
         gameSo.OnMultiplierChange += bonusTime;
+        
         panelUIinGame.SetActive(true);
         panelStart.SetActive(true);
     }
 
     private void OnDisable()
     {
-        gameSo.OnScoreChange -= updateUI;
-        gameSo.OnHpChange -= updateUI;
-        gameSo.OnGameOverChange -= updateUI;
+        gameSo.OnScoreChange -= updateScore;
+        gameSo.OnHpChange -= updateHp;
+        gameSo.OnGameOverChange -= gameoverUI;
         gameSo.OnMultiplierChange -= bonusTime;
     }
 
@@ -57,18 +58,13 @@ public class UImanager : MonoBehaviour
         }
     }
 
-    public void StartGame()
+    private void updateHp()
     {
-        panelStart.SetActive(false);
+        textHp.text = "HP: " + gameSo.Hp;
     }
 
-    private void updateUI()
+    private void gameoverUI()
     {
-        textInGameScore.text = "Score: " + gameSo.Score;
-        textHp.text = "HP: " + gameSo.Hp;
-        textTimeBetweenSpawn.text = "TbS: " + Math.Round(gameSo.TimeBetweenSpawn, 2) + " s";
-        
-
         if (gameSo.GameOver)
         {
             if (PlayerPrefs.GetInt("BestScore", 0) < gameSo.Score)
@@ -86,5 +82,16 @@ public class UImanager : MonoBehaviour
             panelUIinGame.SetActive(true);
             panelGameOver.SetActive(false);
         }
+    }
+    
+    public void StartGame()
+    {
+        panelStart.SetActive(false);
+    }
+
+    private void updateScore()
+    {
+        textInGameScore.text = "Score: " + gameSo.Score;
+        textTimeBetweenSpawn.text = "TbS: " + Math.Round(gameSo.TimeBetweenSpawn, 2) + " s";
     }
 }

@@ -29,7 +29,6 @@ public class Mushroom : MonoBehaviour
     public bool CheckMushroomState()
     {
         return isActive;
-        
     }
     
    
@@ -50,10 +49,9 @@ public class Mushroom : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if(!clicked)
-        {
-            clicked = true;
-        }
+        if (clicked) return;
+        clicked = true;
+        StartCoroutine(MushroomDeath());
     }
 
     void InitMushroom()
@@ -71,51 +69,60 @@ public class Mushroom : MonoBehaviour
         {
             _renderer.material = matirials[Random.Range(0, matirials.Length)];
         }
-        StartCoroutine(MushroomRutine());
+        StartCoroutine(MushroomRoutine());
         _animator.SetTrigger("Start");
     }
 
-    private IEnumerator MushroomRutine()
+    private IEnumerator MushroomRoutine()
     {
         while (_lifeTime > 0)
         {
-            if (clicked)
-            {
-                if(isBomb)
-                {
-                    gameManagerSo.Hp--;
-                    _animator.SetTrigger("Die");
-                    while (_animator.GetCurrentAnimatorStateInfo(0).IsName("Die"))
-                    {
-                        yield return null;
-                    }
-                    yield return new WaitForSeconds(0.1f);
-                    isActive = false;
-                    yield break;
-                }
+          
 
-                _animator.SetTrigger("Die");
-                while (_animator.GetCurrentAnimatorStateInfo(0).IsName("Die"))
-                {
-                    yield return null;
-                }
-                //yield return new WaitForSeconds(0.15f);
-                gameManagerSo.AddScore(10);
-                yield return new WaitForSeconds(0.1f);
-                isActive = false;
-                yield break;
-                
-            }
-            
             if (gameManagerSo.GameOver)
             {
                 _animator.SetTrigger("Hide");
-                isActive = false;
+                yield return new WaitForSeconds(0.1f);
+                mushroomState(false);
                 yield break;
             }
 
             _lifeTime -= 0.01f;
             yield return new WaitForSeconds(0.01f);
+        }
+        StartCoroutine(MushroomDeath());
+        
+        
+    }
+
+    private IEnumerator MushroomDeath()
+    {
+        _lifeTime = 0;
+        if (clicked)
+        {
+            if(isBomb)
+            {
+                gameManagerSo.Hp--;
+                _animator.SetTrigger("Die");
+                while (_animator.GetCurrentAnimatorStateInfo(0).IsName("Die"))
+                {
+                    yield return null;
+                }
+                yield return new WaitForSeconds(0.1f);
+                mushroomState(false);
+                yield break;
+            }
+
+            _animator.SetTrigger("Die");
+            while (_animator.GetCurrentAnimatorStateInfo(0).IsName("Die"))
+            {
+                yield return null;
+            }
+
+            gameManagerSo.Score += 10 * gameManagerSo.Multiplier;
+            yield return new WaitForSeconds(0.1f);
+            mushroomState(false);
+            yield break;
         }
         
         if (isBomb)
@@ -126,7 +133,7 @@ public class Mushroom : MonoBehaviour
                 yield return null;
             }
             yield return new WaitForSeconds(0.1f);
-            isActive = false;
+            mushroomState(false);
         }
         else
         {
@@ -137,16 +144,10 @@ public class Mushroom : MonoBehaviour
                 yield return null;
             }
             yield return new WaitForSeconds(0.1f);
-            isActive = false;
+            mushroomState(false);
         }
+        yield return null;
     }
-
-    void disableMushroom()
-    {
-        isActive = false;
-       
-    }
-    
 
  
     private bool GetRandom(float setChance)

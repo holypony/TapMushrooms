@@ -36,7 +36,6 @@ public class FirebaseAnalytics : MonoBehaviour
                 auth = Firebase.Auth.FirebaseAuth.DefaultInstance;
                 reference = FirebaseDatabase.DefaultInstance.RootReference;
                 anonymousAuth();
-                
             }
             else
             {
@@ -47,7 +46,7 @@ public class FirebaseAnalytics : MonoBehaviour
         
     }
 
-    void anonymousAuth()
+    private void anonymousAuth()
     {
         auth.SignInAnonymouslyAsync().ContinueWith(task => {
             if (task.IsCanceled) {
@@ -62,15 +61,11 @@ public class FirebaseAnalytics : MonoBehaviour
             newUser = task.Result;
             Debug.LogFormat("User signed in successfully: {0} ({1})",
                 newUser.DisplayName, newUser.UserId);
-            
-            
-            //string json = JsonUtility.ToJson(9999);
 
-           
         });
     }
 
-    public  void AddBestScore()
+    private void AddBestScore()
     {
         reference.Child("Users").Child(newUser.UserId).Child("BestScore").SetValueAsync(gameSo.BestScore).ContinueWith(task =>
         {
@@ -91,5 +86,4 @@ public class FirebaseAnalytics : MonoBehaviour
         Firebase.Analytics.FirebaseAnalytics
             .LogEvent("RestartBtn");
     }
-    
 }

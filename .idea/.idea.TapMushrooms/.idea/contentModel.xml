@@ -20,11 +20,19 @@
                   <e p="firebase-auth-unity" t="Include">
                     <e p="maven-metadata.xml" t="Include" />
                   </e>
+                  <e p="firebase-crashlytics-unity" t="Include">
+                    <e p="maven-metadata.xml" t="Include" />
+                  </e>
                   <e p="firebase-database-unity" t="Include">
                     <e p="maven-metadata.xml" t="Include" />
                   </e>
                 </e>
               </e>
+            </e>
+          </e>
+          <e p="Plugins" t="Include">
+            <e p="Crashlytics" t="Include">
+              <e p="link.xml" t="Include" />
             </e>
           </e>
         </e>
@@ -37,19 +45,20 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="datebase.cs" t="Include" />
           <e p="FirebaseAnalytics.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="Input" t="Include">
             <e p="InputManager.cs" t="Include" />
             <e p="Mashrooms_Screen_input.cs" t="Include" />
           </e>
+          <e p="menu.cs" t="Include" />
           <e p="Mushroom.cs" t="Include" />
           <e p="SO" t="Include">
             <e p="BoolValueSO.cs" t="Include" />
             <e p="GameManagerSo.cs" t="Include" />
             <e p="mashroomSO.cs" t="Include" />
           </e>
+          <e p="SoundManager.cs" t="Include" />
           <e p="UImanager.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">

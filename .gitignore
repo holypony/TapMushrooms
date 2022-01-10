@@ -32,6 +32,9 @@ ExportedObj/
 # Unity3D Generated File On Crash Reports
 sysinfo.txt
 
+#firebase dll
+FirebaseCppApp-8_7_0.so
+
 # Builds
 *.apk
 *.unitypackage

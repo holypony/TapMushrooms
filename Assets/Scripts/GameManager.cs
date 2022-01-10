@@ -8,36 +8,25 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameManagerSo gameSo;
     [SerializeField] private Mushroom[] mushrooms;
-    private List<Mushroom> ReadyMushrooms;
+    private List<Mushroom> readyMushrooms;
 
-    private int lastMushIndex = 99;
-    private bool _isBonusTime = false;
+    private bool isBonusTime = false;
 
-    private void Awake()
-    {
-        InitializeGameField();
-    }
 
     private void InitializeGameField()
     {
-        
-        
-        ReadyMushrooms = new List<Mushroom>();
+        isBonusTime = false;
+        readyMushrooms = new List<Mushroom>();
         foreach (var mushroom in mushrooms)
         {
             mushroom.mushroomState(false);
-            if (!mushroom.CheckMushroomState())
-            {
-                ReadyMushrooms.Add(mushroom);
-            }
         }
     }
 
-
-
     public void StartGame()
     {
-        _isBonusTime = false;
+        
+        InitializeGameField();
         gameSo.InitializeGameSo();
         StopAllCoroutines();
         StartCoroutine(GameRoutine());
@@ -52,46 +41,44 @@ public class GameManager : MonoBehaviour
             {
                 if (!mushroom.CheckMushroomState())
                 {
-                    ReadyMushrooms.Add(mushroom);
+                    readyMushrooms.Add(mushroom);
                 }
             }
 
-            if (ReadyMushrooms.Count > 0)
+            if (readyMushrooms.Count > 0)
             {
-                int i = Random.Range(0, ReadyMushrooms.Count);
-                ReadyMushrooms[i].mushroomState(true);
-                ReadyMushrooms.Clear();
+                int i = Random.Range(0, readyMushrooms.Count);
+                readyMushrooms[i].mushroomState(true);
+                readyMushrooms.Clear();
             }
-            gameSo.UpdateTimeBetweenSpawns();
             
-            if (!_isBonusTime && gameSo.Score > 100)
+            if (!isBonusTime && gameSo.Score > 100)
             {
 
-                if (GetRandom(9))
+                if (setRandom(9))
                 {
                     StartCoroutine(bonusTime());
                 }
             }
-
+            
+            gameSo.UpdateTimeBetweenSpawns();
             yield return new WaitForSeconds(gameSo.TimeBetweenSpawn);
         }
-
-        InitializeGameField();
     }
     
     
 
     private IEnumerator bonusTime()
     {
-        _isBonusTime = true;
+        isBonusTime = true;
         gameSo.Multiplier = 2;
         yield return new WaitForSeconds(5f);
         gameSo.Multiplier = 1;
-        _isBonusTime = false;
+        isBonusTime = false;
     }
 
 
-    private bool GetRandom(float setChance)
+    private bool setRandom(float setChance)
     {
         int drop = Random.Range(0, 101);
         return drop <= setChance;
