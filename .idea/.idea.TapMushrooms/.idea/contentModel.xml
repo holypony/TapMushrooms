@@ -45,6 +45,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="BtnSoundSwitcher.cs" t="Include" />
           <e p="FirebaseAnalytics.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="Input" t="Include">

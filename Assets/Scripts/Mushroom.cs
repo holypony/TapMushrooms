@@ -15,6 +15,9 @@ public class Mushroom : MonoBehaviour
     [SerializeField] private Material[] matirials;
     [SerializeField] private Material matirialBlack;
     
+    [SerializeField] private ParticleSystem psMinusHp;
+    [SerializeField] private ParticleSystem psTap;
+    
     private Animator _animator;
     private MeshRenderer _renderer;
 
@@ -22,8 +25,6 @@ public class Mushroom : MonoBehaviour
     {
         _animator = GetComponentInChildren<Animator>();
         _renderer = GetComponentInChildren<MeshRenderer>();
-        
-        
     }
 
     public bool CheckMushroomState()
@@ -31,8 +32,6 @@ public class Mushroom : MonoBehaviour
         return isActive;
     }
     
-   
-
     public void mushroomState(bool _isActive)
     {
         isActive = _isActive;
@@ -43,6 +42,7 @@ public class Mushroom : MonoBehaviour
         }
         else
         {
+            psMinusHp.Stop(true);
             StopAllCoroutines();
         }
     }
@@ -51,6 +51,7 @@ public class Mushroom : MonoBehaviour
     {
         if (clicked) return;
         clicked = true;
+        psTap.Play(true);
         StartCoroutine(MushroomDeath());
     }
 
@@ -77,8 +78,6 @@ public class Mushroom : MonoBehaviour
     {
         while (_lifeTime > 0)
         {
-          
-
             if (gameManagerSo.GameOver)
             {
                 _animator.SetTrigger("Hide");
@@ -90,9 +89,11 @@ public class Mushroom : MonoBehaviour
             _lifeTime -= 0.01f;
             yield return new WaitForSeconds(0.01f);
         }
-        StartCoroutine(MushroomDeath());
-        
-        
+
+        if (!clicked)
+        {
+            StartCoroutine(MushroomDeath()); 
+        }
     }
 
     private IEnumerator MushroomDeath()
@@ -103,6 +104,7 @@ public class Mushroom : MonoBehaviour
             if(isBomb)
             {
                 gameManagerSo.Hp--;
+                psMinusHp.Play(true);
                 _animator.SetTrigger("Die");
                 while (_animator.GetCurrentAnimatorStateInfo(0).IsName("Die"))
                 {
@@ -134,10 +136,12 @@ public class Mushroom : MonoBehaviour
             }
             yield return new WaitForSeconds(0.1f);
             mushroomState(false);
+            
         }
         else
         {
             gameManagerSo.Hp--;
+            psMinusHp.Play(true);
             _animator.SetTrigger("Hide");
             while (_animator.GetCurrentAnimatorStateInfo(0).IsName("Hide"))
             {
@@ -146,7 +150,6 @@ public class Mushroom : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
             mushroomState(false);
         }
-        yield return null;
     }
 
  

@@ -6,7 +6,7 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
     [SerializeField] private BoolValueSO isSoundOn;
-    [SerializeField] private AudioSource AsBg;
+    [SerializeField] private AudioSource asBg;
     
     private void OnEnable()
     {
@@ -19,11 +19,8 @@ public class SoundManager : MonoBehaviour
 
     private void btnSwitchSound(bool isSound)
     {
-        AsBg.mute = isSound;
+        asBg.mute = !isSound;
 
     }
-    
-   
-    
-    
+
 }
