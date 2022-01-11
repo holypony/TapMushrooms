@@ -9939,7 +9939,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c2b4759489cd4f649b5ef20c78c7bb96, type: 2}
   - {fileID: 2100000, guid: 3510ecf199490ce428a23b3481caa63b, type: 2}
   matirialBlack: {fileID: 2100000, guid: 7fde64a9772a3b046ba867ad54e1f3df, type: 2}
-  psMushGlowing: {fileID: 3628721021188398996}
   psMinusHp: {fileID: 4035433732631594121}
   psTap: {fileID: 6490000908458554215}
 --- !u!1 &6490000909017861453
@@ -15022,7 +15021,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5074235708766200411, guid: 4a987ee6770ea9a44bfecbb93048ebfc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.803
+      value: 0.725
       objectReference: {fileID: 0}
     - target: {fileID: 5074235708766200411, guid: 4a987ee6770ea9a44bfecbb93048ebfc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -15061,10 +15060,5 @@ PrefabInstance:
 --- !u!4 &3628721021188398997 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5074235708766200411, guid: 4a987ee6770ea9a44bfecbb93048ebfc, type: 3}
-  m_PrefabInstance: {fileID: 8372333497564659150}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &3628721021188398996 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 5074235708766200410, guid: 4a987ee6770ea9a44bfecbb93048ebfc, type: 3}
   m_PrefabInstance: {fileID: 8372333497564659150}
   m_PrefabAsset: {fileID: 0}

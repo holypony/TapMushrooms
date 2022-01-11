@@ -10,6 +10,7 @@ public class SoundManager : MonoBehaviour
     
     private void OnEnable()
     {
+        isSoundOn.Value = true;
         isSoundOn.OnValueChange += btnSwitchSound;
     }
     private void OnDisable()

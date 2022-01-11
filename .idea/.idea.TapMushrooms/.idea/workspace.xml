@@ -28,8 +28,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/SO/GameManagerSo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UImanager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BtnSoundSwitcher.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Mushroom.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" />
       </list>
     </option>
   </component>
@@ -83,7 +83,9 @@
       <workItem from="1641732894333" duration="7221000" />
       <workItem from="1641760579869" duration="2000" />
       <workItem from="1641760596914" duration="3884000" />
-      <workItem from="1641810234970" duration="6476000" />
+      <workItem from="1641810234970" duration="7505000" />
+      <workItem from="1641836442703" duration="1093000" />
+      <workItem from="1641844529722" duration="633000" />
     </task>
     <servers />
   </component>
