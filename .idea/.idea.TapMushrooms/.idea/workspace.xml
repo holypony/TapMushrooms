@@ -12,6 +12,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/menu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SO/leaderboardManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FirebaseAnalytics.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BtnSoundSwitcher.cs" root0="FORCE_HIGHLIGHTING" />
@@ -22,14 +23,17 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/datebase.cs" />
         <option value="$PROJECT_DIR$/Assets/google-services.json" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Android/proguard-user.txt" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FirebaseAnalytics.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/menu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SO/GameManagerSo.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UImanager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BtnSoundSwitcher.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Mushroom.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SO/mashroomSO.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SO/BoolValueSO.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SO/leaderboardManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Mushroom.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UImanager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FirebaseAnalytics.cs" />
       </list>
     </option>
   </component>
@@ -86,6 +90,9 @@
       <workItem from="1641810234970" duration="7505000" />
       <workItem from="1641836442703" duration="1093000" />
       <workItem from="1641844529722" duration="633000" />
+      <workItem from="1642021069395" duration="5938000" />
+      <workItem from="1642074952466" duration="14988000" />
+      <workItem from="1642166535477" duration="14870000" />
     </task>
     <servers />
   </component>
@@ -102,10 +109,10 @@
       <screen x="0" y="0" width="2048" height="1090" />
     </state>
     <state x="617" y="278" key="Rider.ProjectTemplateDialog.Size/0.0.2048.1090/-1920.0.1536.834@0.0.2048.1090" timestamp="1641672237823" />
-    <state x="687" y="238" width="672" height="678" key="search.everywhere.popup" timestamp="1641816765447">
+    <state x="687" y="238" width="672" height="678" key="search.everywhere.popup" timestamp="1642183626285">
       <screen x="0" y="0" width="2048" height="1090" />
     </state>
-    <state x="687" y="238" key="search.everywhere.popup/0.0.2048.1090/-1920.0.1536.834@0.0.2048.1090" timestamp="1641672231905" />
+    <state x="687" y="238" width="672" height="678" key="search.everywhere.popup/0.0.2048.1090/-1920.0.1536.834@0.0.2048.1090" timestamp="1642183626285" />
     <state x="687" y="238" width="672" height="678" key="search.everywhere.popup/0.0.2048.1090@0.0.2048.1090" timestamp="1641816765447" />
   </component>
 </project>

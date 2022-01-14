@@ -1,65 +1,47 @@
 {
     "m_SelectedDeviceId": "22a0a620dd0d7ece",
     "m_SelectedPackage": {
-        "deviceId": "22a0a620dd0d7ece",
-        "name": "com.tapmushrooms",
-        "processId": 31737,
+        "deviceId": "",
+        "name": "",
+        "processId": 0,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
         {
             "deviceId": "22a0a620dd0d7ece",
-            "name": "com.samsung.android.incallui",
-            "processId": 18694,
-            "exited": true
-        },
-        {
-            "deviceId": "22a0a620dd0d7ece",
-            "name": "com.tapmushrooms",
-            "processId": 21097,
-            "exited": true
-        },
-        {
-            "deviceId": "22a0a620dd0d7ece",
-            "name": "com.tapmushrooms",
-            "processId": 23512,
-            "exited": true
-        },
-        {
-            "deviceId": "22a0a620dd0d7ece",
-            "name": "com.tapmushrooms",
-            "processId": 23795,
-            "exited": true
-        },
-        {
-            "deviceId": "22a0a620dd0d7ece",
-            "name": "com.tapmushrooms",
-            "processId": 26563,
-            "exited": true
-        },
-        {
-            "deviceId": "22a0a620dd0d7ece",
-            "name": "com.tapmushrooms",
-            "processId": 28001,
-            "exited": false
-        },
-        {
-            "deviceId": "22a0a620dd0d7ece",
-            "name": "com.tapmushrooms",
-            "processId": 29885,
-            "exited": false
-        },
-        {
-            "deviceId": "22a0a620dd0d7ece",
-            "name": "com.tapmushrooms",
-            "processId": 31937,
-            "exited": false
-        },
-        {
-            "deviceId": "22a0a620dd0d7ece",
             "name": "com.tapmushrooms",
             "processId": 31737,
+            "exited": true
+        },
+        {
+            "deviceId": "22a0a620dd0d7ece",
+            "name": "com.tapmushrooms",
+            "processId": 20571,
+            "exited": true
+        },
+        {
+            "deviceId": "22a0a620dd0d7ece",
+            "name": "com.tapmushrooms",
+            "processId": 4474,
+            "exited": true
+        },
+        {
+            "deviceId": "22a0a620dd0d7ece",
+            "name": "com.tapmushrooms",
+            "processId": 21637,
+            "exited": true
+        },
+        {
+            "deviceId": "22a0a620dd0d7ece",
+            "name": "com.tapmushrooms",
+            "processId": 27750,
+            "exited": true
+        },
+        {
+            "deviceId": "22a0a620dd0d7ece",
+            "name": "com.sec.android.app.launcher",
+            "processId": 1710,
             "exited": false
         }
     ],

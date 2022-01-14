@@ -18,17 +18,19 @@ public class UImanager : MonoBehaviour
     [SerializeField] private TMP_Text textAfterGameScore;
     [SerializeField] private GameObject panelStart;
     [SerializeField] private TMP_Text textBestScore;
+    [SerializeField] private TMP_Text textTotalPlayers;
     [Space(10)]
     [SerializeField] private GameManagerSo gameSo;
-
-
+    [SerializeField] private leaderboardManager leaderboardSo;
+    [SerializeField] private TMP_Text[] leadersTexts; 
     private void OnEnable()
     {
         gameSo.OnScoreChange += updateScore;
         gameSo.OnHpChange += updateHp;
         gameSo.OnGameOverChange += gameoverUI;
         gameSo.OnMultiplierChange += bonusTime;
-        
+
+        leaderboardSo.OnValueChange += CreateLeaderboard;
         panelUIinGame.SetActive(true);
         panelStart.SetActive(true);
     }
@@ -39,6 +41,22 @@ public class UImanager : MonoBehaviour
         gameSo.OnHpChange -= updateHp;
         gameSo.OnGameOverChange -= gameoverUI;
         gameSo.OnMultiplierChange -= bonusTime;
+        
+        leaderboardSo.OnValueChange -= CreateLeaderboard;
+    }
+
+    private void CreateLeaderboard(bool isUpdated)
+    {
+        if (isUpdated)
+        {
+            for (int i = 0; i < leaderboardSo.LeadersList.Count; i++)
+            {
+                leadersTexts[i].text = leaderboardSo.LeadersList[i];
+            }
+            textTotalPlayers.text = "Total players: " + leaderboardSo.TotalPlayers;
+            leaderboardSo.Value = false;
+        }
+        
     }
 
     private void bonusTime()
@@ -67,13 +85,9 @@ public class UImanager : MonoBehaviour
     {
         if (gameSo.GameOver)
         {
-            if (PlayerPrefs.GetInt("BestScore", 0) < gameSo.Score)
-            {
-                gameSo.BestScore = gameSo.Score;
-                PlayerPrefs.SetInt("BestScore", gameSo.Score);
-            }
-            textAfterGameScore.text = "Score: " + gameSo.Score;
-            textBestScore.text = "Best score: " + PlayerPrefs.GetInt("BestScore", 0);
+            textTotalPlayers.text = "Total players: ";
+            textAfterGameScore.text = "";
+            textBestScore.text = "" ;
             panelUIinGame.SetActive(false);
             panelGameOver.SetActive(true);
         }

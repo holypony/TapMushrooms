@@ -4,8 +4,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Data/BoolData")]
 public class BoolValueSO : ScriptableObject
 {
-    [SerializeField]
-    private bool _value;
+    [SerializeField] private bool _value;
 
     public bool Value
     {

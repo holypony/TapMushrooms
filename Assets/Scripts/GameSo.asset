@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: GameSo
   m_EditorClassIdentifier: 
   score: 0
-  bestScore: 2710
+  bestScore: 4000
   hp: 0
   gameOver: 1
   multiplier: 1
   mushLifeTime: 1.5
-  timeBetweenSpawn: 0.65
-  defaultTimeBetweenSpawn: 0.65
+  timeBetweenSpawn: 0.75
+  defaultTimeBetweenSpawn: 0.75
+  diffIndex: 0

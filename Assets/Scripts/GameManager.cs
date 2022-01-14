@@ -64,6 +64,18 @@ public class GameManager : MonoBehaviour
             gameSo.UpdateTimeBetweenSpawns();
             yield return new WaitForSeconds(gameSo.TimeBetweenSpawn);
         }
+
+        gameSo.BestScore = PlayerPrefs.GetInt("BestScore", 1);
+        
+        if (gameSo.BestScore < gameSo.Score)
+        {
+            gameSo.BestScore = gameSo.Score;
+            PlayerPrefs.SetInt("BestScore", gameSo.Score);
+        }
+        
+        FirebaseAnalytics.instance.AddBestScore();
+        yield return new WaitForSeconds(0.1f);
+        FirebaseAnalytics.instance.StartScoreboardLoader();
     }
     
     
