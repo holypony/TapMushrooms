@@ -17,7 +17,7 @@ public class UImanager : MonoBehaviour
     [SerializeField] private GameObject panelGameOver;
     [SerializeField] private TMP_Text textAfterGameScore;
     [SerializeField] private GameObject panelStart;
-    [SerializeField] private TMP_Text textBestScore;
+    [SerializeField] private TMP_Text textCurrentScore;
     [SerializeField] private TMP_Text textTotalPlayers;
     [Space(10)]
     [SerializeField] private GameManagerSo gameSo;
@@ -59,16 +59,16 @@ public class UImanager : MonoBehaviour
         
     }
 
-    private void bonusTime()
+    private void bonusTime(int multiplier)
     {
-        if (gameSo.Multiplier != 1)
+        if (multiplier != 1)
         {
             psMultiplierEarth.Play();
             animatorMultiplierText.SetTrigger("Enable");
             textMultiplier.text = "X" + gameSo.Multiplier;
         }
 
-        if (gameSo.Multiplier != 1) return;
+        if (multiplier != 1) return;
         psMultiplierEarth.Stop();
         if (animatorMultiplierText.GetCurrentAnimatorStateInfo(0).IsName("Multipl_idle"))
         {
@@ -81,13 +81,16 @@ public class UImanager : MonoBehaviour
         textHp.text = "HP: " + gameSo.Hp;
     }
 
-    private void gameoverUI()
+    private void gameoverUI(bool isGameover)
     {
-        if (gameSo.GameOver)
+        if (isGameover)
         {
             textTotalPlayers.text = "Total players: ";
+
+            textCurrentScore.text = "Score: " + gameSo.Score;
+
+
             textAfterGameScore.text = "";
-            textBestScore.text = "" ;
             panelUIinGame.SetActive(false);
             panelGameOver.SetActive(true);
         }

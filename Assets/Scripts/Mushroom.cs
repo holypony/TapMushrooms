@@ -1,8 +1,8 @@
 using System;
 using UnityEngine;
 using System.Collections;
+using MoreMountains.NiceVibrations;
 using Random = UnityEngine.Random;
-
 
 public class Mushroom : MonoBehaviour
 {
@@ -31,6 +31,18 @@ public class Mushroom : MonoBehaviour
     {
         return isActive;
     }
+
+    public void TesterClick()
+    {
+        if (!isBomb)
+        {
+            if (clicked) return;
+            clicked = true;
+            MMVibrationManager.Haptic(HapticTypes.LightImpact);
+            psTap.Play(true);
+            StartCoroutine(MushroomDeath());
+        }
+    }
     
     public void mushroomState(bool _isActive)
     {
@@ -51,6 +63,7 @@ public class Mushroom : MonoBehaviour
     {
         if (clicked) return;
         clicked = true;
+        MMVibrationManager.Haptic(HapticTypes.LightImpact);
         psTap.Play(true);
         StartCoroutine(MushroomDeath());
     }
@@ -105,12 +118,13 @@ public class Mushroom : MonoBehaviour
             {
                 gameManagerSo.Hp--;
                 psMinusHp.Play(true);
+                MMVibrationManager.Haptic(HapticTypes.MediumImpact);
                 _animator.SetTrigger("Die");
                 while (_animator.GetCurrentAnimatorStateInfo(0).IsName("Die"))
                 {
                     yield return null;
                 }
-                yield return new WaitForSeconds(0.1f);
+                yield return new WaitForSeconds(0.15f);
                 mushroomState(false);
                 yield break;
             }
@@ -122,7 +136,7 @@ public class Mushroom : MonoBehaviour
             }
 
             gameManagerSo.Score += 10 * gameManagerSo.Multiplier;
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.15f);
             mushroomState(false);
             yield break;
         }
@@ -134,20 +148,21 @@ public class Mushroom : MonoBehaviour
             {
                 yield return null;
             }
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.15f);
             mushroomState(false);
             
         }
         else
         {
             gameManagerSo.Hp--;
+            MMVibrationManager.Haptic(HapticTypes.MediumImpact);
             psMinusHp.Play(true);
             _animator.SetTrigger("Hide");
             while (_animator.GetCurrentAnimatorStateInfo(0).IsName("Hide"))
             {
                 yield return null;
             }
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.15f);
             mushroomState(false);
         }
     }

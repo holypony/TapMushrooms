@@ -111,7 +111,7 @@ public class GameManagerSo : ScriptableObject
         set
         {
             multiplier = value;
-            OnMultiplierChange?.Invoke();
+            OnMultiplierChange?.Invoke(value);
         }
     }
     
@@ -135,15 +135,15 @@ public class GameManagerSo : ScriptableObject
         set
         {
             gameOver = value;
-            OnGameOverChange?.Invoke();
+            OnGameOverChange?.Invoke(value);
         }
     }
 
 
-    public event Action OnGameOverChange;
+    public event Action<bool> OnGameOverChange;
     public event Action OnScoreChange;
     public event Action OnBestScoreChange;
-    public event Action OnMultiplierChange;
+    public event Action<int> OnMultiplierChange;
     public event Action OnHpChange;
 
 }

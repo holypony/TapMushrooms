@@ -14,6 +14,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/menu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SO/leaderboardManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FirebaseAnalytics.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TesterAI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BtnSoundSwitcher.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -24,16 +25,19 @@
         <option value="$PROJECT_DIR$/Assets/google-services.json" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Android/proguard-user.txt" />
         <option value="$PROJECT_DIR$/Assets/Scripts/menu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SO/GameManagerSo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BtnSoundSwitcher.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SO/mashroomSO.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SO/BoolValueSO.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SO/leaderboardManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Mushroom.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UImanager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FirebaseAnalytics.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SO/GameManagerSo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/Android/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UImanager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Mushroom.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SO/MushroomController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TesterAI.cs" />
       </list>
     </option>
   </component>
@@ -92,7 +96,8 @@
       <workItem from="1641844529722" duration="633000" />
       <workItem from="1642021069395" duration="5938000" />
       <workItem from="1642074952466" duration="14988000" />
-      <workItem from="1642166535477" duration="14870000" />
+      <workItem from="1642166535477" duration="17314000" />
+      <workItem from="1642332181807" duration="6114000" />
     </task>
     <servers />
   </component>

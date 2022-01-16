@@ -7,7 +7,7 @@ using Random = UnityEngine.Random;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameManagerSo gameSo;
-    [SerializeField] private Mushroom[] mushrooms;
+    public Mushroom[] mushrooms;
     private List<Mushroom> readyMushrooms;
 
     private bool isBonusTime = false;
@@ -24,8 +24,7 @@ public class GameManager : MonoBehaviour
     }
 
     public void StartGame()
-    {
-        
+    { 
         InitializeGameField();
         gameSo.InitializeGameSo();
         StopAllCoroutines();

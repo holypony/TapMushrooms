@@ -44,6 +44,59 @@
             </e>
           </e>
         </e>
+        <e p="NiceVibrations" t="Include">
+          <e p="Common" t="Include">
+            <e p="Plugins" t="Include">
+              <e p="Android" t="Include">
+                <e p="AndroidManifest.xml" t="Include" />
+              </e>
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="Editor" t="Include">
+                <e p="DefineSymbols" t="Include">
+                  <e p="NiceVibrationsDefineSymbols.cs" t="Include" />
+                </e>
+                <e p="MMNVAndroidWaveFormAssetEditor.cs" t="Include" />
+                <e p="MMNVAssetPostProcessor.cs" t="Include" />
+                <e p="MMNVBuildPostProcessor.cs" t="Include" />
+                <e p="MMNVRumbleWaveFormAssetEditor.cs" t="Include" />
+                <e p="MoreMountains.NiceVibrations.Editor.asmdef" t="Include" />
+              </e>
+              <e p="Haptics" t="Include">
+                <e p="MMNVAHAP.cs" t="Include" />
+                <e p="MMNVAltThread.cs" t="Include" />
+                <e p="MMNVAndroid.cs" t="Include" />
+                <e p="MMNVAndroidWaveFormAsset.cs" t="Include" />
+                <e p="MMNVEnumCondition.cs" t="Include" />
+                <e p="MMNVHapticTypes.cs" t="Include" />
+                <e p="MMNVInspectorButton.cs" t="Include" />
+                <e p="MMNViOS.cs" t="Include" />
+                <e p="MMNViOSCoreHaptics.cs" t="Include" />
+                <e p="MMNVPlatform.cs" t="Include" />
+                <e p="MMNVRumbleWaveFormAsset.cs" t="Include" />
+                <e p="MoreMountains.NiceVibrations.Haptics.asmdef" t="Include" />
+              </e>
+              <e p="NiceVibrations" t="Include">
+                <e p="MMNVPath.cs" t="Include" />
+                <e p="MMVibrationManager.cs" t="Include" />
+                <e p="MMVibrationManagerTester.cs" t="Include" />
+                <e p="MoreMountains.NiceVibrations.asmdef" t="Include" />
+              </e>
+              <e p="Rumble" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="DefineSymbols" t="Include">
+                    <e p="NiceVibrationsRumbleDefineSymbols.cs" t="Include" />
+                  </e>
+                  <e p="MoreMountains.NiceVibrations.Rumble.Editor.asmdef" t="Include" />
+                </e>
+                <e p="Scripts" t="Include">
+                  <e p="MMNVRumble.cs" t="Include" />
+                  <e p="MoreMountains.NiceVibrations.Rumble.asmdef" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="BtnSoundSwitcher.cs" t="Include" />
           <e p="FirebaseAnalytics.cs" t="Include" />
@@ -60,6 +113,7 @@
             <e p="leaderboardManager.cs" t="Include" />
           </e>
           <e p="SoundManager.cs" t="Include" />
+          <e p="TesterAI.cs" t="Include" />
           <e p="UImanager.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
@@ -94,6 +148,11 @@
           </e>
         </e>
       </e>
+      <e p="MoreMountains.NiceVibrations.csproj" t="IncludeRecursive" />
+      <e p="MoreMountains.NiceVibrations.Editor.csproj" t="IncludeRecursive" />
+      <e p="MoreMountains.NiceVibrations.Haptics.csproj" t="IncludeRecursive" />
+      <e p="MoreMountains.NiceVibrations.Rumble.csproj" t="IncludeRecursive" />
+      <e p="MoreMountains.NiceVibrations.Rumble.Editor.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="TapMushrooms.sln" t="IncludeFlat" />

@@ -1,9 +1,9 @@
 {
     "m_SelectedDeviceId": "22a0a620dd0d7ece",
     "m_SelectedPackage": {
-        "deviceId": "",
-        "name": "",
-        "processId": 0,
+        "deviceId": "22a0a620dd0d7ece",
+        "name": "com.tapmushrooms",
+        "processId": 18768,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -42,6 +42,54 @@
             "deviceId": "22a0a620dd0d7ece",
             "name": "com.sec.android.app.launcher",
             "processId": 1710,
+            "exited": false
+        },
+        {
+            "deviceId": "22a0a620dd0d7ece",
+            "name": "com.tapmushrooms",
+            "processId": 12620,
+            "exited": false
+        },
+        {
+            "deviceId": "22a0a620dd0d7ece",
+            "name": "com.tapmushrooms",
+            "processId": 13184,
+            "exited": false
+        },
+        {
+            "deviceId": "22a0a620dd0d7ece",
+            "name": "com.tapmushrooms",
+            "processId": 14403,
+            "exited": false
+        },
+        {
+            "deviceId": "22a0a620dd0d7ece",
+            "name": "com.tapmushrooms",
+            "processId": 17273,
+            "exited": false
+        },
+        {
+            "deviceId": "22a0a620dd0d7ece",
+            "name": "com.tapmushrooms",
+            "processId": 24922,
+            "exited": false
+        },
+        {
+            "deviceId": "22a0a620dd0d7ece",
+            "name": "com.tapmushrooms",
+            "processId": 26665,
+            "exited": false
+        },
+        {
+            "deviceId": "22a0a620dd0d7ece",
+            "name": "com.tapmushrooms",
+            "processId": 10631,
+            "exited": false
+        },
+        {
+            "deviceId": "22a0a620dd0d7ece",
+            "name": "com.tapmushrooms",
+            "processId": 18768,
             "exited": false
         }
     ],
