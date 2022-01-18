@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class SoundManager : MonoBehaviour
 {
@@ -9,11 +10,35 @@ public class SoundManager : MonoBehaviour
     [SerializeField] private GameManagerSo gameSo;
     [SerializeField] private BoolValueSO isSoundOn;
     [SerializeField] private AudioSource asBg;
-    [SerializeField] private AudioSource asSounds;
+    [SerializeField] private AudioSource asSeconsSounds;
+    [SerializeField] private AudioSource asMainSounds;
     
     [Header("Sounds")]
     [SerializeField] private AudioClip soundBonusTime;
     [SerializeField] private AudioClip soundGameOver;
+    [SerializeField] private AudioClip[] soundOnTap;
+    
+    
+    public static SoundManager instance;
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            return;
+        }
+        Destroy(this.gameObject);
+    }
+    
+    public void MushroomTapSound()
+    {
+        int i = Random.Range(0, soundOnTap.Length);
+        asMainSounds.clip = soundOnTap[i];
+        asMainSounds.Play();
+    }
+    
+    
+    
     private void OnEnable()
     {
         isSoundOn.Value = true;
@@ -38,8 +63,8 @@ public class SoundManager : MonoBehaviour
     {
         if (isGameOver)
         {
-            asSounds.clip = soundGameOver;
-            asSounds.Play();
+            asSeconsSounds.clip = soundGameOver;
+            asSeconsSounds.Play();
         }
         
     }
@@ -48,8 +73,8 @@ public class SoundManager : MonoBehaviour
     {
         if (multiplier > 1)
         {
-            asSounds.clip = soundBonusTime;
-            asSounds.Play();
+            asSeconsSounds.clip = soundBonusTime;
+            asSeconsSounds.Play();
         }
         
     }

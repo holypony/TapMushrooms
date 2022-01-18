@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7726a90e853071c45a8775969441bb6f, type: 3}
+  m_Name: skins
+  m_EditorClassIdentifier: 
+  MushroomsSkinBlack:
+  - skins:
+    - {fileID: 2100000, guid: 3c698111701582a4cbda0b0d0c0ed72f, type: 2}
+    - {fileID: 2100000, guid: 113da47f30350b34cad4c2f50e8ad725, type: 2}
+    - {fileID: 2100000, guid: 37df0d643356ef6418cb121d5a335707, type: 2}
+    - {fileID: 2100000, guid: 3c698111701582a4cbda0b0d0c0ed72f, type: 2}
+  - skins:
+    - {fileID: 2100000, guid: 44e20e503e9f92f4998e0b95053523d2, type: 2}
+    - {fileID: 2100000, guid: 5741ef0cf6a356a4cbe95e837e0ad02f, type: 2}
+    - {fileID: 2100000, guid: 2509e48f6133bb042b30c1538f6c1fdf, type: 2}
+    - {fileID: 2100000, guid: 44e20e503e9f92f4998e0b95053523d2, type: 2}
+  - skins:
+    - {fileID: 2100000, guid: b041f554bab50fe42a0e1d8992e657b2, type: 2}
+    - {fileID: 2100000, guid: 283acd43cae86b14f82362cbc3c988d7, type: 2}
+    - {fileID: 2100000, guid: c98339d55b6844f42a06824742fe65b4, type: 2}
+    - {fileID: 2100000, guid: b041f554bab50fe42a0e1d8992e657b2, type: 2}
+  - skins:
+    - {fileID: 2100000, guid: 7fde64a9772a3b046ba867ad54e1f3df, type: 2}
+    - {fileID: 2100000, guid: 7fde64a9772a3b046ba867ad54e1f3df, type: 2}
+    - {fileID: 2100000, guid: 7fde64a9772a3b046ba867ad54e1f3df, type: 2}
+    - {fileID: 2100000, guid: 7fde64a9772a3b046ba867ad54e1f3df, type: 2}

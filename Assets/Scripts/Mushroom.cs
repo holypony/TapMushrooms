@@ -12,15 +12,19 @@ public class Mushroom : MonoBehaviour
     private bool isBomb = false;
     
     [SerializeField] private GameManagerSo gameManagerSo;
-    [SerializeField] private Material[] matirials;
-    [SerializeField] private Material matirialBlack;
+    [SerializeField] private mushroomsSkinsSO skins;
+    
+   
     
     [SerializeField] private ParticleSystem psMinusHp;
     [SerializeField] private ParticleSystem psTap;
-    
+
     private Animator _animator;
     private MeshRenderer _renderer;
 
+    
+    
+  
     private void Awake()
     {
         _animator = GetComponentInChildren<Animator>();
@@ -38,6 +42,7 @@ public class Mushroom : MonoBehaviour
         {
             if (clicked) return;
             clicked = true;
+            SoundManager.instance.MushroomTapSound();
             MMVibrationManager.Haptic(HapticTypes.LightImpact);
             psTap.Play(true);
             StartCoroutine(MushroomDeath());
@@ -63,6 +68,7 @@ public class Mushroom : MonoBehaviour
     {
         if (clicked) return;
         clicked = true;
+        SoundManager.instance.MushroomTapSound();
         MMVibrationManager.Haptic(HapticTypes.LightImpact);
         psTap.Play(true);
         StartCoroutine(MushroomDeath());
@@ -77,11 +83,14 @@ public class Mushroom : MonoBehaviour
         if (GetRandom(13))
         {
             isBomb = true;
-            _renderer.material = matirialBlack;
+            _renderer.materials = skins.MushroomsSkinBlack[3].skins;
         }
         else
         {
-            _renderer.material = matirials[Random.Range(0, matirials.Length)];
+            int randomSkin = Random.Range(0, 2);
+            _renderer.materials = skins.MushroomsSkinBlack[randomSkin].skins;
+           
+            //_renderer.material = matirials[Random.Range(0, matirials.Length)];
         }
         StartCoroutine(MushroomRoutine());
         _animator.SetTrigger("Start");

@@ -11,6 +11,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SO/mushroomsSkinsSO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/menu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SO/leaderboardManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FirebaseAnalytics.cs" root0="FORCE_HIGHLIGHTING" />
@@ -30,13 +31,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/SO/BoolValueSO.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SO/leaderboardManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FirebaseAnalytics.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SO/GameManagerSo.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Android/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UImanager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Mushroom.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SO/MushroomController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/mushroomsSkinsSO.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SO/mushroomsSkinsSO.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Mushroom.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TesterAI.cs" />
       </list>
     </option>
@@ -98,6 +101,10 @@
       <workItem from="1642074952466" duration="14988000" />
       <workItem from="1642166535477" duration="17314000" />
       <workItem from="1642332181807" duration="6114000" />
+      <workItem from="1642354116511" duration="863000" />
+      <workItem from="1642368916362" duration="1805000" />
+      <workItem from="1642412706946" duration="4622000" />
+      <workItem from="1642506563754" duration="6711000" />
     </task>
     <servers />
   </component>

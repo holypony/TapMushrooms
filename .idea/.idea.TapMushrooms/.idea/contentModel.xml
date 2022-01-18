@@ -111,6 +111,7 @@
             <e p="BoolValueSO.cs" t="Include" />
             <e p="GameManagerSo.cs" t="Include" />
             <e p="leaderboardManager.cs" t="Include" />
+            <e p="mushroomsSkinsSO.cs" t="Include" />
           </e>
           <e p="SoundManager.cs" t="Include" />
           <e p="TesterAI.cs" t="Include" />
