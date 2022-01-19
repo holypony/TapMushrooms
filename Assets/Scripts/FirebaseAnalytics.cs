@@ -1,17 +1,19 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Firebase;
+using UnityEngine.UI;
 using Firebase.Auth;
 using Firebase.Database;
 using UnityEngine;
 using System.Linq;
+using Random = UnityEngine.Random;
 
 public class FirebaseAnalytics : MonoBehaviour
 {
     
     [SerializeField] private GameManagerSo gameSo;
     [SerializeField] private leaderboardManager leaderboardSo;
+    [SerializeField] private Text usernameField;
     
     private DatabaseReference reference;
     private FirebaseAuth auth;
@@ -26,7 +28,7 @@ public class FirebaseAnalytics : MonoBehaviour
             return;
         }
         Destroy(this.gameObject);
-    }
+       }
     
     private void Start()
     {
@@ -66,6 +68,14 @@ public class FirebaseAnalytics : MonoBehaviour
         });
     }
 
+    public void SetDefaultName()
+    {
+        int randomName = Random.Range(1000, 9999);
+        String defaultNick = "mushroom" + randomName;
+        StartCoroutine(UpdateUsernameDatabase(defaultNick));
+        leaderboardSo.Username = defaultNick;
+
+    }
    
     public void AddBestScore()
     {
@@ -82,6 +92,79 @@ public class FirebaseAnalytics : MonoBehaviour
         });
     }
     
+    public void StartGameButton()
+    {
+        StartCoroutine(LoadUserData());
+        UpdateUserDate();
+    } 
+    
+    private IEnumerator UpdateUsernameDatabase(string username)
+    {
+
+
+        //Set the currently logged in user username in the database
+        var DBTask = reference.Child("Users").Child(newUser.UserId).Child("UserName").SetValueAsync(username);
+
+        yield return new WaitUntil(predicate: () => DBTask.IsCompleted);
+
+        if (DBTask.Exception != null)
+        {
+            Debug.LogWarning(message: $"Failed to register task with {DBTask.Exception}");
+        }
+        else
+        {
+            //Database username is now updated
+        }
+    }
+
+
+    public void UpdateUserDate()
+    {
+        var date = DateTime.Now.ToString("yyyy-MM-dd");
+        reference.Child("Users").Child(newUser.UserId).Child("TimeUpdate").SetValueAsync(date).ContinueWith(task =>
+        {
+            if (task.IsCompleted) 
+            {
+                Debug.Log("Db successful updated");
+            }
+            else
+            {
+                Debug.Log("db failed");
+            }
+        });
+        
+        reference.Child("Users").Child(newUser.UserId).Child("GamesPlayed").SetValueAsync(leaderboardSo.TotalGamesPlayed).ContinueWith(task =>
+        {
+            if (task.IsCompleted) 
+            {
+                Debug.Log("Db successful updated");
+            }
+            else
+            {
+                Debug.Log("db failed");
+            }
+        });
+        
+    }
+    private IEnumerator LoadUserData()
+    {
+        //Get the currently logged in user data
+        var DBTask = reference.Child("Users").Child(newUser.UserId).GetValueAsync();
+
+        yield return new WaitUntil(predicate: () => DBTask.IsCompleted);
+
+        if (DBTask.Exception != null)
+        {
+            Debug.LogWarning(message: $"Failed to register task with {DBTask.Exception}");
+        }
+
+        
+        DataSnapshot snapshot = DBTask.Result;
+        if (!snapshot.Child("UserName").Exists)
+        {
+            SetDefaultName();
+        }
+    }
     
     public void AnalyticRestartBtn()
     {

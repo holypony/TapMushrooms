@@ -87,7 +87,7 @@ public class Mushroom : MonoBehaviour
         }
         else
         {
-            int randomSkin = Random.Range(0, 2);
+            int randomSkin = Random.Range(0, 3);
             _renderer.materials = skins.MushroomsSkinBlack[randomSkin].skins;
            
             //_renderer.material = matirials[Random.Range(0, matirials.Length)];

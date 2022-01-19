@@ -10,6 +10,8 @@ public class leaderboardManager : ScriptableObject
 
     [SerializeField] private bool _value;
     [SerializeField] private int totalPlayer;
+    [SerializeField] private int totalGamePlayed;
+    [SerializeField] private string username;
 
     public bool Value
     {
@@ -26,6 +28,23 @@ public class leaderboardManager : ScriptableObject
     {
         get => totalPlayer;
         set => totalPlayer = value;
+    }
+    
+    public string Username
+    {
+        get => username;
+        set => username = value;
+    }
+    
+    public int TotalGamesPlayed
+    {
+        get => totalGamePlayed;
+        set
+        {
+            totalGamePlayed = value;
+
+        }
+
     }
     
     public event Action<bool> OnValueChange;

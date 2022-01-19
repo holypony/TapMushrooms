@@ -7,6 +7,7 @@ using Random = UnityEngine.Random;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameManagerSo gameSo;
+    [SerializeField] private leaderboardManager _leaderboardManager;
     public Mushroom[] mushrooms;
     private List<Mushroom> readyMushrooms;
 
@@ -29,6 +30,7 @@ public class GameManager : MonoBehaviour
         gameSo.InitializeGameSo();
         StopAllCoroutines();
         StartCoroutine(GameRoutine());
+        _leaderboardManager.TotalGamesPlayed++;
     }
     
 

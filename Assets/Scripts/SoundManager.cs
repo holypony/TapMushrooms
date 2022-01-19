@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -56,6 +53,8 @@ public class SoundManager : MonoBehaviour
     private void btnSwitchSound(bool isSound)
     {
         asBg.mute = !isSound;
+        asSeconsSounds.mute = !isSound;
+        asMainSounds.mute = !isSound;
 
     }
 
