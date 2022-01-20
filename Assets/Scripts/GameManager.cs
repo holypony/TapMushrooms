@@ -31,7 +31,6 @@ public class GameManager : MonoBehaviour
         StopAllCoroutines();
         StartCoroutine(GameRoutine());
         _leaderboardManager.TotalGamesPlayed++;
-        FirebaseAnalytics.instance.UpdateUserDate();
     }
     
 

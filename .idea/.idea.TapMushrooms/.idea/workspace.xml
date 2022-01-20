@@ -30,8 +30,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/BtnSoundSwitcher.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SO/mashroomSO.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SO/BoolValueSO.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SO/GameManagerSo.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/Android/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UImanager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SO/MushroomController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/mushroomsSkinsSO.cs" />
@@ -39,9 +37,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/TesterAI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SO/leaderboardManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Mushroom.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FirebaseAnalytics.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SO/GameManagerSo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Mushroom.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/Android/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FirebaseAnalytics.cs" />
       </list>
     </option>
   </component>
@@ -108,7 +108,7 @@
       <workItem from="1642412706946" duration="4622000" />
       <workItem from="1642506563754" duration="6711000" />
       <workItem from="1642590452749" duration="8791000" />
-      <workItem from="1642668962883" duration="2511000" />
+      <workItem from="1642668962883" duration="9241000" />
     </task>
     <servers />
   </component>
