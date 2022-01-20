@@ -16,7 +16,7 @@ MonoBehaviour:
   - skins:
     - {fileID: 2100000, guid: 44e20e503e9f92f4998e0b95053523d2, type: 2}
     - {fileID: 2100000, guid: 37df0d643356ef6418cb121d5a335707, type: 2}
-    - {fileID: 2100000, guid: 113da47f30350b34cad4c2f50e8ad725, type: 2}
+    - {fileID: 2100000, guid: 9af683f2b42ad9f4da272d33a3414ade, type: 2}
     - {fileID: 2100000, guid: 44e20e503e9f92f4998e0b95053523d2, type: 2}
   - skins:
     - {fileID: 2100000, guid: 44e20e503e9f92f4998e0b95053523d2, type: 2}
@@ -29,7 +29,7 @@ MonoBehaviour:
     - {fileID: 2100000, guid: 283acd43cae86b14f82362cbc3c988d7, type: 2}
     - {fileID: 2100000, guid: 44e20e503e9f92f4998e0b95053523d2, type: 2}
   - skins:
-    - {fileID: 2100000, guid: 44e20e503e9f92f4998e0b95053523d2, type: 2}
+    - {fileID: 2100000, guid: 0e908b470daeb1947b2a9ff51647957c, type: 2}
     - {fileID: 2100000, guid: bc56f230b83212b4c8d8d11f905d9498, type: 2}
     - {fileID: 2100000, guid: f3f2b10a8c92f86418d9d676d72b8674, type: 2}
     - {fileID: 2100000, guid: 44e20e503e9f92f4998e0b95053523d2, type: 2}

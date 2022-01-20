@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
         StopAllCoroutines();
         StartCoroutine(GameRoutine());
         _leaderboardManager.TotalGamesPlayed++;
+        FirebaseAnalytics.instance.UpdateUserDate();
     }
     
 
@@ -84,7 +85,8 @@ public class GameManager : MonoBehaviour
     private IEnumerator bonusTime()
     {
         isBonusTime = true;
-        gameSo.Multiplier = 2;
+        int i = Random.Range(2, 5);
+        gameSo.Multiplier = i;
         yield return new WaitForSeconds(5f);
         gameSo.Multiplier = 1;
         isBonusTime = false;

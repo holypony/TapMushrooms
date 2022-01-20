@@ -1,8 +1,8 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine.UI;
 using Firebase.Auth;
+using Firebase;
 using Firebase.Database;
 using UnityEngine;
 using System.Linq;
@@ -18,7 +18,8 @@ public class FirebaseAnalytics : MonoBehaviour
     private DatabaseReference reference;
     private FirebaseAuth auth;
     private FirebaseUser newUser;
-
+    private DependencyStatus dependencyStatus;
+    
     public static FirebaseAnalytics instance;
     private void Awake()
     {
@@ -27,27 +28,32 @@ public class FirebaseAnalytics : MonoBehaviour
             instance = this;
             return;
         }
-        Destroy(this.gameObject);
-       }
+        Destroy(this.gameObject); 
+    }
     
     private void Start()
     {
-        Firebase.FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(task =>
+        FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(task =>
         {
-            var dependencyStatus = task.Result;
-            if (dependencyStatus == Firebase.DependencyStatus.Available)
+            dependencyStatus = task.Result;
+            if (dependencyStatus == DependencyStatus.Available)
             {
-
-                auth = Firebase.Auth.FirebaseAuth.DefaultInstance;
-                reference = FirebaseDatabase.DefaultInstance.RootReference;
-                anonymousAuth();
+                //If they are avalible Initialize Firebase
+                InitializeFirebase();
             }
             else
             {
-                UnityEngine.Debug.LogError(System.String.Format(
-                    "Could not resolve all Firebase dependencies: {0}", dependencyStatus));
+                Debug.LogError("Could not resolve all Firebase dependencies: " + dependencyStatus);
             }
         });
+    }
+    
+    private void InitializeFirebase()
+    {
+
+        auth = FirebaseAuth.DefaultInstance;
+        reference = FirebaseDatabase.DefaultInstance.RootReference;
+        anonymousAuth();
     }
 
     private void anonymousAuth()
@@ -67,6 +73,29 @@ public class FirebaseAnalytics : MonoBehaviour
                 newUser.DisplayName, newUser.UserId);
         });
     }
+    
+    public void StartGameButton()
+    {
+        StartCoroutine(CheckUserName());
+        StartCoroutine(LoadScoreboardData());
+        
+    } 
+    
+    private IEnumerator CheckUserName()
+    {
+        var DBTask = reference.Child("Users").Child(newUser.UserId).GetValueAsync();
+        yield return new WaitUntil(predicate: () => DBTask.IsCompleted);
+        
+        if (DBTask.Exception != null)
+        {
+            Debug.LogWarning(message: $"Failed to register task with {DBTask.Exception}");
+        }
+        DataSnapshot snapshot = DBTask.Result;
+        if (!snapshot.Child("UserName").Exists)
+        {
+            SetDefaultName();
+        }
+    }
 
     public void SetDefaultName()
     {
@@ -74,7 +103,6 @@ public class FirebaseAnalytics : MonoBehaviour
         String defaultNick = "mushroom" + randomName;
         StartCoroutine(UpdateUsernameDatabase(defaultNick));
         leaderboardSo.Username = defaultNick;
-
     }
    
     public void AddBestScore()
@@ -91,22 +119,11 @@ public class FirebaseAnalytics : MonoBehaviour
             }
         });
     }
-    
-    public void StartGameButton()
-    {
-        StartCoroutine(LoadUserData());
-        UpdateUserDate();
-    } 
-    
+
     private IEnumerator UpdateUsernameDatabase(string username)
     {
-
-
-        //Set the currently logged in user username in the database
         var DBTask = reference.Child("Users").Child(newUser.UserId).Child("UserName").SetValueAsync(username);
-
         yield return new WaitUntil(predicate: () => DBTask.IsCompleted);
-
         if (DBTask.Exception != null)
         {
             Debug.LogWarning(message: $"Failed to register task with {DBTask.Exception}");
@@ -116,7 +133,6 @@ public class FirebaseAnalytics : MonoBehaviour
             //Database username is now updated
         }
     }
-
 
     public void UpdateUserDate()
     {
@@ -144,26 +160,6 @@ public class FirebaseAnalytics : MonoBehaviour
                 Debug.Log("db failed");
             }
         });
-        
-    }
-    private IEnumerator LoadUserData()
-    {
-        //Get the currently logged in user data
-        var DBTask = reference.Child("Users").Child(newUser.UserId).GetValueAsync();
-
-        yield return new WaitUntil(predicate: () => DBTask.IsCompleted);
-
-        if (DBTask.Exception != null)
-        {
-            Debug.LogWarning(message: $"Failed to register task with {DBTask.Exception}");
-        }
-
-        
-        DataSnapshot snapshot = DBTask.Result;
-        if (!snapshot.Child("UserName").Exists)
-        {
-            SetDefaultName();
-        }
     }
     
     public void AnalyticRestartBtn()
@@ -182,9 +178,7 @@ public class FirebaseAnalytics : MonoBehaviour
     
     private IEnumerator LoadScoreboardData()
     {
-        if (gameSo.GameOver)
-        {
-            var DBTask = reference.Child("Users").OrderByChild("BestScore").GetValueAsync();
+        var DBTask = reference.Child("Users").OrderByChild("BestScore").GetValueAsync();
             yield return new WaitUntil(predicate: () => DBTask.IsCompleted);
             if (DBTask.Exception != null)
             {
@@ -222,6 +216,6 @@ public class FirebaseAnalytics : MonoBehaviour
                 }
                 leaderboardSo.Value = true;
             }
-        }
+        
     }
 }

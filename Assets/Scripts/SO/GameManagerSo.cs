@@ -45,7 +45,7 @@ public class GameManagerSo : ScriptableObject
         
         if (Multiplier > 1)
         {
-            multiplierTimeBonus = -(defaultTimeBetweenSpawn + DiffIndex) / Multiplier;
+            multiplierTimeBonus = -(defaultTimeBetweenSpawn + DiffIndex) / 2;
         }
         else
         {
