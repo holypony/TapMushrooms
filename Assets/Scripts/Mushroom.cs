@@ -6,10 +6,11 @@ using Random = UnityEngine.Random;
 
 public class Mushroom : MonoBehaviour
 {
+    
     private float _lifeTime;
-    [SerializeField] private bool isActive = false;
-    private bool clicked = false;
-    private bool isBomb = false;
+    private bool _isActive = false;
+    private bool _clicked = false;
+    private bool _isBomb = false;
     
     [SerializeField] private GameManagerSo gameManagerSo;
     [SerializeField] private mushroomsSkinsSO skins;
@@ -33,15 +34,15 @@ public class Mushroom : MonoBehaviour
 
     public bool CheckMushroomState()
     {
-        return isActive;
+        return _isActive;
     }
 
     public void TesterClick()
     {
-        if (!isBomb)
+        if (!_isBomb)
         {
-            if (clicked) return;
-            clicked = true;
+            if (_clicked) return;
+            _clicked = true;
             SoundManager.instance.MushroomTapSound();
             MMVibrationManager.Haptic(HapticTypes.LightImpact);
             psTap.Play(true);
@@ -51,9 +52,9 @@ public class Mushroom : MonoBehaviour
     
     public void mushroomState(bool _isActive)
     {
-        isActive = _isActive;
+        this._isActive = _isActive;
         
-        if (isActive)
+        if (this._isActive)
         {
             InitMushroom();
         }
@@ -66,8 +67,8 @@ public class Mushroom : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (clicked) return;
-        clicked = true;
+        if (_clicked) return;
+        _clicked = true;
         SoundManager.instance.MushroomTapSound();
         MMVibrationManager.Haptic(HapticTypes.LightImpact);
         psTap.Play(true);
@@ -76,22 +77,29 @@ public class Mushroom : MonoBehaviour
 
     void InitMushroom()
     {
-        isBomb = false;
-        clicked = false;
-        _lifeTime = gameManagerSo.MushLifeTime;
-        
-        if (GetRandom(13))
+        _isBomb = false;
+        _clicked = false;
+        if (_isBomb)
         {
-            isBomb = true;
+            _lifeTime = gameManagerSo.MushLifeTime / 3;
+        }
+        else
+        {
+            _lifeTime = gameManagerSo.MushLifeTime;
+        }
+
+        if (gameManagerSo.BombMushroomsLive < 4 && GetRandom(13))
+        {
+            _isBomb = true;
+            gameManagerSo.BombMushroomsLive++;
             _renderer.materials = skins.MushroomsSkinBlack[3].skins;
         }
         else
         {
             int randomSkin = Random.Range(0, 3);
             _renderer.materials = skins.MushroomsSkinBlack[randomSkin].skins;
-           
-            //_renderer.material = matirials[Random.Range(0, matirials.Length)];
         }
+        
         StartCoroutine(MushroomRoutine());
         _animator.SetTrigger("Start");
     }
@@ -112,7 +120,7 @@ public class Mushroom : MonoBehaviour
             yield return new WaitForSeconds(0.01f);
         }
 
-        if (!clicked)
+        if (!_clicked)
         {
             StartCoroutine(MushroomDeath()); 
         }
@@ -121,10 +129,11 @@ public class Mushroom : MonoBehaviour
     private IEnumerator MushroomDeath()
     {
         _lifeTime = 0;
-        if (clicked)
+        if (_clicked)
         {
-            if(isBomb)
+            if(_isBomb)
             {
+                gameManagerSo.BombMushroomsLive--;
                 gameManagerSo.Hp--;
                 psMinusHp.Play(true);
                 MMVibrationManager.Haptic(HapticTypes.MediumImpact);
@@ -150,8 +159,9 @@ public class Mushroom : MonoBehaviour
             yield break;
         }
         
-        if (isBomb)
+        if (_isBomb)
         {
+            gameManagerSo.BombMushroomsLive--;
             _animator.SetTrigger("Hide");
             while (_animator.GetCurrentAnimatorStateInfo(0).IsName("Hide"))
             {

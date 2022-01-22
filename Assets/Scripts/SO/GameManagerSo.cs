@@ -12,37 +12,40 @@ public class GameManagerSo : ScriptableObject
     [SerializeField] private int bestScore;
     [SerializeField] private int hp;
     [SerializeField] private bool gameOver;
+    [SerializeField] private bool isPause;
 
     [SerializeField] private int multiplier;
+    [SerializeField] private int bombMushroomsLive;
     [SerializeField] private float mushLifeTime;
     [SerializeField] private float timeBetweenSpawn;
     [SerializeField] private float defaultTimeBetweenSpawn;
     [SerializeField] private float diffIndex;
-    
+
     private void Awake()
     {
         InitializeGameSo();
     }
-    
+
     public void InitializeGameSo()
     {
         Multiplier = 1;
         MushLifeTime = 1.5f;
-        
+        BombMushroomsLive = 0;
         defaultTimeBetweenSpawn = 0.75f;
         TimeBetweenSpawn = defaultTimeBetweenSpawn;
         DiffIndex = 0;
-        
+
         Score = 0;
         Hp = 3;
         GameOver = false;
     }
 
     private float multiplierTimeBonus;
+
     public void UpdateTimeBetweenSpawns()
     {
-        DiffIndex = -Score / 10000f;
-        
+        DiffIndex = -Score / 7500f;
+
         if (Multiplier > 1)
         {
             multiplierTimeBonus = -(defaultTimeBetweenSpawn + DiffIndex) / 2;
@@ -51,12 +54,10 @@ public class GameManagerSo : ScriptableObject
         {
             multiplierTimeBonus = 0;
         }
-        
+
         TimeBetweenSpawn = defaultTimeBetweenSpawn + DiffIndex + multiplierTimeBonus;
     }
     
-    
-
     public float MushLifeTime
     {
         get => mushLifeTime;
@@ -74,7 +75,7 @@ public class GameManagerSo : ScriptableObject
             }
 
             timeBetweenSpawn = value;
-            }
+        }
     }
     public int Score
     {
@@ -114,6 +115,12 @@ public class GameManagerSo : ScriptableObject
             OnMultiplierChange?.Invoke(value);
         }
     }
+
+    public int BombMushroomsLive
+    {
+        get => bombMushroomsLive;
+        set { bombMushroomsLive = value; }
+    }
     
     public int Hp
     {
@@ -129,6 +136,7 @@ public class GameManagerSo : ScriptableObject
             OnHpChange?.Invoke();
         }
     }
+
     public bool GameOver
     {
         get => gameOver;
@@ -138,9 +146,20 @@ public class GameManagerSo : ScriptableObject
             OnGameOverChange?.Invoke(value);
         }
     }
+    
+    public bool IsPause
+    {
+        get => isPause;
+        set
+        {
+            isPause = value;
+            OnPauseChange?.Invoke(value);
+        }
+    }
 
 
     public event Action<bool> OnGameOverChange;
+    public event Action<bool> OnPauseChange;
     public event Action OnScoreChange;
     public event Action OnBestScoreChange;
     public event Action<int> OnMultiplierChange;

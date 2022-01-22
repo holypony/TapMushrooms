@@ -37,6 +37,48 @@
             </e>
           </e>
         </e>
+        <e p="GoogleMobileAds" t="Include">
+          <e p="Api" t="Include">
+            <e p="Mediation" t="Include">
+              <e p="UnityAds" t="Include">
+                <e p="UnityAds.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Common" t="Include">
+            <e p="Mediation" t="Include">
+              <e p="UnityAds" t="Include">
+                <e p="DummyClient.cs" t="Include" />
+                <e p="IUnityAdsClient.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Editor" t="Include">
+            <e p="BuildPreProcessor.cs" t="Include" />
+            <e p="GoogleMobileAds.Editor.asmdef" t="Include" />
+            <e p="GoogleMobileAdsDependencies.xml" t="Include" />
+            <e p="GoogleMobileAdsSettings.cs" t="Include" />
+            <e p="GoogleMobileAdsSettingsEditor.cs" t="Include" />
+            <e p="GoogleMobileAdsSKAdNetworkItems.xml" t="Include" />
+            <e p="ManifestProcessor.cs" t="Include" />
+            <e p="PListProcessor.cs" t="Include" />
+            <e p="UnityMediationDependencies.xml" t="Include" />
+          </e>
+          <e p="GoogleMobileAds_version-6.1.2_manifest.txt" t="Include" />
+          <e p="link.xml" t="Include" />
+          <e p="Platforms" t="Include">
+            <e p="Android" t="Include">
+              <e p="Mediation" t="Include">
+                <e p="UnityAds" t="Include">
+                  <e p="UnityAdsClient.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Mediation" t="Include">
+              <e p="UnityAdsClientFactory.cs" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="GUI Kit Casual Game" t="Include">
           <e p="ResourcesData" t="Include">
             <e p="Shader &amp; Materials" t="Include">
@@ -99,6 +141,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="AdsManager.cs" t="Include" />
           <e p="BtnSoundSwitcher.cs" t="Include" />
           <e p="FirebaseAnalytics.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
@@ -150,6 +193,7 @@
           </e>
         </e>
       </e>
+      <e p="GoogleMobileAds.Editor.csproj" t="IncludeRecursive" />
       <e p="MoreMountains.NiceVibrations.csproj" t="IncludeRecursive" />
       <e p="MoreMountains.NiceVibrations.Editor.csproj" t="IncludeRecursive" />
       <e p="MoreMountains.NiceVibrations.Haptics.csproj" t="IncludeRecursive" />

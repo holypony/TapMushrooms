@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 
@@ -19,6 +20,9 @@ public class UImanager : MonoBehaviour
     [SerializeField] private GameObject panelStart;
     [SerializeField] private TMP_Text textCurrentScore;
     [SerializeField] private TMP_Text textTotalPlayers;
+    [Header("Pause")]
+    [SerializeField] private GameObject panelPause;
+    [SerializeField] private TMP_Text textsUserName; 
     [Space(10)]
     [SerializeField] private GameManagerSo gameSo;
     [SerializeField] private leaderboardManager leaderboardSo;
@@ -29,8 +33,8 @@ public class UImanager : MonoBehaviour
         gameSo.OnHpChange += updateHp;
         gameSo.OnGameOverChange += gameoverUI;
         gameSo.OnMultiplierChange += bonusTime;
-
         leaderboardSo.OnValueChange += CreateLeaderboard;
+        
         panelUIinGame.SetActive(true);
         panelStart.SetActive(true);
     }
@@ -41,10 +45,29 @@ public class UImanager : MonoBehaviour
         gameSo.OnHpChange -= updateHp;
         gameSo.OnGameOverChange -= gameoverUI;
         gameSo.OnMultiplierChange -= bonusTime;
-        
+
         leaderboardSo.OnValueChange -= CreateLeaderboard;
     }
 
+    public void PauseUI()
+    {
+        gameSo.IsPause = !gameSo.IsPause;
+        if (!gameSo.IsPause)
+        {
+            panelPause.SetActive(false);
+            gameSo.IsPause = false;
+            Time.timeScale = 1;
+        }
+        else
+        {
+            Time.timeScale = 0;
+            panelPause.SetActive(true);
+            textsUserName.text = leaderboardSo.Username;
+        }
+    }
+
+    
+    
     private void CreateLeaderboard(bool isUpdated)
     {
         if (isUpdated)
@@ -88,7 +111,6 @@ public class UImanager : MonoBehaviour
             textTotalPlayers.text = "Total players: ";
 
             textCurrentScore.text = "Score: " + gameSo.Score;
-
 
             textAfterGameScore.text = "";
             panelUIinGame.SetActive(false);

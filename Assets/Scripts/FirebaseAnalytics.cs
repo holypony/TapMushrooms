@@ -113,6 +113,11 @@ public class FirebaseAnalytics : MonoBehaviour
         {
             SetDefaultName();
         }
+        else
+        {
+            leaderboardSo.Username = ""+ snapshot.Child("UserName").Value.ToString();
+        }
+
     }
 
     public void SetDefaultName()
@@ -167,9 +172,12 @@ public class FirebaseAnalytics : MonoBehaviour
             }
         });
     }
+    
     public void UpdateTotalGames()
     {
-        reference.Child("Users").Child(newUser.UserId).Child("GamesPlayed").SetValueAsync(leaderboardSo.TotalGamesPlayed).ContinueWith(task =>
+        int i = PlayerPrefs.GetInt("totalGamePlayed", 1);
+        
+        reference.Child("Users").Child(newUser.UserId).Child("GamesPlayed").SetValueAsync(i).ContinueWith(task =>
         {
             if (task.IsCompleted) 
             {

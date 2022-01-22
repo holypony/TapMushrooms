@@ -8,12 +8,36 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameManagerSo gameSo;
     [SerializeField] private leaderboardManager _leaderboardManager;
+    
     public Mushroom[] mushrooms;
     private List<Mushroom> readyMushrooms;
-
+    
     private bool isBonusTime = false;
 
-
+    public static GameManager instance;
+    private void Awake()
+    {
+        Time.timeScale = 1;
+        if (instance == null)
+        {
+            instance = this;
+            return;
+        }
+        Destroy(this.gameObject); 
+    }
+    
+    public void StartGame()
+    {
+        
+        StopAllCoroutines();
+        InitializeGameField();
+        gameSo.InitializeGameSo();
+        
+        StartCoroutine(GameRoutine());
+        
+        _leaderboardManager.TotalGamesPlayed++;
+    }
+    
     private void InitializeGameField()
     {
         isBonusTime = false;
@@ -22,17 +46,9 @@ public class GameManager : MonoBehaviour
         {
             mushroom.mushroomState(false);
         }
+        
+        AdsManager.instance.RequestInterstitial();
     }
-
-    public void StartGame()
-    { 
-        InitializeGameField();
-        gameSo.InitializeGameSo();
-        StopAllCoroutines();
-        StartCoroutine(GameRoutine());
-        _leaderboardManager.TotalGamesPlayed++;
-    }
-    
 
     private IEnumerator GameRoutine()
     {
@@ -56,7 +72,7 @@ public class GameManager : MonoBehaviour
             if (!isBonusTime && gameSo.Score > 100)
             {
 
-                if (setRandom(9))
+                if (setRandom(12))
                 {
                     StartCoroutine(bonusTime());
                 }
@@ -75,11 +91,9 @@ public class GameManager : MonoBehaviour
         }
         
         FirebaseAnalytics.instance.AddBestScore();
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.15f);
         FirebaseAnalytics.instance.StartScoreboardLoader();
     }
-    
-    
 
     private IEnumerator bonusTime()
     {
@@ -90,8 +104,7 @@ public class GameManager : MonoBehaviour
         gameSo.Multiplier = 1;
         isBonusTime = false;
     }
-
-
+    
     private bool setRandom(float setChance)
     {
         int drop = Random.Range(0, 101);

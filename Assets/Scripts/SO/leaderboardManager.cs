@@ -21,7 +21,6 @@ public class leaderboardManager : ScriptableObject
             _value = value;
             OnValueChange?.Invoke(_value);
         }
-
     }
     
     public int TotalPlayers
@@ -42,9 +41,8 @@ public class leaderboardManager : ScriptableObject
         set
         {
             totalGamePlayed = value;
-
+            PlayerPrefs.SetInt("totalGamePlayed", totalGamePlayed);
         }
-
     }
     
     public event Action<bool> OnValueChange;

@@ -6,6 +6,7 @@ public class TesterAI : MonoBehaviour
 {
     [SerializeField] private GameManager gm;
     private bool AiIsWork = false;
+
     public void StartTesterAi()
     {
         if (!AiIsWork)
@@ -16,7 +17,6 @@ public class TesterAI : MonoBehaviour
         {
             AiIsWork = false;
         }
-        
     }
 
     IEnumerator chkMushrooomsLife()
@@ -25,18 +25,17 @@ public class TesterAI : MonoBehaviour
         int i;
         while (AiIsWork)
         {
-            for(i = 0; i < gm.mushrooms.Length; i++)
+            for (i = 0; i < gm.mushrooms.Length; i++)
             {
                 if (gm.mushrooms[i].CheckMushroomState())
                 {
                     StartCoroutine(ClickOnMushroom(i));
-                    yield return new WaitForSeconds(0.25f);
+                    yield return new WaitForSeconds(0.13f);
                 }
             }
-            
+
             yield return new WaitForSeconds(0.01f);
         }
-        
     }
 
     IEnumerator ClickOnMushroom(int i)

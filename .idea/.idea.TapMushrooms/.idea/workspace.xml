@@ -19,6 +19,7 @@
     <setting file="file://$USER_HOME$/Documents/FirebaseAnalytics.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SO/leaderboardManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BtnSoundSwitcher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AdsManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -26,22 +27,23 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/datebase.cs" />
         <option value="$PROJECT_DIR$/Assets/google-services.json" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Android/proguard-user.txt" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/menu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BtnSoundSwitcher.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SO/mashroomSO.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SO/BoolValueSO.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UImanager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SO/MushroomController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/mushroomsSkinsSO.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SO/mushroomsSkinsSO.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TesterAI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SO/leaderboardManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/Android/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TesterAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/menu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SO/GameManagerSo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AdsManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SO/leaderboardManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FirebaseAnalytics.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UImanager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Mushroom.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/Android/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FirebaseAnalytics.cs" />
       </list>
     </option>
   </component>
@@ -54,7 +56,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
+    <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -108,7 +110,9 @@
       <workItem from="1642412706946" duration="4622000" />
       <workItem from="1642506563754" duration="6711000" />
       <workItem from="1642590452749" duration="8791000" />
-      <workItem from="1642668962883" duration="9241000" />
+      <workItem from="1642668962883" duration="11956000" />
+      <workItem from="1642769772763" duration="1497000" />
+      <workItem from="1642842557389" duration="12685000" />
     </task>
     <servers />
   </component>
@@ -125,14 +129,16 @@
       <screen x="0" y="0" width="2048" height="1090" />
     </state>
     <state x="617" y="278" key="Rider.ProjectTemplateDialog.Size/0.0.2048.1090/-1920.0.1536.834@0.0.2048.1090" timestamp="1641672237823" />
-    <state x="533" y="180" key="SettingsEditor" timestamp="1642590852847">
+    <state x="533" y="180" key="SettingsEditor" timestamp="1642850767508">
       <screen x="0" y="0" width="2048" height="1071" />
     </state>
     <state x="533" y="180" key="SettingsEditor/0.0.2048.1071@0.0.2048.1071" timestamp="1642590852847" />
-    <state x="687" y="238" width="672" height="678" key="search.everywhere.popup" timestamp="1642183626285">
-      <screen x="0" y="0" width="2048" height="1090" />
+    <state x="533" y="180" key="SettingsEditor/2560.348.1536.783/0.0.2048.1071@0.0.2048.1071" timestamp="1642850767508" />
+    <state x="687" y="234" width="672" height="667" key="search.everywhere.popup" timestamp="1642850762829">
+      <screen x="0" y="0" width="2048" height="1071" />
     </state>
     <state x="687" y="238" width="672" height="678" key="search.everywhere.popup/0.0.2048.1090/-1920.0.1536.834@0.0.2048.1090" timestamp="1642183626285" />
     <state x="687" y="238" width="672" height="678" key="search.everywhere.popup/0.0.2048.1090@0.0.2048.1090" timestamp="1641816765447" />
+    <state x="687" y="234" width="672" height="667" key="search.everywhere.popup/2560.348.1536.783/0.0.2048.1071@0.0.2048.1071" timestamp="1642850762829" />
   </component>
 </project>
