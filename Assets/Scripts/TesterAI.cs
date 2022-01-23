@@ -5,8 +5,8 @@ using UnityEngine;
 public class TesterAI : MonoBehaviour
 {
     [SerializeField] private GameManager gm;
-    private bool AiIsWork = false;
-
+    [SerializeField] private bool AiIsWork = false;
+    [SerializeField] private float timeBetweenClick = 0.15f;
     public void StartTesterAi()
     {
         if (!AiIsWork)
@@ -29,12 +29,13 @@ public class TesterAI : MonoBehaviour
             {
                 if (gm.mushrooms[i].CheckMushroomState())
                 {
-                    StartCoroutine(ClickOnMushroom(i));
-                    yield return new WaitForSeconds(0.13f);
+                    //StartCoroutine(ClickOnMushroom(i));
+                    yield return new WaitForSeconds(timeBetweenClick);
+                    gm.mushrooms[i].TesterClick();
                 }
             }
 
-            yield return new WaitForSeconds(0.01f);
+            yield return null;
         }
     }
 

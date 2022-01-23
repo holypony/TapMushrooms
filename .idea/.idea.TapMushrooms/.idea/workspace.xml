@@ -35,15 +35,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/SO/mushroomsSkinsSO.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Android/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TesterAI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/menu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SO/GameManagerSo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AdsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SO/leaderboardManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FirebaseAnalytics.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UImanager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SO/GameManagerSo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Mushroom.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TesterAI.cs" />
       </list>
     </option>
   </component>
@@ -112,7 +112,8 @@
       <workItem from="1642590452749" duration="8791000" />
       <workItem from="1642668962883" duration="11956000" />
       <workItem from="1642769772763" duration="1497000" />
-      <workItem from="1642842557389" duration="12685000" />
+      <workItem from="1642842557389" duration="14367000" />
+      <workItem from="1642943386354" duration="4166000" />
     </task>
     <servers />
   </component>

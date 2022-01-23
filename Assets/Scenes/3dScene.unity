@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 8
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 1, g: 1, b: 1, a: 0}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 81f714daf7144784b8a2f42f1cd30927, type: 2}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -12392,6 +12392,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gm: {fileID: 516954108}
+  AiIsWork: 0
+  timeBetweenClick: 0.25
 --- !u!1 &529229359
 GameObject:
   m_ObjectHideFlags: 0
@@ -13367,6 +13369,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7984169755243589879, guid: d980a7804e46cd749b410443a7651a2e, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: c98339d55b6844f42a06824742fe65b4, type: 2}
+    - target: {fileID: 7984169755243589879, guid: d980a7804e46cd749b410443a7651a2e, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 283acd43cae86b14f82362cbc3c988d7, type: 2}
     m_RemovedComponents:
     - {fileID: -3878509663331652906, guid: d980a7804e46cd749b410443a7651a2e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d980a7804e46cd749b410443a7651a2e, type: 3}
@@ -21162,8 +21172,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458680290}
   m_LocalRotation: {x: 0.12637705, y: -0, z: -0, w: 0.99198234}
-  m_LocalPosition: {x: 2.32, y: 2.85, z: 13.54}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalPosition: {x: 2.32, y: 5.1, z: 14.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1603733254}
   m_Father: {fileID: 0}
@@ -23580,7 +23590,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2034047708}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 

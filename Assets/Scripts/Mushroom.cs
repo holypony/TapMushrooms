@@ -7,7 +7,7 @@ using Random = UnityEngine.Random;
 public class Mushroom : MonoBehaviour
 {
     
-    private float _lifeTime;
+    [SerializeField] private float _lifeTime;
     private bool _isActive = false;
     private bool _clicked = false;
     private bool _isBomb = false;
@@ -79,18 +79,12 @@ public class Mushroom : MonoBehaviour
     {
         _isBomb = false;
         _clicked = false;
-        if (_isBomb)
-        {
-            _lifeTime = gameManagerSo.MushLifeTime / 3;
-        }
-        else
-        {
-            _lifeTime = gameManagerSo.MushLifeTime;
-        }
-
+        
+        _lifeTime = gameManagerSo.MushLifeTime;
         if (gameManagerSo.BombMushroomsLive < 4 && GetRandom(13))
         {
             _isBomb = true;
+            _lifeTime *= 0.75f;
             gameManagerSo.BombMushroomsLive++;
             _renderer.materials = skins.MushroomsSkinBlack[3].skins;
         }

@@ -10,13 +10,15 @@ public class GameManagerSo : ScriptableObject
     [Header("Game settings")]
     [SerializeField] private int score;
     [SerializeField] private int bestScore;
+    [Space(15)]
     [SerializeField] private int hp;
     [SerializeField] private bool gameOver;
     [SerializeField] private bool isPause;
-
-    [SerializeField] private int multiplier;
+    [Space(15)]
     [SerializeField] private int bombMushroomsLive;
     [SerializeField] private float mushLifeTime;
+    [Space(15)]
+    [SerializeField] private int multiplier;
     [SerializeField] private float timeBetweenSpawn;
     [SerializeField] private float defaultTimeBetweenSpawn;
     [SerializeField] private float diffIndex;
@@ -29,7 +31,7 @@ public class GameManagerSo : ScriptableObject
     public void InitializeGameSo()
     {
         Multiplier = 1;
-        MushLifeTime = 1.5f;
+        MushLifeTime = 1f;
         BombMushroomsLive = 0;
         defaultTimeBetweenSpawn = 0.75f;
         TimeBetweenSpawn = defaultTimeBetweenSpawn;
