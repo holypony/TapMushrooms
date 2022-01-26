@@ -1,88 +1,68 @@
-using System;
 using UnityEngine;
-using GoogleMobileAds.Api;
-public class AdsManager : MonoBehaviour
+using UnityEngine.UI;
+using CAS;
+using System.Collections.Generic;
+using CAS.UserConsent;
+
+public class adsManager : MonoBehaviour
 {
+    IMediationManager manager;
     
-    private InterstitialAd interstitial;
-    [SerializeField] private bool TestAds = true;
+    public ConsentStatus userConsent;
+    public CCPAStatus userCCPAStatus;
     
-    
-    public static AdsManager instance;
-    private void Awake()
+    void OnEnable ()
     {
-        if (instance == null)
-        {
-            instance = this;
-            return;
-        }
-        Destroy(this.gameObject); 
-    }
-    
-    public void Start()
-    {
-        MobileAds.Initialize(initStatus => { });
-    }
-    
-    public void RequestInterstitial()
-    {
-#if UNITY_ANDROID
-        string TESTadUnitId = "ca-app-pub-3940256099942544/1033173712";
-        string adUnitId = "ca-app-pub-5214300113420107/1956980315";
-#elif UNITY_IPHONE
-        string adUnitId = "ca-app-pub-3940256099942544/4411468910";
-#else
-        string adUnitId = "unexpected_platform";
-#endif
 
-        this.interstitial = TestAds ? new InterstitialAd(TESTadUnitId) : new InterstitialAd(adUnitId);
-        
-        this.interstitial.OnAdLoaded += HandleOnAdLoaded;
-        this.interstitial.OnAdFailedToLoad += HandleOnAdFailedToLoad;
-        this.interstitial.OnAdOpening += HandleOnAdOpened;
-        this.interstitial.OnAdClosed += HandleOnAdClosed;
-        
-        AdRequest request = new AdRequest.Builder().Build();
-        this.interstitial.LoadAd(request);
+        InitAdsManager();
+        // Called when the ad is displayed.
+        manager.OnInterstitialAdShown += () => Debug.Log("Interstitial shown");
+        // The same call as the `OnInterstitialAdShown` but with `AdMetaData` about the impression. 
+        manager.OnInterstitialAdOpening += (data) => Debug.Log("Interstitial Ad " + data.ToString());
+        // Called when the ad is failed to display.
+        manager.OnInterstitialAdFailedToShow += (error) => Debug.LogError(error);
+        // Called when the user clicks on the Ad.
+        manager.OnInterstitialAdClicked += () => Debug.Log("Interstitial clicked");
+        // Called when the ad is closed.
+        manager.OnInterstitialAdClosed += OnInterClosed;
     }
 
-    public void HandleOnAdLoaded(object sender, EventArgs args)
-    {
-        MonoBehaviour.print("HandleAdLoaded event received");
-    }
 
-    public void HandleOnAdOpened(object sender, EventArgs args)
+    void OnInterClosed()
     {
-        MonoBehaviour.print("HandleAdOpened event received");
-    }
-
-    public void HandleOnAdClosed(object sender, EventArgs args)
-    {
-        MonoBehaviour.print("HandleAdClosed event received");
+        Debug.Log("Interstitial closed");
         GameManager.instance.StartGame();
     }
 
-    public void HandleOnAdLeavingApplication(object sender, EventArgs args)
+    void InitAdsManager()
     {
-        MonoBehaviour.print("HandleAdLeavingApplication event received");
+        // -- Privacy Laws (Optional):
+        MobileAds.settings.userConsent = userConsent;
+        MobileAds.settings.userCCPAStatus = userCCPAStatus;
+        manager = MobileAds.BuildManager()
+            .WithManagerIdAtIndex(0)
+            .WithInitListener((success, error) =>
+            {
+                // CAS manager initialization done
+            })
+            .Initialize();
     }
-    
-    public void HandleOnAdFailedToLoad(object sender, AdFailedToLoadEventArgs args)
+
+
+    public void LoadInter()
     {
-        print("Interstitial failed to load: ");
-        // Handle the ad failed to load event.
+        manager.LoadAd(AdType.Interstitial);
     }
 
     public void ShowInter()
     {
-        if (this.interstitial.IsLoaded()) {
-            this.interstitial.Show();
+        if (manager.IsReadyAd(AdType.Interstitial))
+        {
+            manager.ShowAd(AdType.Interstitial);
         }
         else
         {
             GameManager.instance.StartGame();
         }
     }
-    
 }
-

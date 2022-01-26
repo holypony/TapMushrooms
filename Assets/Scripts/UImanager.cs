@@ -133,4 +133,11 @@ public class UImanager : MonoBehaviour
         textInGameScore.text = "Score: " + gameSo.Score;
         textTimeBetweenSpawn.text = "TbS: " + Math.Round(gameSo.TimeBetweenSpawn, 2) + " s";
     }
+
+    public void GoHome()
+    {
+        panelStart.SetActive(true);
+        panelUIinGame.SetActive(false);
+        panelGameOver.SetActive(false);
+    }
 }

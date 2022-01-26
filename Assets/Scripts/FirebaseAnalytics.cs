@@ -115,7 +115,7 @@ public class FirebaseAnalytics : MonoBehaviour
         }
         else
         {
-            leaderboardSo.Username = ""+ snapshot.Child("UserName").Value.ToString();
+            leaderboardSo.Username = ""+ snapshot.Child("UserName").Value;
         }
 
     }
@@ -159,7 +159,8 @@ public class FirebaseAnalytics : MonoBehaviour
 
     public void UpdateUserDate()
     {
-        var date = DateTime.Now.ToString("yyyy-MM-dd");
+        var date = DateTime.Now.ToString("yyyy-MM-dd\\THH:mm:ss\\Z");
+
         reference.Child("Users").Child(newUser.UserId).Child("TimeUpdate").SetValueAsync(date).ContinueWith(task =>
         {
             if (task.IsCompleted)
@@ -226,6 +227,8 @@ public class FirebaseAnalytics : MonoBehaviour
                 string userId = childSnapshot.Key;
                 int bestScore = int.Parse(childSnapshot.Child("BestScore").Value.ToString());
 
+
+                
                 if (bestFive > i)
                 {
                     if (userId == newUser.UserId && i < 6)

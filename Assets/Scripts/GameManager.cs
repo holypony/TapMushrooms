@@ -34,8 +34,7 @@ public class GameManager : MonoBehaviour
         gameSo.InitializeGameSo();
         
         StartCoroutine(GameRoutine());
-        
-        _leaderboardManager.TotalGamesPlayed++;
+        PlayerPrefs.SetInt("totalGamePlayed", PlayerPrefs.GetInt("totalGamePlayed", 0) + 1);
     }
     
     private void InitializeGameField()
@@ -46,8 +45,6 @@ public class GameManager : MonoBehaviour
         {
             mushroom.mushroomState(false);
         }
-        
-        AdsManager.instance.RequestInterstitial();
     }
 
     private IEnumerator GameRoutine()

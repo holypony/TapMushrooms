@@ -3,57 +3,63 @@
     "m_SelectedPackage": {
         "deviceId": "22a0a620dd0d7ece",
         "name": "com.tapmushrooms",
-        "processId": 31692,
+        "processId": 7202,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
         {
             "deviceId": "22a0a620dd0d7ece",
-            "name": "com.tapmushrooms",
-            "processId": 8240,
-            "exited": true
-        },
-        {
-            "deviceId": "22a0a620dd0d7ece",
-            "name": "com.tapmushrooms",
-            "processId": 1104,
-            "exited": true
-        },
-        {
-            "deviceId": "22a0a620dd0d7ece",
-            "name": "com.tapmushrooms",
-            "processId": 20488,
-            "exited": true
-        },
-        {
-            "deviceId": "22a0a620dd0d7ece",
-            "name": "com.tapmushrooms",
-            "processId": 25450,
-            "exited": true
-        },
-        {
-            "deviceId": "22a0a620dd0d7ece",
-            "name": "com.tapmushrooms",
-            "processId": 1175,
-            "exited": true
-        },
-        {
-            "deviceId": "22a0a620dd0d7ece",
-            "name": "com.tapmushrooms",
-            "processId": 27495,
+            "name": "com.sec.android.app.launcher",
+            "processId": 1844,
             "exited": false
         },
         {
             "deviceId": "22a0a620dd0d7ece",
             "name": "com.tapmushrooms",
-            "processId": 2878,
+            "processId": 9234,
+            "exited": true
+        },
+        {
+            "deviceId": "22a0a620dd0d7ece",
+            "name": "com.tapmushrooms",
+            "processId": 6909,
+            "exited": true
+        },
+        {
+            "deviceId": "22a0a620dd0d7ece",
+            "name": "com.tapmushrooms",
+            "processId": 8629,
+            "exited": true
+        },
+        {
+            "deviceId": "22a0a620dd0d7ece",
+            "name": "com.tapmushrooms",
+            "processId": 10912,
+            "exited": true
+        },
+        {
+            "deviceId": "22a0a620dd0d7ece",
+            "name": "com.tapmushrooms",
+            "processId": 14203,
+            "exited": true
+        },
+        {
+            "deviceId": "22a0a620dd0d7ece",
+            "name": "com.tapmushrooms",
+            "processId": 16353,
             "exited": false
         },
         {
             "deviceId": "22a0a620dd0d7ece",
             "name": "com.tapmushrooms",
-            "processId": 31692,
+            "processId": 21467,
+            "exited": false
+        },
+        {
+            "deviceId": "22a0a620dd0d7ece",
+            "name": "com.tapmushrooms",
+            "processId": 7202,
             "exited": false
         }
     ],

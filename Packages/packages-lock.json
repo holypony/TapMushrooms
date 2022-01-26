@@ -1,5 +1,21 @@
 {
   "dependencies": {
+    "com.cleversolutions.ads.consent.unity": {
+      "version": "https://github.com/cleveradssolutions/CAS-Unity-Consent.git#2.0.0",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.cleversolutions.ads.unity": "2.6.1"
+      },
+      "hash": "7fa606968dc326384abaa6cbad42ec18e9a5d2b8"
+    },
+    "com.cleversolutions.ads.unity": {
+      "version": "https://github.com/cleveradssolutions/CAS-Unity.git#2.6.3",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "c7da7715034e8e4816ac61f5a0db7a8981d06fbf"
+    },
     "com.unity.cinemachine": {
       "version": "2.6.11",
       "depth": 0,
