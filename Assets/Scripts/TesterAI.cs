@@ -1,15 +1,25 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class TesterAI : MonoBehaviour
 {
+    [SerializeField] private GameManagerSo gameSo;
     [SerializeField] private GameManager gm;
     [SerializeField] private bool AiIsWork = false;
-    [SerializeField] private float timeBetweenClick = 0.15f;
-    public void StartTesterAi()
+    [SerializeField] private float timeBetweenClickMin = 0.15f;
+    [SerializeField] private float timeBetweenClickMax = 0.25f;
+
+    private void OnEnable()
     {
-        if (!AiIsWork)
+        gameSo.OnGameOverChange += StartTesterAi;
+    }
+
+    public void StartTesterAi(bool isGameover)
+    {
+        if (!AiIsWork && !isGameover)
         {
             StartCoroutine(chkMushrooomsLife());
         }
@@ -30,9 +40,10 @@ public class TesterAI : MonoBehaviour
                 if (gm.mushrooms[i].CheckMushroomState())
                 {
                     //StartCoroutine(ClickOnMushroom(i));
-                    yield return new WaitForSeconds(timeBetweenClick);
+                    yield return new WaitForSeconds(Random.Range(timeBetweenClickMin, timeBetweenClickMax));
                     gm.mushrooms[i].TesterClick();
                 }
+                
             }
 
             yield return null;

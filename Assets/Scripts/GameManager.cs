@@ -2,13 +2,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 using Random = UnityEngine.Random;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameManagerSo gameSo;
     [SerializeField] private leaderboardManager _leaderboardManager;
-    
     public Mushroom[] mushrooms;
     private List<Mushroom> readyMushrooms;
     
@@ -32,7 +32,6 @@ public class GameManager : MonoBehaviour
         StopAllCoroutines();
         InitializeGameField();
         gameSo.InitializeGameSo();
-        
         StartCoroutine(GameRoutine());
         PlayerPrefs.SetInt("totalGamePlayed", PlayerPrefs.GetInt("totalGamePlayed", 0) + 1);
     }
