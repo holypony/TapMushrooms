@@ -62,7 +62,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
-  m_Name: mushroom_for_Jane (1) Profile
+  m_Name: mushroom_for_JaneProfile
   m_EditorClassIdentifier: 
   components:
   - {fileID: -598104195871095117}
@@ -102,7 +102,7 @@ MonoBehaviour:
   m_AdvancedMode: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.228
+    m_Value: 0.042
     min: 0
     max: 1
 --- !u!114 &4645455624912621655
@@ -130,7 +130,7 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.433
+    m_Value: 0.29
     min: 0
     max: 1
   smoothness:

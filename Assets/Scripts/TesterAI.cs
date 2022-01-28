@@ -14,12 +14,12 @@ public class TesterAI : MonoBehaviour
 
     private void OnEnable()
     {
-        gameSo.OnGameOverChange += StartTesterAi;
+        //gameSo.OnGameOverChange += StartTesterAi;
     }
 
-    public void StartTesterAi(bool isGameover)
+    public void StartTesterAi()
     {
-        if (!AiIsWork && !isGameover)
+        if (!AiIsWork)
         {
             StartCoroutine(chkMushrooomsLife());
         }
