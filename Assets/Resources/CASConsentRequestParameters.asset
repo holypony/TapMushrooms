@@ -17,7 +17,7 @@ MonoBehaviour:
   withDeclineOption: 0
   withMediationSettings: 1
   withRequestTrackingTransparency: 0
-  uiPrefab: {fileID: 6378617394226191214, guid: 7d5e0316681d1474ab5f043167c4a559, type: 3}
+  uiPrefab: {fileID: 6709700588356939559, guid: 3f3d0f4c6286b254d96d6a4daccf0786, type: 3}
   settingsTogglePrefab: {fileID: 12792720823157484, guid: 49ee03b086a184e5b9a50c9d48206556, type: 3}
   privacyPolicyUrl:
   - id: 0

@@ -233,7 +233,7 @@ public class FirebaseAnalytics : MonoBehaviour
                 {
                     if (userId == newUser.UserId && i < 6)
                     {
-                        leaderboardSo.LeadersList.Add(i + ". " + bestScore + " You here!");
+                        leaderboardSo.LeadersList.Add(i + ". " + bestScore + " Your score");
                     }
 
                     if (userId != newUser.UserId && i < 6)
@@ -245,7 +245,7 @@ public class FirebaseAnalytics : MonoBehaviour
                 if (userId == newUser.UserId && i >= 6)
                 {
                     
-                    leaderboardSo.LeadersList.Add(i + ". " + bestScore + " You here!");
+                    leaderboardSo.LeadersList.Add(i + ". " + bestScore + " Your score");
                 }
 
                 leaderboardSo.TotalPlayers = i;

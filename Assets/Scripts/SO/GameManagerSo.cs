@@ -31,7 +31,7 @@ public class GameManagerSo : ScriptableObject
     public void InitializeGameSo()
     {
         Multiplier = 1;
-        MushLifeTime = 1.25f;
+        MushLifeTime = 1f;
         BombMushroomsLive = 0;
         defaultTimeBetweenSpawn = 0.75f;
         TimeBetweenSpawn = defaultTimeBetweenSpawn;
@@ -71,9 +71,9 @@ public class GameManagerSo : ScriptableObject
         get => timeBetweenSpawn;
         set
         {
-            if (value < 0.15f)
+            if (value < 0.1f)
             {
-                value = 0.15f;
+                value = 0.1f;
             }
 
             timeBetweenSpawn = value;
