@@ -195,7 +195,6 @@ public class FirebaseAnalytics : MonoBehaviour
     {
         Firebase.Analytics.FirebaseAnalytics
             .LogEvent("RestartBtn");
-        UpdateTotalGames();
     }
 
     private int yourNumber;

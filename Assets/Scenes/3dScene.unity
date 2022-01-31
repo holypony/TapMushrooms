@@ -13020,6 +13020,7 @@ GameObject:
   m_Component:
   - component: {fileID: 572027262}
   - component: {fileID: 572027263}
+  - component: {fileID: 572027264}
   m_Layer: 0
   m_Name: AnalyticsManagerSingleton
   m_TagString: Untagged
@@ -13056,6 +13057,18 @@ MonoBehaviour:
   gameSo: {fileID: 11400000, guid: 7f92b343cdf63f4499a3d864b7d8be75, type: 2}
   leaderboardSo: {fileID: 11400000, guid: baf0d2c1a4a517147ac2d7cac2734350, type: 2}
   usernameField: {fileID: 0}
+--- !u!114 &572027264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572027261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 936001ab6de48f84099cd6a9122ed264, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &594775711
 GameObject:
   m_ObjectHideFlags: 0

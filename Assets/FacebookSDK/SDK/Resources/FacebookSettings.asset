@@ -16,9 +16,9 @@ MonoBehaviour:
   clientTokens:
   - 
   appIds:
-  - 4605281824532490
+  - 460528182453249
   appLabels:
-  - App Name
+  - Tap mushrooms
   cookie: 1
   logging: 1
   status: 1

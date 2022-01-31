@@ -33,7 +33,9 @@ public class GameManager : MonoBehaviour
         InitializeGameField();
         gameSo.InitializeGameSo();
         StartCoroutine(GameRoutine());
+        
         PlayerPrefs.SetInt("totalGamePlayed", PlayerPrefs.GetInt("totalGamePlayed", 0) + 1);
+        FirebaseAnalytics.instance.UpdateTotalGames();
     }
     
     private void InitializeGameField()

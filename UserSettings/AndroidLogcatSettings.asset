@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "22a0a620dd0d7ece",
         "name": "com.tapmushrooms",
-        "processId": 27785,
+        "processId": 2138,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -17,55 +17,43 @@
         {
             "deviceId": "22a0a620dd0d7ece",
             "name": "com.tapmushrooms",
-            "processId": 21070,
-            "exited": true
-        },
-        {
-            "deviceId": "22a0a620dd0d7ece",
-            "name": "com.tapmushrooms",
-            "processId": 2184,
-            "exited": true
-        },
-        {
-            "deviceId": "22a0a620dd0d7ece",
-            "name": "com.tapmushrooms",
-            "processId": 1037,
-            "exited": true
-        },
-        {
-            "deviceId": "22a0a620dd0d7ece",
-            "name": "com.tapmushrooms",
-            "processId": 1943,
-            "exited": true
-        },
-        {
-            "deviceId": "22a0a620dd0d7ece",
-            "name": "com.tapmushrooms",
-            "processId": 8214,
-            "exited": true
-        },
-        {
-            "deviceId": "22a0a620dd0d7ece",
-            "name": "com.tapmushrooms",
-            "processId": 8664,
-            "exited": false
-        },
-        {
-            "deviceId": "22a0a620dd0d7ece",
-            "name": "com.tapmushrooms",
             "processId": 2405,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "22a0a620dd0d7ece",
             "name": "com.tapmushrooms",
             "processId": 10949,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "22a0a620dd0d7ece",
             "name": "com.tapmushrooms",
             "processId": 27785,
+            "exited": true
+        },
+        {
+            "deviceId": "22a0a620dd0d7ece",
+            "name": "com.samsung.android.bixby.agent",
+            "processId": 29323,
+            "exited": true
+        },
+        {
+            "deviceId": "22a0a620dd0d7ece",
+            "name": "com.tapmushrooms",
+            "processId": 19649,
+            "exited": true
+        },
+        {
+            "deviceId": "22a0a620dd0d7ece",
+            "name": "com.tapmushrooms",
+            "processId": 30924,
+            "exited": false
+        },
+        {
+            "deviceId": "22a0a620dd0d7ece",
+            "name": "com.tapmushrooms",
+            "processId": 2138,
             "exited": false
         }
     ],
