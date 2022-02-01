@@ -27,6 +27,10 @@ public class UImanager : MonoBehaviour
     [SerializeField] private GameManagerSo gameSo;
     [SerializeField] private leaderboardManager leaderboardSo;
     [SerializeField] private TMP_Text[] leadersTexts; 
+    
+    [Header("FPS")]
+    [SerializeField] private TMP_Text textFps;
+    private float deltaTime;
     private void OnEnable()
     {
         gameSo.OnScoreChange += updateScore;
@@ -66,7 +70,11 @@ public class UImanager : MonoBehaviour
         }
     }
 
-    
+    private void Update () {
+        deltaTime += (Time.deltaTime - deltaTime) * 0.1f;
+        float fps = 1.0f / deltaTime;
+        textFps.text = "FPS: " + Mathf.Ceil (fps);
+    }
     
     private void CreateLeaderboard(bool isUpdated)
     {

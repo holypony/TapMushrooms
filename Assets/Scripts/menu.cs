@@ -11,8 +11,7 @@ public class menu : MonoBehaviour
     [SerializeField] private String termsOfUseLink = "https://telegra.ph/Terms--Conditions-01-25";
     [SerializeField] private String googlePlayLink = "https://play.google.com/store/apps/details?id=com.tapmushrooms";
     [SerializeField] private TMP_Text textQuality;
-    [SerializeField] private TMP_Text textFps;
-    public float deltaTime;
+
     public void btnRayeUs()
     {
         Application.OpenURL(googlePlayLink);
@@ -23,11 +22,7 @@ public class menu : MonoBehaviour
         Application.OpenURL(privacyPolicyLink);
     }
 
-    void Update () {
-        deltaTime += (Time.deltaTime - deltaTime) * 0.1f;
-        float fps = 1.0f / deltaTime;
-        textFps.text = "FPS: " + Mathf.Ceil (fps);
-    }
+    
 
 
     private void Start()

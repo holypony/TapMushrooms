@@ -37,7 +37,7 @@ public class Mushroom : MonoBehaviour
         return _isActive;
     }
 
-    public void TesterClick()
+    public void TesterClick(bool killAll = false)
     {
         if (!_isBomb)
         {
@@ -48,6 +48,15 @@ public class Mushroom : MonoBehaviour
             psTap.Play(true);
             StartCoroutine(MushroomDeath());
         }
+
+        if (!killAll) return;
+        _isBomb = false;
+        if (_clicked) return;
+        _clicked = true;
+        SoundManager.instance.MushroomTapSound();
+        MMVibrationManager.Haptic(HapticTypes.LightImpact);
+        psTap.Play(true);
+        StartCoroutine(MushroomDeath());
     }
     
     public void mushroomState(bool _isActive)

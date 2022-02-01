@@ -20,12 +20,119 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea1d2b87-ad3e-42b0-8f61-b861a0ded18c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TapMushrooms/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TapMushrooms/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TapMushrooms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TapMushrooms/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FirebaseAnalytics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FirebaseAnalytics.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Animatons.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Animatons.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Animatons/Loading.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Animatons/Loading.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Animatons/Loading.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Animatons/Loading.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 120 SDF Atlas.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 120 SDF Atlas.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 120 SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 120 SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 120 SDF.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 120 SDF.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 210 SDF Atlas.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 210 SDF Atlas.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 210 SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 210 SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 210 SDF.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 210 SDF.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 32 SDF Atlas.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 32 SDF Atlas.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 32 SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 32 SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 32 SDF.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 32 SDF.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 40 SDF Atlas.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 40 SDF Atlas.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 40 SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 40 SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 40 SDF.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 40 SDF.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 50 SDF Atlas.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 50 SDF Atlas.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 50 SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 50 SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 50 SDF.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 50 SDF.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 54 SDF Atlas.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 54 SDF Atlas.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 54 SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 54 SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 54 SDF.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 54 SDF.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 64 SDF Atlas.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 64 SDF Atlas.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 64 SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 64 SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 64 SDF.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 64 SDF.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 72 SDF Atlas.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 72 SDF Atlas.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 72 SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 72 SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 72 SDF.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline 72 SDF.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_120 SDF Atlas.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_120 SDF Atlas.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_120 SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_120 SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_120 SDF.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_120 SDF.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_210 SDF Atlas.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_210 SDF Atlas.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_210 SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_210 SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_210 SDF.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_210 SDF.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_32 SDF Atlas.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_32 SDF Atlas.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_32 SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_32 SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_32 SDF.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_32 SDF.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_40 SDF Atlas.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_40 SDF Atlas.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_40 SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_40 SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_40 SDF.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_40 SDF.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_50 SDF Atlas.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_50 SDF Atlas.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_50 SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_50 SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_50 SDF.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_50 SDF.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_54 SDF Atlas.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_54 SDF Atlas.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_54 SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_54 SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_54 SDF.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_54 SDF.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_64 SDF Atlas.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_64 SDF Atlas.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_64 SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_64 SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_64 SDF.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_64 SDF.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_72 SDF Atlas.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_72 SDF Atlas.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_72 SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_72 SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_72 SDF.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular Outline_Extended ASCII_72 SDF.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular SDF.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular SDF.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular.ttf.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Fonts/LilitaOne-Regular.ttf.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Materials.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Materials/fx_circle.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Materials/fx_circle.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Materials/fx_circle.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Materials/fx_circle.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_box_blur.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_box_blur.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_circle.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_circle.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_circle_blur 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_circle_blur 1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_circle_blur.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_circle_blur.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_circle_glow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_circle_glow.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_circle_line_blue.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_circle_line_blue.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_glow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_glow.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_glow_small.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_glow_small.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_rotate_line.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_rotate_line.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_rotate_line_small.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_rotate_line_small.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_special_particle_blue.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_special_particle_blue.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_special_particle_green.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_special_particle_green.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_special_particle_purple.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_special_particle_purple.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_special_particle_red.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_special_particle_red.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_special_particle_white.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_special_particle_white.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_special_particle_yellow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_special_particle_yellow.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_star_blue.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_star_blue.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_star_green.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_star_green.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_star_light.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_star_light.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_star_purple.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_star_purple.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_star_red.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_star_red.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_star_white.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_star_white.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_star_yellow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Particle/Texture/fx_star_yellow.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Shader &amp; Materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Shader &amp; Materials.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Shader &amp; Materials/MobileAdditive.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Shader &amp; Materials/MobileAdditive.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Shader &amp; Materials/MobileAdditive.shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Shader &amp; Materials/MobileAdditive.shader.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Shader &amp; Materials/UIAdditive.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Shader &amp; Materials/UIAdditive.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Shader &amp; Materials/UIAdditive.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Shader &amp; Materials/UIAdditive.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Shader &amp; Materials/UIAdditive.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Shader &amp; Materials/UIAdditive.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Shader &amp; Materials/UIAdditive.shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Shader &amp; Materials/UIAdditive.shader.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Sprite.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Sprite.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Sprite/Popup.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI Kit Casual Game/ResourcesData/Sprite/Popup.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/CASPlugin.androidlib/res/raw/cas_settings16s.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/CASPlugin.androidlib/res/raw/cas_settings16s.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/FirebaseCrashlytics.androidlib/res/values/crashlytics_build_id.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/FirebaseCrashlytics.androidlib/res/values/crashlytics_build_id.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/New Lighting Settings.lighting" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/New Lighting Settings.lighting" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/3dScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/3dScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/3dScene/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/3dScene/LightingData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/3dScene/Lightmap-0_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/3dScene/Lightmap-0_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/3dScene/Lightmap-0_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/3dScene/Lightmap-0_comp_light.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mushroom.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Mushroom.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TesterAI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TesterAI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UImanager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UImanager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/menu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/AndroidLogcatSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/AndroidLogcatSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +144,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SO/mushroomsSkinsSO.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TesterAI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/adsManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.cleversolutions.ads.consent.unity@7fa606968d/Runtime/UserConsentUI.cs" root0="SKIP_HIGHLIGHTING" />
@@ -47,6 +153,7 @@
     <setting file="file://$USER_HOME$/Documents/FirebaseAnalytics.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SO/leaderboardManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BtnSoundSwitcher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/skillsManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -63,15 +170,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AdsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SO/leaderboardManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Mushroom.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Android/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UImanager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/adsManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TesterAI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/menu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SO/GameManagerSo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FirebaseAnalytics.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Mushroom.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SO/GameManagerSo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/menu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UImanager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TesterAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/skillsManager.cs" />
       </list>
     </option>
   </component>
@@ -153,6 +261,8 @@
       <workItem from="1643550894407" duration="2368000" />
       <workItem from="1643556511321" duration="1926000" />
       <workItem from="1643620734637" duration="1027000" />
+      <workItem from="1643713058790" duration="4365000" />
+      <workItem from="1643742194785" duration="4606000" />
     </task>
     <servers />
   </component>
