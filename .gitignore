@@ -25,6 +25,8 @@ ExportedObj/
 *.opendb
 *.VC.db
 
+
+*.log
 # Unity3D generated meta files
 *.pidb.meta
 *.pdb.meta
@@ -39,4 +41,4 @@ FirebaseCppApp-8_7_0.so
 *.apk
 *.aab
 *.unitypackage
-
+*.unitypackage.meta

@@ -20,28 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea1d2b87-ad3e-42b0-8f61-b861a0ded18c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TapMushrooms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TapMushrooms/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/ForDemo/Hand.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/ForDemo/Hand.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/ForDemo/Mush_Demo.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/ForDemo/Mush_Demo.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/menu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/skillsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/skillsManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/glow-shroom/anim/Die.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/glow-shroom/anim/Die.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/glow-shroom/anim/Hide.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/glow-shroom/anim/Hide.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/glow-shroom/anim/Idle.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/glow-shroom/anim/Idle.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/glow-shroom/anim/Start.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/glow-shroom/anim/Start.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/glow-shroom/anim/idle_NO.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/glow-shroom/anim/idle_NO.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +71,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/menu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/skillsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
