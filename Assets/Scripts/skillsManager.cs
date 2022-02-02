@@ -15,7 +15,7 @@ public class skillsManager : MonoBehaviour
     [Header("Skills stettings")]
     [SerializeField] private float aiCooldown = 5f;
     [SerializeField] private float aiTimeBetweenTap = 0.1f;
-    [SerializeField] private float aiduration = 5f;
+    [SerializeField] private float aiDuration = 5f;
     
     [SerializeField] private float allKillCooldown = 5f;
 
@@ -27,10 +27,16 @@ public class skillsManager : MonoBehaviour
     
     private bool isKillReady = true;
     private bool isAiReady = true;
-    
-    public void StartAi()
+
+    private void OnEnable()
     {
-        if (isAiReady)
+        gameSo.OnGameOverChange += StartAi;
+    }
+
+
+    public void StartAi(bool isGameOver)
+    {
+        if (isAiReady && !isGameOver)
         {
             StartCoroutine(aiRoutine());
         }
@@ -38,7 +44,7 @@ public class skillsManager : MonoBehaviour
 
     private IEnumerator aiRoutine()
     {
-        float activeTime = aiduration;
+        float activeTime = aiDuration;
         isAiReady = false;
         imgAi.enabled = false;
         while (!gameSo.GameOver && activeTime > 0.1f)

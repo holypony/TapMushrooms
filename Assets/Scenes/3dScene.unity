@@ -12968,13 +12968,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 504531857}
-  m_LocalRotation: {x: 0.23196895, y: -0, z: -0, w: 0.97272325}
+  m_LocalRotation: {x: 0.23344536, y: 0, z: 0, w: 0.97236997}
   m_LocalPosition: {x: 2.37, y: 6.91, z: -4.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 26.826, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 27, y: 0, z: 0}
 --- !u!114 &504531861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13063,11 +13063,12 @@ MonoBehaviour:
   - {fileID: 150945953}
   - {fileID: 1575257}
   - {fileID: 1281052810}
-  - {fileID: 683951108}
   - {fileID: 1847395208}
   - {fileID: 250998191}
   - {fileID: 981355529}
   - {fileID: 799415231}
+  DemoMush: {fileID: 836155169}
+  Hand: {fileID: 1379473588}
 --- !u!4 &516954109
 Transform:
   m_ObjectHideFlags: 0
@@ -13097,8 +13098,8 @@ MonoBehaviour:
   gameSo: {fileID: 11400000, guid: 7f92b343cdf63f4499a3d864b7d8be75, type: 2}
   gm: {fileID: 516954108}
   aiCooldown: 5
-  aiTimeBetweenTap: 0.25
-  aiduration: 5
+  aiTimeBetweenTap: 0.45
+  aiDuration: 55
   allKillCooldown: 5
   textAiCooldown: {fileID: 1561643509}
   textAllKillCooldown: {fileID: 1944673775}
@@ -13190,7 +13191,7 @@ PrefabInstance:
     - target: {fileID: 6490000908740087879, guid: d980a7804e46cd749b410443a7651a2e, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 73015f414e91f3f4bbe4d5783a2d4140, type: 2}
+      objectReference: {fileID: 9100000, guid: e9e3ea46fab43844b8c837efe822bfde, type: 2}
     m_RemovedComponents:
     - {fileID: -3878509663331652906, guid: d980a7804e46cd749b410443a7651a2e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d980a7804e46cd749b410443a7651a2e, type: 3}
@@ -13732,17 +13733,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6490000908740087878, guid: d980a7804e46cd749b410443a7651a2e, type: 3}
   m_PrefabInstance: {fileID: 1117466915}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &683951108 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 773801667, guid: d980a7804e46cd749b410443a7651a2e, type: 3}
-  m_PrefabInstance: {fileID: 1995940088}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d11b7d660b47794cbad5fc8bc3f4d32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &688838245
 GameObject:
   m_ObjectHideFlags: 0
@@ -14681,6 +14671,11 @@ Light:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6490000908740087878, guid: d980a7804e46cd749b410443a7651a2e, type: 3}
   m_PrefabInstance: {fileID: 753838943}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &836155169 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6490000908740087872, guid: d980a7804e46cd749b410443a7651a2e, type: 3}
+  m_PrefabInstance: {fileID: 528458795}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &840174168
 PrefabInstance:
@@ -18193,7 +18188,7 @@ Animator:
   m_GameObject: {fileID: 1379473588}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e9e3ea46fab43844b8c837efe822bfde, type: 2}
+  m_Controller: {fileID: 9100000, guid: 73015f414e91f3f4bbe4d5783a2d4140, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -18389,7 +18384,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1428420908
 RectTransform:
   m_ObjectHideFlags: 0
@@ -29777,7 +29772,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5332170527738808881, guid: 9c0a48096853b80489b2ed18dfc4c366, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5332170528090943789, guid: 9c0a48096853b80489b2ed18dfc4c366, type: 3}
       propertyPath: m_Sprite
@@ -30795,7 +30790,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5332170527738808880, guid: 9c0a48096853b80489b2ed18dfc4c366, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1467
+      value: 1236
       objectReference: {fileID: 0}
     - target: {fileID: 5332170527738808880, guid: 9c0a48096853b80489b2ed18dfc4c366, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -30816,6 +30811,10 @@ PrefabInstance:
     - target: {fileID: 5332170527738808881, guid: 9c0a48096853b80489b2ed18dfc4c366, type: 3}
       propertyPath: m_Name
       value: StartAiBtn
+      objectReference: {fileID: 0}
+    - target: {fileID: 5332170527738808881, guid: 9c0a48096853b80489b2ed18dfc4c366, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5332170528090943789, guid: 9c0a48096853b80489b2ed18dfc4c366, type: 3}
       propertyPath: m_Sprite
@@ -30917,7 +30916,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   privacyPolicyLink: https://telegra.ph/Privacy-Policy-01-02-36
-  termsOfUseLink: https://telegra.ph/Privacy-Policy-01-02-36
   googlePlayLink: https://play.google.com/store/apps/details?id=com.tapmushrooms
   textQuality: {fileID: 1017090109}
 --- !u!4 &1877949982

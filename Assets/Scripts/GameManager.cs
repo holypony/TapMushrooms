@@ -11,12 +11,20 @@ public class GameManager : MonoBehaviour
     [SerializeField] private leaderboardManager _leaderboardManager;
     public Mushroom[] mushrooms;
     private List<Mushroom> readyMushrooms;
-    
     private bool isBonusTime = false;
 
+    //DEMO
+    [SerializeField] private GameObject DemoMush;
+    [SerializeField] private GameObject Hand;
+    private Animator DemoMushAnim;
+    private Animator HandAnim;
+    
     public static GameManager instance;
     private void Awake()
     {
+        DemoMushAnim = DemoMush.GetComponent<Animator>();
+        HandAnim = Hand.GetComponent<Animator>();
+        
         Time.timeScale = 1;
         if (instance == null)
         {
@@ -36,6 +44,17 @@ public class GameManager : MonoBehaviour
         
         PlayerPrefs.SetInt("totalGamePlayed", PlayerPrefs.GetInt("totalGamePlayed", 0) + 1);
         FirebaseAnalytics.instance.UpdateTotalGames();
+
+        StartCoroutine(Demo());
+    }
+
+    private IEnumerator Demo()
+    {
+        
+        yield return new WaitForSeconds(2f);
+        DemoMushAnim.SetTrigger("Start");
+        yield return new WaitForSeconds(2f);
+        HandAnim.SetTrigger("Hand");
     }
     
     private void InitializeGameField()

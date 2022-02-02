@@ -8,7 +8,7 @@ public class menu : MonoBehaviour
 {
 
     [SerializeField] private String privacyPolicyLink = "https://telegra.ph/Privacy-Policy-01-02-36";
-    [SerializeField] private String termsOfUseLink = "https://telegra.ph/Terms--Conditions-01-25";
+    //[SerializeField] private String termsOfUseLink = "https://telegra.ph/Terms--Conditions-01-25";
     [SerializeField] private String googlePlayLink = "https://play.google.com/store/apps/details?id=com.tapmushrooms";
     [SerializeField] private TMP_Text textQuality;
 
