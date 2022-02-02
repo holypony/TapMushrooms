@@ -51,9 +51,9 @@ public class GameManager : MonoBehaviour
     private IEnumerator Demo()
     {
         
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(12f);
         DemoMushAnim.SetTrigger("Start");
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         HandAnim.SetTrigger("Hand");
     }
     
@@ -89,7 +89,7 @@ public class GameManager : MonoBehaviour
             if (!isBonusTime && gameSo.Score > 100)
             {
 
-                if (setRandom(12))
+                if (setRandom(22))
                 {
                     StartCoroutine(bonusTime());
                 }
