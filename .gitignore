@@ -22,6 +22,7 @@ ExportedObj/
 *.booproj
 *.svd
 *.pdb
+*.log 
 *.opendb
 *.VC.db
 
@@ -39,4 +40,5 @@ FirebaseCppApp-8_7_0.so
 *.apk
 *.aab
 *.unitypackage
+*.unitypackage.meta
 

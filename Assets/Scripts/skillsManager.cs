@@ -28,12 +28,7 @@ public class skillsManager : MonoBehaviour
     private bool isKillReady = true;
     private bool isAiReady = true;
 
-    private void OnEnable()
-    {
-        gameSo.OnGameOverChange += StartAi;
-    }
-
-
+  
     public void StartAi(bool isGameOver)
     {
         if (isAiReady && !isGameOver)

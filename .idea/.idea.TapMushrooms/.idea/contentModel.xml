@@ -47,18 +47,6 @@
             </e>
           </e>
         </e>
-        <e p="GUI PRO Kit - Casual Game" t="Include">
-          <e p="Extensions" t="Include">
-            <e p="UIParticle" t="Include">
-              <e p="hidden particle.shader" t="Include" />
-              <e p="UIParticleSystem.cs" t="Include" />
-            </e>
-          </e>
-          <e p="Scripts" t="Include">
-            <e p="Panel.cs" t="Include" />
-            <e p="PanelControl.cs" t="Include" />
-          </e>
-        </e>
         <e p="NiceVibrations" t="Include">
           <e p="Common" t="Include">
             <e p="Plugins" t="Include">
