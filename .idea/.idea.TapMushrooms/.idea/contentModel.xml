@@ -120,6 +120,7 @@
             <e p="mushroomsSkinsSO.cs" t="Include" />
           </e>
           <e p="SoundManager.cs" t="Include" />
+          <e p="Spot.cs" t="Include" />
           <e p="UImanager.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">

@@ -13,10 +13,6 @@ public class GameManager : MonoBehaviour
     private List<Mushroom> readyMushrooms;
     private bool isBonusTime = false;
 
-    //DEMO
-    [SerializeField] private GameObject DemoMush;
-    [SerializeField] private GameObject Hand;
-    
     public static GameManager instance;
     private void Awake()
     {
@@ -31,7 +27,6 @@ public class GameManager : MonoBehaviour
     
     public void StartGame()
     {
-        
         StopAllCoroutines();
         InitializeGameField();
         gameSo.InitializeGameSo();
@@ -39,10 +34,8 @@ public class GameManager : MonoBehaviour
         
         PlayerPrefs.SetInt("totalGamePlayed", PlayerPrefs.GetInt("totalGamePlayed", 0) + 1);
         FirebaseAnalytics.instance.UpdateTotalGames();
-
     }
 
-    
     private void InitializeGameField()
     {
         isBonusTime = false;
