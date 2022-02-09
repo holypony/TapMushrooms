@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class UImanager : MonoBehaviour
@@ -26,8 +27,8 @@ public class UImanager : MonoBehaviour
     [Space(10)]
     [SerializeField] private GameManagerSo gameSo;
     [SerializeField] private leaderboardManager leaderboardSo;
-    [SerializeField] private TMP_Text[] leadersTexts; 
-    
+    [SerializeField] private TMP_Text[] leadersTexts;
+    [SerializeField] private Image[] healthImages;
     [Header("FPS")]
     [SerializeField] private TMP_Text textFps;
     private float deltaTime;
@@ -109,7 +110,18 @@ public class UImanager : MonoBehaviour
 
     private void updateHp()
     {
-        textHp.text = "HP: " + gameSo.Hp;
+        if (gameSo.Hp < 3)
+        {
+            healthImages[gameSo.Hp].enabled = false;
+        }
+        else
+        {
+            foreach (var hpbar in healthImages)
+            {
+                hpbar.enabled = true;
+            }
+        }
+        
     }
 
     private void gameoverUI(bool isGameover)

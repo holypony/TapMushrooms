@@ -105,6 +105,7 @@
           <e p="BtnSoundSwitcher.cs" t="Include" />
           <e p="facebook.cs" t="Include" />
           <e p="FirebaseAnalytics.cs" t="Include" />
+          <e p="GameGuide.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="Input" t="Include">
             <e p="InputManager.cs" t="Include" />

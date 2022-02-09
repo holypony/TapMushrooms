@@ -28,10 +28,10 @@ public class GameManagerSo : ScriptableObject
         InitializeGameSo();
     }
 
-    public void InitializeGameSo()
+    public void InitializeGameSo(float mushLife = 1.25f)
     {
         Multiplier = 1;
-        MushLifeTime = 1.25f;
+        MushLifeTime = mushLife;
         BombMushroomsLive = 0;
         defaultTimeBetweenSpawn = 0.75f;
         TimeBetweenSpawn = defaultTimeBetweenSpawn;

@@ -3,16 +3,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private GameManagerSo gameSo;
-    [SerializeField] private leaderboardManager _leaderboardManager;
+    [SerializeField] private GameManagerSo gameManagerSo;
     public Mushroom[] mushrooms;
-    private List<Mushroom> readyMushrooms;
+    public List<Mushroom> readyMushrooms;
     private bool isBonusTime = false;
 
+    [SerializeField] private GameGuide guide;
     public static GameManager instance;
     private void Awake()
     {
@@ -27,16 +28,23 @@ public class GameManager : MonoBehaviour
     
     public void StartGame()
     {
-        StopAllCoroutines();
-        InitializeGameField();
-        gameSo.InitializeGameSo();
-        StartCoroutine(GameRoutine());
+        if (PlayerPrefs.GetInt("guide", -1) < 0)
+        {
+            guide.InitGuide();
+        }
+        else
+        {
+            StopAllCoroutines();
+            InitializeGameField();
+            gameManagerSo.InitializeGameSo();
+            StartCoroutine(GameRoutine());
         
-        PlayerPrefs.SetInt("totalGamePlayed", PlayerPrefs.GetInt("totalGamePlayed", 0) + 1);
-        FirebaseAnalytics.instance.UpdateTotalGames();
+            PlayerPrefs.SetInt("totalGamePlayed", PlayerPrefs.GetInt("totalGamePlayed", 0) + 1);
+            FirebaseAnalytics.instance.UpdateTotalGames();
+        }
     }
 
-    private void InitializeGameField()
+    public void InitializeGameField()
     {
         isBonusTime = false;
         readyMushrooms = new List<Mushroom>();
@@ -48,7 +56,7 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator GameRoutine()
     {
-        while (!gameSo.GameOver)
+        while (!gameManagerSo.GameOver)
         {
             foreach (var mushroom in mushrooms)
             {
@@ -61,29 +69,38 @@ public class GameManager : MonoBehaviour
             if (readyMushrooms.Count > 0)
             {
                 int i = Random.Range(0, readyMushrooms.Count);
-                readyMushrooms[i].mushroomState(true);
+                if (gameManagerSo.BombMushroomsLive < 4 && getRandom(13))
+                {
+                    gameManagerSo.BombMushroomsLive++;
+                    readyMushrooms[i].mushroomState(true, true);
+                }
+                else
+                {
+                    readyMushrooms[i].mushroomState(true);
+                }
+                
                 readyMushrooms.Clear();
             }
             
-            if (!isBonusTime && gameSo.Score > 100)
+            if (!isBonusTime && gameManagerSo.Score > 100)
             {
 
-                if (setRandom(12))
+                if (getRandom(12))
                 {
                     StartCoroutine(bonusTime());
                 }
             }
             
-            gameSo.UpdateTimeBetweenSpawns();
-            yield return new WaitForSeconds(gameSo.TimeBetweenSpawn);
+            gameManagerSo.UpdateTimeBetweenSpawns();
+            yield return new WaitForSeconds(gameManagerSo.TimeBetweenSpawn);
         }
 
-        gameSo.BestScore = PlayerPrefs.GetInt("BestScore", 1);
+        gameManagerSo.BestScore = PlayerPrefs.GetInt("BestScore", 1);
         
-        if (gameSo.BestScore < gameSo.Score)
+        if (gameManagerSo.BestScore < gameManagerSo.Score)
         {
-            gameSo.BestScore = gameSo.Score;
-            PlayerPrefs.SetInt("BestScore", gameSo.Score);
+            gameManagerSo.BestScore = gameManagerSo.Score;
+            PlayerPrefs.SetInt("BestScore", gameManagerSo.Score);
         }
         
         FirebaseAnalytics.instance.AddBestScore();
@@ -95,15 +112,16 @@ public class GameManager : MonoBehaviour
     {
         isBonusTime = true;
         int i = Random.Range(2, 5);
-        gameSo.Multiplier = i;
+        gameManagerSo.Multiplier = i;
         yield return new WaitForSeconds(5f);
-        gameSo.Multiplier = 1;
+        gameManagerSo.Multiplier = 1;
         isBonusTime = false;
     }
     
-    private bool setRandom(float setChance)
+    private bool getRandom(float setChance)
     {
         int drop = Random.Range(0, 101);
         return drop <= setChance;
     }
+
 }

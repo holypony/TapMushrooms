@@ -24,53 +24,18 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TapMushrooms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TapMushrooms/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/CASPlugin.androidlib/res/raw/cas_settings16s.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/CASPlugin.androidlib/res/raw/cas_settings16s.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/FirebaseCrashlytics.androidlib/res/values/crashlytics_build_id.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/FirebaseCrashlytics.androidlib/res/values/crashlytics_build_id.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Mashroom.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Mashroom.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/models/planet/planet/plan.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/models/planet/planet/plan.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/spot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/spot.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/3dScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/3dScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/3dScene/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/3dScene/LightingData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/3dScene/LightingData.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/3dScene/LightingData.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/3dScene/Lightmap-0_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/3dScene/Lightmap-0_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/3dScene/Lightmap-0_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/3dScene/Lightmap-0_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/3dScene/ReflectionProbe-0.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/3dScene/ReflectionProbe-0.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/3dScene/ReflectionProbe-0.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/3dScene/ReflectionProbe-0.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/3dScene/mushroom_for_JaneProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/3dScene/mushroom_for_JaneProfile.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mushroom.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Mushroom.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/GameManagerSo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/GameManagerSo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UImanager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UImanager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/anim_resourses.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/anim_resourses.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/anim_resourses/materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/anim_resourses/materials.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/anim_resourses/textures.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/anim_resourses/textures.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/glow-shroom.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/glow-shroom/Mushroom.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/glow-shroom/Mushroom.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/glow-shroom/anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/glow-shroom/anim/MushDie.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/glow-shroom/anim/MushDie.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/glow-shroom/anim/MushHide.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/glow-shroom/anim/MushHide.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/glow-shroom/anim/MushIdle.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/glow-shroom/anim/MushIdle.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/glow-shroom/anim/MushStart.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/glow-shroom/anim/MushStart.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/glow-shroom/anim/Mush_anim.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/glow-shroom/anim/Mush_anim.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/glow-shroom/anim/Mushidle_NO.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/glow-shroom/anim/Mushidle_NO.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/glow-shroom/textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/glow-shroom/textures/light_stars_02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/glow-shroom/textures/light_stars_02.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/glow-shroom/textures/part_mat.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/glow-shroom/textures/part_mat.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/AndroidLogcatSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/AndroidLogcatSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,18 +47,19 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SO/mushroomsSkinsSO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/adsManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.cleversolutions.ads.consent.unity@7fa606968d/Runtime/UserConsentUI.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FirebaseAnalytics.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.cleversolutions.ads.consent.unity@7fa606968d/Runtime/UserConsentRequest.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/menu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Documents/FirebaseAnalytics.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SO/leaderboardManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameGuide.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BtnSoundSwitcher.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/skillsManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SO/mushroomsSkinsSO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SO/leaderboardManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -113,15 +79,16 @@
         <option value="$PROJECT_DIR$/Assets/Plugins/Android/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/Assets/Scripts/adsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FirebaseAnalytics.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UImanager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TesterAI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/menu.cs" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Assets/Scripts/skillsManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SO/GameManagerSo.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Mushroom.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SO/GameManagerSo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Mushroom.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameGuide.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UImanager.cs" />
       </list>
     </option>
   </component>
@@ -208,6 +175,9 @@
       <workItem from="1643789781472" duration="1615000" />
       <workItem from="1643979219339" duration="2550000" />
       <workItem from="1644069685521" duration="5107000" />
+      <workItem from="1644265628838" duration="8511000" />
+      <workItem from="1644317690905" duration="5503000" />
+      <workItem from="1644360842466" duration="3852000" />
     </task>
     <servers />
   </component>
