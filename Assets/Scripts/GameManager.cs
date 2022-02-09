@@ -102,8 +102,6 @@ public class GameManager : MonoBehaviour
             gameManagerSo.BestScore = gameManagerSo.Score;
             PlayerPrefs.SetInt("BestScore", gameManagerSo.Score);
         }
-        
-        FirebaseAnalytics.instance.AddBestScore();
         yield return new WaitForSeconds(0.15f);
         FirebaseAnalytics.instance.StartScoreboardLoader();
     }

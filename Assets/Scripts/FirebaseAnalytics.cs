@@ -30,7 +30,8 @@ public class FirebaseAnalytics : MonoBehaviour
         }
         Destroy(this.gameObject); 
     }
-    
+
+
     private void Start()
     {
         FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(task =>
@@ -54,6 +55,8 @@ public class FirebaseAnalytics : MonoBehaviour
     {
         Firebase.Messaging.FirebaseMessaging.TokenReceived += OnTokenReceived;
         Firebase.Messaging.FirebaseMessaging.MessageReceived += OnMessageReceived;
+
+        gameSo.OnBestScoreChange += AddBestScore;
     }
 
     public void OnTokenReceived(object sender, Firebase.Messaging.TokenReceivedEventArgs token) 
@@ -94,10 +97,28 @@ public class FirebaseAnalytics : MonoBehaviour
     
     public void StartGameButton()
     {
+        if(reference == null) return;
         UpdateUserDate();
         StartCoroutine(CheckUserName());
         
     } 
+    
+    private void UpdateUserDate()
+    {
+        var date = DateTime.Now.ToString("yyyy-MM-dd\\THH:mm:ss\\Z");
+
+        reference.Child("Users").Child(newUser.UserId).Child("TimeUpdate").SetValueAsync(date).ContinueWith(task =>
+        {
+            if (task.IsCompleted)
+            {
+                Debug.Log("Db successful updated");
+            }
+            else
+            {
+                Debug.Log("db failed");
+            }
+        });
+    }
     
     private IEnumerator CheckUserName()
     {
@@ -130,6 +151,7 @@ public class FirebaseAnalytics : MonoBehaviour
    
     public void AddBestScore()
     {
+        if(reference == null) return;
         reference.Child("Users").Child(newUser.UserId).Child("BestScore").SetValueAsync(gameSo.BestScore).ContinueWith(task =>
         {
             if (task.IsCompleted) 
@@ -155,23 +177,6 @@ public class FirebaseAnalytics : MonoBehaviour
         {
             //Database username is now updated
         }
-    }
-
-    public void UpdateUserDate()
-    {
-        var date = DateTime.Now.ToString("yyyy-MM-dd\\THH:mm:ss\\Z");
-
-        reference.Child("Users").Child(newUser.UserId).Child("TimeUpdate").SetValueAsync(date).ContinueWith(task =>
-        {
-            if (task.IsCompleted)
-            {
-                Debug.Log("Db successful updated");
-            }
-            else
-            {
-                Debug.Log("db failed");
-            }
-        });
     }
     
     public void UpdateTotalGames()
