@@ -6,6 +6,7 @@
     <e p="D:\GitHub\TapMushrooms" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="___www.unityassetcollection.com___.txt" t="Include" />
         <e p="FacebookSDK" t="Include">
           <e p="link.xml" t="Include" />
         </e>
@@ -44,6 +45,14 @@
             <e p="Shader &amp; Materials" t="Include">
               <e p="MobileAdditive.shader" t="Include" />
               <e p="UIAdditive.shader" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="GUI PRO Kit - Casual Game" t="Include">
+          <e p="Extensions" t="Include">
+            <e p="UIParticle" t="Include">
+              <e p="hidden particle.shader" t="Include" />
+              <e p="UIParticleSystem.cs" t="Include" />
             </e>
           </e>
         </e>
@@ -103,6 +112,7 @@
         <e p="Scripts" t="Include">
           <e p="AdsManager.cs" t="Include" />
           <e p="BtnSoundSwitcher.cs" t="Include" />
+          <e p="CameraRoll.cs" t="Include" />
           <e p="facebook.cs" t="Include" />
           <e p="FirebaseAnalytics.cs" t="Include" />
           <e p="GameGuide.cs" t="Include" />

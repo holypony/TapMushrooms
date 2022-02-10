@@ -47,8 +47,6 @@ public class FirebaseAnalytics : MonoBehaviour
                 Debug.LogError("Could not resolve all Firebase dependencies: " + dependencyStatus);
             }
         });
-        
-        
     }
 
     private void OnEnable()
@@ -98,16 +96,90 @@ public class FirebaseAnalytics : MonoBehaviour
     public void StartGameButton()
     {
         if(reference == null) return;
-        UpdateUserDate();
+        UpdateUserLastOnline();
         StartCoroutine(CheckUserName());
-        
+        UpdateUserLang();
+        UpdateUserRegTime();
+        UpdateAdsShown();
     } 
     
-    private void UpdateUserDate()
+    private void UpdateUserLastOnline()
     {
         var date = DateTime.Now.ToString("yyyy-MM-dd\\THH:mm:ss\\Z");
 
         reference.Child("Users").Child(newUser.UserId).Child("TimeUpdate").SetValueAsync(date).ContinueWith(task =>
+        {
+            if (task.IsCompleted)
+            {
+                Debug.Log("Db successful updated");
+            }
+            else
+            {
+                Debug.Log("db failed");
+            }
+        });
+    }
+    
+    private void UpdateUserRegTime()
+    {
+        var i = PlayerPrefs.GetInt("isFirstRun", 1);
+        if(i == 0) return;
+        var date = DateTime.Now.ToString("yyyy-MM-dd\\THH:mm:ss\\Z");
+
+        reference.Child("Users").Child(newUser.UserId).Child("RegistrationTime").SetValueAsync(date).ContinueWith(task =>
+        {
+            if (task.IsCompleted)
+            {
+                Debug.Log("Db successful updated");
+                PlayerPrefs.SetInt("isFirstRun", 0);
+            }
+            else
+            {
+                Debug.Log("db failed");
+            }
+        });
+        UpdateUserDevice();
+    }
+    
+    private void UpdateUserLang()
+    {
+        var lang = Application.systemLanguage.ToString();
+
+        reference.Child("Users").Child(newUser.UserId).Child("Language").SetValueAsync(lang).ContinueWith(task =>
+        {
+            if (task.IsCompleted)
+            {
+                Debug.Log("Db successful updated");
+            }
+            else
+            {
+                Debug.Log("db failed");
+            }
+        });
+    }
+    
+    private void UpdateAdsShown()
+    {
+        var adsShown = PlayerPrefs.GetInt("adsShown", 0);
+
+        reference.Child("Users").Child(newUser.UserId).Child("AdsShown").SetValueAsync(adsShown).ContinueWith(task =>
+        {
+            if (task.IsCompleted)
+            {
+                Debug.Log("Db successful updated");
+            }
+            else
+            {
+                Debug.Log("db failed");
+            }
+        });
+    }
+    
+    private void UpdateUserDevice()
+    {
+        var deviceModel = SystemInfo.deviceModel.ToString();
+
+        reference.Child("Users").Child(newUser.UserId).Child("Device model").SetValueAsync(deviceModel).ContinueWith(task =>
         {
             if (task.IsCompleted)
             {
@@ -181,8 +253,8 @@ public class FirebaseAnalytics : MonoBehaviour
     
     public void UpdateTotalGames()
     {
+        if(reference == null) return;
         int i = PlayerPrefs.GetInt("totalGamePlayed", 1);
-        
         reference.Child("Users").Child(newUser.UserId).Child("GamesPlayed").SetValueAsync(i).ContinueWith(task =>
         {
             if (task.IsCompleted) 
@@ -207,6 +279,7 @@ public class FirebaseAnalytics : MonoBehaviour
 
     public void StartScoreboardLoader()
     {
+        if(reference == null) return;
         StartCoroutine(LoadScoreboardData());
     }
     

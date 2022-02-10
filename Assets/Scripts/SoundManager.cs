@@ -13,6 +13,7 @@ public class SoundManager : MonoBehaviour
     [Header("Sounds")]
     [SerializeField] private AudioClip soundBonusTime;
     [SerializeField] private AudioClip soundGameOver;
+    [SerializeField] private AudioClip soundLoseHp;
     [SerializeField] private AudioClip[] soundOnTap;
     
     
@@ -65,7 +66,12 @@ public class SoundManager : MonoBehaviour
             asSeconsSounds.clip = soundGameOver;
             asSeconsSounds.Play();
         }
-        
+    }
+
+    public void OnLoseHp()
+    {
+        asMainSounds.clip = soundLoseHp;
+        asMainSounds.Play();
     }
     
     private void PlayBonusTime(int multiplier)

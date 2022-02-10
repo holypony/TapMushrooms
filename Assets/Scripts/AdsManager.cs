@@ -59,6 +59,7 @@ public class adsManager : MonoBehaviour
         if (manager.IsReadyAd(AdType.Interstitial))
         {
             manager.ShowAd(AdType.Interstitial);
+            PlayerPrefs.SetInt("adsShown", PlayerPrefs.GetInt("adsShown", 0) + 1);
         }
         else
         {

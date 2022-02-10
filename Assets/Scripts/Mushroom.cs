@@ -87,7 +87,7 @@ public class Mushroom : MonoBehaviour
     {
         if (_clicked) return;
         _clicked = true;
-        SoundManager.instance.MushroomTapSound();
+        
         MMVibrationManager.Haptic(HapticTypes.LightImpact);
         psTap.Play(true);
         StartCoroutine(MushroomDeath());
@@ -145,6 +145,7 @@ public class Mushroom : MonoBehaviour
             {
                 gameManagerSo.BombMushroomsLive--;
                 gameManagerSo.Hp--;
+                SoundManager.instance.OnLoseHp();
                 psMinusHp.Play(true);
                 MMVibrationManager.Haptic(HapticTypes.MediumImpact);
                 _animator.SetTrigger("Die");
@@ -162,7 +163,8 @@ public class Mushroom : MonoBehaviour
             {
                 yield return null;
             }
-
+            
+            SoundManager.instance.MushroomTapSound();
             gameManagerSo.Score += 10 * gameManagerSo.Multiplier;
             yield return new WaitForSeconds(0.15f);
             mushroomState(false);
@@ -183,6 +185,7 @@ public class Mushroom : MonoBehaviour
         }
         else
         {
+            SoundManager.instance.OnLoseHp();
             gameManagerSo.Hp--;
             MMVibrationManager.Haptic(HapticTypes.MediumImpact);
             psMinusHp.Play(true);
@@ -195,5 +198,4 @@ public class Mushroom : MonoBehaviour
             mushroomState(false);
         }
     }
-    
 }
