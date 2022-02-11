@@ -13,8 +13,7 @@ public class FirebaseAnalytics : MonoBehaviour
     
     [SerializeField] private GameManagerSo gameSo;
     [SerializeField] private leaderboardManager leaderboardSo;
-    [SerializeField] private Text usernameField;
-    
+
     private DatabaseReference reference;
     private FirebaseAuth auth;
     private FirebaseUser newUser;
@@ -98,15 +97,25 @@ public class FirebaseAnalytics : MonoBehaviour
         if(reference == null) return;
         UpdateUserLastOnline();
         StartCoroutine(CheckUserName());
-        UpdateUserLang();
+        
+        FirstStart();
+    }
+
+    private void FirstStart()
+    {
+        var i = PlayerPrefs.GetInt("isFirstRun", 1);
+        if(i == 0) return;
+        
         UpdateUserRegTime();
-        UpdateAdsShown();
-    } 
+        UpdateUserLang();
+        UpdateUserDevice();
+        
+        PlayerPrefs.SetInt("isFirstRun", 0);
+    }
     
     private void UpdateUserLastOnline()
     {
         var date = DateTime.Now.ToString("yyyy-MM-dd\\THH:mm:ss\\Z");
-
         reference.Child("Users").Child(newUser.UserId).Child("TimeUpdate").SetValueAsync(date).ContinueWith(task =>
         {
             if (task.IsCompleted)
@@ -122,29 +131,24 @@ public class FirebaseAnalytics : MonoBehaviour
     
     private void UpdateUserRegTime()
     {
-        var i = PlayerPrefs.GetInt("isFirstRun", 1);
-        if(i == 0) return;
+        
         var date = DateTime.Now.ToString("yyyy-MM-dd\\THH:mm:ss\\Z");
-
         reference.Child("Users").Child(newUser.UserId).Child("RegistrationTime").SetValueAsync(date).ContinueWith(task =>
         {
             if (task.IsCompleted)
             {
                 Debug.Log("Db successful updated");
-                PlayerPrefs.SetInt("isFirstRun", 0);
             }
             else
             {
                 Debug.Log("db failed");
             }
         });
-        UpdateUserDevice();
     }
     
     private void UpdateUserLang()
     {
         var lang = Application.systemLanguage.ToString();
-
         reference.Child("Users").Child(newUser.UserId).Child("Language").SetValueAsync(lang).ContinueWith(task =>
         {
             if (task.IsCompleted)
@@ -158,11 +162,9 @@ public class FirebaseAnalytics : MonoBehaviour
         });
     }
     
-    private void UpdateAdsShown()
+    public void UpdateAdsShown(int AdsShown)
     {
-        var adsShown = PlayerPrefs.GetInt("adsShown", 0);
-
-        reference.Child("Users").Child(newUser.UserId).Child("AdsShown").SetValueAsync(adsShown).ContinueWith(task =>
+        reference.Child("Users").Child(newUser.UserId).Child("AdsShown").SetValueAsync(AdsShown).ContinueWith(task =>
         {
             if (task.IsCompleted)
             {
@@ -177,8 +179,7 @@ public class FirebaseAnalytics : MonoBehaviour
     
     private void UpdateUserDevice()
     {
-        var deviceModel = SystemInfo.deviceModel.ToString();
-
+        var deviceModel = SystemInfo.deviceModel + " QualityLevel: "+ QualitySettings.GetQualityLevel();
         reference.Child("Users").Child(newUser.UserId).Child("Device model").SetValueAsync(deviceModel).ContinueWith(task =>
         {
             if (task.IsCompleted)
@@ -303,8 +304,6 @@ public class FirebaseAnalytics : MonoBehaviour
                 i++;
                 string userId = childSnapshot.Key;
                 int bestScore = int.Parse(childSnapshot.Child("BestScore").Value.ToString());
-
-
                 
                 if (bestFive > i)
                 {

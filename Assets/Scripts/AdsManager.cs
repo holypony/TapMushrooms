@@ -59,7 +59,9 @@ public class adsManager : MonoBehaviour
         if (manager.IsReadyAd(AdType.Interstitial))
         {
             manager.ShowAd(AdType.Interstitial);
-            PlayerPrefs.SetInt("adsShown", PlayerPrefs.GetInt("adsShown", 0) + 1);
+            int i = PlayerPrefs.GetInt("adsShown", 0);
+            PlayerPrefs.SetInt("adsShown", i + 1);
+            FirebaseAnalytics.instance.UpdateAdsShown(i);
         }
         else
         {
