@@ -15,6 +15,8 @@ public class UImanager : MonoBehaviour
     [SerializeField] private TMP_Text textMultiplier;
     [SerializeField] private ParticleSystem psMultiplierEarth;
     [SerializeField] private Animator animatorMultiplierText;
+    [SerializeField] private Animator[] healthImagesAnimator;
+    [SerializeField] private Animator healthScreenAnimator;
     [Header("Game Over")]
     [SerializeField] private GameObject panelGameOver;
     [SerializeField] private TMP_Text textAfterGameScore;
@@ -28,7 +30,7 @@ public class UImanager : MonoBehaviour
     [SerializeField] private GameManagerSo gameSo;
     [SerializeField] private leaderboardManager leaderboardSo;
     [SerializeField] private TMP_Text[] leadersTexts;
-    [SerializeField] private Image[] healthImages;
+    
     [Header("FPS")]
     [SerializeField] private TMP_Text textFps;
     private float deltaTime;
@@ -112,13 +114,14 @@ public class UImanager : MonoBehaviour
     {
         if (gameSo.Hp < 3)
         {
-            healthImages[gameSo.Hp].enabled = false;
+            healthImagesAnimator[gameSo.Hp].SetTrigger("LoseHp");
+            healthScreenAnimator.SetTrigger("LoseHp");
         }
         else
         {
-            foreach (var hpbar in healthImages)
+            foreach (var health in healthImagesAnimator)
             {
-                hpbar.enabled = true;
+                health.SetTrigger("renewHeart");
             }
         }
         
@@ -128,19 +131,25 @@ public class UImanager : MonoBehaviour
     {
         if (isGameover)
         {
-            textTotalPlayers.text = "Total players: ";
-
-            textCurrentScore.text = "Score: " + gameSo.Score;
-
-            textAfterGameScore.text = "";
-            panelUIinGame.SetActive(false);
-            panelGameOver.SetActive(true);
+            StartCoroutine(gameOverRoutine());
         }
         else
         {
             panelUIinGame.SetActive(true);
             panelGameOver.SetActive(false);
         }
+    }
+
+    private IEnumerator gameOverRoutine()
+    {
+        yield return new WaitForSeconds(0.5f);
+        textTotalPlayers.text = "Total players: ";
+
+        textCurrentScore.text = "Score: " + gameSo.Score;
+
+        textAfterGameScore.text = "";
+        panelUIinGame.SetActive(false);
+        panelGameOver.SetActive(true);
     }
     
     public void StartGame()
