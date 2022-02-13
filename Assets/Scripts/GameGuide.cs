@@ -38,7 +38,6 @@ public class GameGuide : MonoBehaviour
     {
         gm.readyMushrooms[4].TesterClick();
         StartCoroutine(guideSecondAction());
-        
     }
     
     private IEnumerator guideSecondAction()
@@ -60,7 +59,7 @@ public class GameGuide : MonoBehaviour
         {
             gm.readyMushrooms[4].mushroomState(false);
         }
-        gameManagerSo.InitializeGameSo(1.25f);
+        gameManagerSo.InitializeGameSo(1f);
         gm.readyMushrooms[4].mushroomState(true);
         UiSecondStep.SetActive(false);
         UiThirdStep.SetActive(true);
@@ -71,6 +70,7 @@ public class GameGuide : MonoBehaviour
     {
         UiThirdStep.SetActive(false);
         PlayerPrefs.SetInt("guide", 0);
+        gm.readyMushrooms[4].ShowDie();
         gm.readyMushrooms[4].mushroomState(false);
     }
     
