@@ -123,6 +123,7 @@
           </e>
           <e p="menu.cs" t="Include" />
           <e p="Mushroom.cs" t="Include" />
+          <e p="PostEffects.cs" t="Include" />
           <e p="skillsManager.cs" t="Include" />
           <e p="SO" t="Include">
             <e p="BoolValueSO.cs" t="Include" />

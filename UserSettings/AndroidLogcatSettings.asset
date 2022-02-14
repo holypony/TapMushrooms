@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "22a0a620dd0d7ece",
         "name": "com.tapmushrooms",
-        "processId": 15410,
+        "processId": 10248,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -11,61 +11,49 @@
         {
             "deviceId": "22a0a620dd0d7ece",
             "name": "com.tapmushrooms",
-            "processId": 6007,
-            "exited": true
-        },
-        {
-            "deviceId": "22a0a620dd0d7ece",
-            "name": "com.tapmushrooms",
-            "processId": 16979,
-            "exited": true
-        },
-        {
-            "deviceId": "22a0a620dd0d7ece",
-            "name": "com.tapmushrooms",
-            "processId": 31349,
-            "exited": true
-        },
-        {
-            "deviceId": "22a0a620dd0d7ece",
-            "name": "com.tapmushrooms",
-            "processId": 7998,
-            "exited": true
-        },
-        {
-            "deviceId": "22a0a620dd0d7ece",
-            "name": "com.tapmushrooms",
-            "processId": 14270,
-            "exited": false
-        },
-        {
-            "deviceId": "22a0a620dd0d7ece",
-            "name": "com.tapmushrooms",
-            "processId": 32657,
-            "exited": false
-        },
-        {
-            "deviceId": "22a0a620dd0d7ece",
-            "name": "com.tapmushrooms",
-            "processId": 18317,
-            "exited": false
-        },
-        {
-            "deviceId": "22a0a620dd0d7ece",
-            "name": "com.tapmushrooms",
-            "processId": 10037,
-            "exited": false
-        },
-        {
-            "deviceId": "22a0a620dd0d7ece",
-            "name": "com.tapmushrooms",
             "processId": 29094,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "22a0a620dd0d7ece",
             "name": "com.tapmushrooms",
             "processId": 15410,
+            "exited": true
+        },
+        {
+            "deviceId": "22a0a620dd0d7ece",
+            "name": "com.tapmushrooms",
+            "processId": 23329,
+            "exited": true
+        },
+        {
+            "deviceId": "22a0a620dd0d7ece",
+            "name": "com.tapmushrooms",
+            "processId": 23149,
+            "exited": true
+        },
+        {
+            "deviceId": "22a0a620dd0d7ece",
+            "name": "com.tapmushrooms",
+            "processId": 26609,
+            "exited": true
+        },
+        {
+            "deviceId": "22a0a620dd0d7ece",
+            "name": "com.tapmushrooms",
+            "processId": 23490,
+            "exited": false
+        },
+        {
+            "deviceId": "22a0a620dd0d7ece",
+            "name": "com.tapmushrooms",
+            "processId": 28133,
+            "exited": false
+        },
+        {
+            "deviceId": "22a0a620dd0d7ece",
+            "name": "com.tapmushrooms",
+            "processId": 10248,
             "exited": false
         }
     ],
@@ -119,7 +107,7 @@
         "MemoryGroup": 2,
         "Behavior": 0
     },
-    "m_Filter": "",
+    "m_Filter": "total",
     "m_FilterIsRegularExpression": false,
     "m_SymbolPaths": []
 }
