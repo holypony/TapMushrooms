@@ -20,48 +20,72 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea1d2b87-ad3e-42b0-8f61-b861a0ded18c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TapMushrooms/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TapMushrooms/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TapMushrooms/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TapMushrooms/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TapMushrooms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TapMushrooms/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Materials/BlueGreenNebular.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Materials/BlueGreenNebular.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Materials/RedOrangeYellowNebular.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Materials/RedOrangeYellowNebular.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Materials/RedYellowNebular.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Materials/RedYellowNebular.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_BlueGreenNebular_Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_BlueGreenNebular_Textures/BlueGreenNebula_back.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_BlueGreenNebular_Textures/BlueGreenNebula_back.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_BlueGreenNebular_Textures/BlueGreenNebula_bottom.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_BlueGreenNebular_Textures/BlueGreenNebula_bottom.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_BlueGreenNebular_Textures/BlueGreenNebula_front.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_BlueGreenNebular_Textures/BlueGreenNebula_front.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_BlueGreenNebular_Textures/BlueGreenNebula_left.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_BlueGreenNebular_Textures/BlueGreenNebula_left.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_BlueGreenNebular_Textures/BlueGreenNebula_right.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_BlueGreenNebular_Textures/BlueGreenNebula_right.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_BlueGreenNebular_Textures/BlueGreenNebula_top.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_BlueGreenNebular_Textures/BlueGreenNebula_top.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedOrangeYellowNebular_Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedOrangeYellowNebular_Textures/RedOrangeYellowNebular_back.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedOrangeYellowNebular_Textures/RedOrangeYellowNebular_back.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedOrangeYellowNebular_Textures/RedOrangeYellowNebular_bottom.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedOrangeYellowNebular_Textures/RedOrangeYellowNebular_bottom.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedOrangeYellowNebular_Textures/RedOrangeYellowNebular_front.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedOrangeYellowNebular_Textures/RedOrangeYellowNebular_front.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedOrangeYellowNebular_Textures/RedOrangeYellowNebular_left.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedOrangeYellowNebular_Textures/RedOrangeYellowNebular_left.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedOrangeYellowNebular_Textures/RedOrangeYellowNebular_right.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedOrangeYellowNebular_Textures/RedOrangeYellowNebular_right.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedOrangeYellowNebular_Textures/RedOrangeYellowNebular_top.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedOrangeYellowNebular_Textures/RedOrangeYellowNebular_top.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedYellowNebular_Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedYellowNebular_Textures/RedYellowNebular_back.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedYellowNebular_Textures/RedYellowNebular_back.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedYellowNebular_Textures/RedYellowNebular_bottom.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedYellowNebular_Textures/RedYellowNebular_bottom.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedYellowNebular_Textures/RedYellowNebular_front.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedYellowNebular_Textures/RedYellowNebular_front.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedYellowNebular_Textures/RedYellowNebular_left.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedYellowNebular_Textures/RedYellowNebular_left.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedYellowNebular_Textures/RedYellowNebular_right.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedYellowNebular_Textures/RedYellowNebular_right.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedYellowNebular_Textures/RedYellowNebular_top.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedYellowNebular_Textures/RedYellowNebular_top.jpg.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/CASPlugin.androidlib/res/raw/cas_settings16s.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/CASPlugin.androidlib/res/raw/cas_settings16s.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/FirebaseCrashlytics.androidlib/res/values/crashlytics_build_id.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/FirebaseCrashlytics.androidlib/res/values/crashlytics_build_id.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Shaders/New Shader Graph.shadergraph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Shaders/New Shader Graph.shadergraph.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Skybox.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Skybox.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Skybox/back.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Skybox/back.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Skybox/back.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Skybox/back.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Skybox/bottom.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Skybox/bottom.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Skybox/bottom.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Skybox/bottom.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Skybox/front.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Skybox/front.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Skybox/front.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Skybox/front.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Skybox/left.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Skybox/left.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Skybox/left.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Skybox/left.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Skybox/right.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Skybox/right.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Skybox/right.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Skybox/right.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Skybox/top.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Skybox/top.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Skybox/top.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Skybox/top.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Skybox_BlueGreenNebular_Textures_NEW.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/skybox 1.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/skybox 1/back.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/skybox 1/back.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/skybox 1/bottom.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/skybox 1/bottom.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/skybox 1/front.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/skybox 1/front.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/skybox 1/left.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/skybox 1/left.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/skybox 1/right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/skybox 1/right.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/skybox 1/skybox.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/skybox 1/skybox.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/skybox 1/top.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/skybox 1/top.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sounds/soundClip_Main_bg.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sounds/soundClip_Main_bg.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/skybox/skybox.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/skybox/skybox.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/3dScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/3dScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/3dScene/mushroom_for_JaneProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/3dScene/mushroom_for_JaneProfile.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FirebaseAnalytics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FirebaseAnalytics.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mushroom.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Mushroom.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PostEffects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PostEffects.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/GameManagerSo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/GameManagerSo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP-HighQuality.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRP-HighQuality.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/anim_resourses/anim/Loss_hp/loss_hp.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/anim_resourses/anim/Loss_hp/loss_hp.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/AndroidLogcatSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/AndroidLogcatSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,17 +131,17 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/menu.cs" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Assets/Scripts/skillsManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Spot.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SO/GameManagerSo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraRoll.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/adsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Mushroom.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UImanager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameGuide.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FirebaseAnalytics.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SO/GameManagerSo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PostEffects.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Mushroom.cs" />
       </list>
     </option>
   </component>
@@ -212,7 +236,8 @@
       <workItem from="1644681774118" duration="1907000" />
       <workItem from="1644684465705" duration="3466000" />
       <workItem from="1644755582194" duration="766000" />
-      <workItem from="1644826739927" duration="6710000" />
+      <workItem from="1644826739927" duration="9064000" />
+      <workItem from="1644915396779" duration="5615000" />
     </task>
     <servers />
   </component>

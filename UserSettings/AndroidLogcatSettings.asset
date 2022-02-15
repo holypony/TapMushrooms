@@ -3,57 +3,63 @@
     "m_SelectedPackage": {
         "deviceId": "22a0a620dd0d7ece",
         "name": "com.tapmushrooms",
-        "processId": 10248,
+        "processId": 12794,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
         {
             "deviceId": "22a0a620dd0d7ece",
-            "name": "com.tapmushrooms",
-            "processId": 29094,
+            "name": "com.sec.android.app.launcher",
+            "processId": 1911,
+            "exited": false
+        },
+        {
+            "deviceId": "22a0a620dd0d7ece",
+            "name": "org.telegram.messenger",
+            "processId": 23210,
             "exited": true
         },
         {
             "deviceId": "22a0a620dd0d7ece",
             "name": "com.tapmushrooms",
-            "processId": 15410,
+            "processId": 17241,
             "exited": true
         },
         {
             "deviceId": "22a0a620dd0d7ece",
             "name": "com.tapmushrooms",
-            "processId": 23329,
+            "processId": 24093,
             "exited": true
         },
         {
             "deviceId": "22a0a620dd0d7ece",
             "name": "com.tapmushrooms",
-            "processId": 23149,
+            "processId": 3304,
             "exited": true
         },
         {
             "deviceId": "22a0a620dd0d7ece",
             "name": "com.tapmushrooms",
-            "processId": 26609,
+            "processId": 21835,
             "exited": true
         },
         {
             "deviceId": "22a0a620dd0d7ece",
             "name": "com.tapmushrooms",
-            "processId": 23490,
+            "processId": 5496,
             "exited": false
         },
         {
             "deviceId": "22a0a620dd0d7ece",
             "name": "com.tapmushrooms",
-            "processId": 28133,
+            "processId": 5875,
             "exited": false
         },
         {
             "deviceId": "22a0a620dd0d7ece",
             "name": "com.tapmushrooms",
-            "processId": 10248,
+            "processId": 12794,
             "exited": false
         }
     ],
@@ -107,7 +113,7 @@
         "MemoryGroup": 2,
         "Behavior": 0
     },
-    "m_Filter": "total",
+    "m_Filter": "",
     "m_FilterIsRegularExpression": false,
     "m_SymbolPaths": []
 }

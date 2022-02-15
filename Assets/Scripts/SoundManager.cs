@@ -59,13 +59,11 @@ public class SoundManager : MonoBehaviour
 
     }
 
-    private void PlayGameOver(bool isGameOver)
+    public void PlayGameOver(bool isGameOver)
     {
-        if (isGameOver)
-        {
-            asSeconsSounds.clip = soundGameOver;
-            asSeconsSounds.Play();
-        }
+        if (!isGameOver) return;
+        asSeconsSounds.clip = soundGameOver;
+        asSeconsSounds.Play();
     }
 
     public void OnLoseHp()
@@ -76,12 +74,8 @@ public class SoundManager : MonoBehaviour
     
     private void PlayBonusTime(int multiplier)
     {
-        if (multiplier > 1)
-        {
-            asSeconsSounds.clip = soundBonusTime;
-            asSeconsSounds.Play();
-        }
-        
+        if (multiplier <= 1) return;
+        asSeconsSounds.clip = soundBonusTime;
+        asSeconsSounds.Play();
     }
-
 }

@@ -116,18 +116,18 @@ public class Mushroom : MonoBehaviour
 
     private IEnumerator MushroomRoutine()
     {
-        while (_lifeTime > 0)
+        while (_lifeTime > 0 && !_clicked)
         {
             if (gameManagerSo.GameOver)
             {
                 _animator.SetTrigger("Hide");
-                yield return new WaitForSeconds(0.1f);
+                yield return new WaitForSeconds(0.2f);
                 mushroomState(false);
                 yield break;
             }
 
-            _lifeTime -= 0.01f;
-            yield return new WaitForSeconds(0.01f);
+            _lifeTime -= 0.1f;
+            yield return new WaitForSeconds(0.1f);
         }
 
         if (!_clicked)
@@ -138,14 +138,14 @@ public class Mushroom : MonoBehaviour
 
     private IEnumerator MushroomDeath()
     {
-        _lifeTime = 0;
+        //_lifeTime = 0;
         if (_clicked)
         {
             if(_isBomb)
             {
                 gameManagerSo.BombMushroomsLive--;
                 gameManagerSo.Hp--;
-                SoundManager.instance.OnLoseHp();
+                
                 psMinusHp.Play(true);
                 MMVibrationManager.Haptic(HapticTypes.MediumImpact);
                 _animator.SetTrigger("Die");
@@ -185,7 +185,7 @@ public class Mushroom : MonoBehaviour
         }
         else
         {
-            SoundManager.instance.OnLoseHp();
+
             gameManagerSo.Hp--;
             MMVibrationManager.Haptic(HapticTypes.MediumImpact);
             psMinusHp.Play(true);

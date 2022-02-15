@@ -130,6 +130,10 @@ public class GameManagerSo : ScriptableObject
         set
         {
             hp = value;
+            if (hp < 3 && hp > 0)
+            {
+                SoundManager.instance.OnLoseHp();
+            }
             if (hp < 1)
             {
                 hp = 0;
