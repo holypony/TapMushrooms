@@ -20,72 +20,76 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea1d2b87-ad3e-42b0-8f61-b861a0ded18c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TapMushrooms/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TapMushrooms/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TapMushrooms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TapMushrooms/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Materials/BlueGreenNebular.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Materials/BlueGreenNebular.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Materials/RedOrangeYellowNebular.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Materials/RedOrangeYellowNebular.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Materials/RedYellowNebular.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Materials/RedYellowNebular.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_BlueGreenNebular_Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_BlueGreenNebular_Textures/BlueGreenNebula_back.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_BlueGreenNebular_Textures/BlueGreenNebula_back.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_BlueGreenNebular_Textures/BlueGreenNebula_bottom.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_BlueGreenNebular_Textures/BlueGreenNebula_bottom.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_BlueGreenNebular_Textures/BlueGreenNebula_front.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_BlueGreenNebular_Textures/BlueGreenNebula_front.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_BlueGreenNebular_Textures/BlueGreenNebula_left.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_BlueGreenNebular_Textures/BlueGreenNebula_left.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_BlueGreenNebular_Textures/BlueGreenNebula_right.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_BlueGreenNebular_Textures/BlueGreenNebula_right.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_BlueGreenNebular_Textures/BlueGreenNebula_top.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_BlueGreenNebular_Textures/BlueGreenNebula_top.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedOrangeYellowNebular_Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedOrangeYellowNebular_Textures/RedOrangeYellowNebular_back.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedOrangeYellowNebular_Textures/RedOrangeYellowNebular_back.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedOrangeYellowNebular_Textures/RedOrangeYellowNebular_bottom.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedOrangeYellowNebular_Textures/RedOrangeYellowNebular_bottom.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedOrangeYellowNebular_Textures/RedOrangeYellowNebular_front.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedOrangeYellowNebular_Textures/RedOrangeYellowNebular_front.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedOrangeYellowNebular_Textures/RedOrangeYellowNebular_left.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedOrangeYellowNebular_Textures/RedOrangeYellowNebular_left.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedOrangeYellowNebular_Textures/RedOrangeYellowNebular_right.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedOrangeYellowNebular_Textures/RedOrangeYellowNebular_right.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedOrangeYellowNebular_Textures/RedOrangeYellowNebular_top.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedOrangeYellowNebular_Textures/RedOrangeYellowNebular_top.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedYellowNebular_Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedYellowNebular_Textures/RedYellowNebular_back.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedYellowNebular_Textures/RedYellowNebular_back.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedYellowNebular_Textures/RedYellowNebular_bottom.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedYellowNebular_Textures/RedYellowNebular_bottom.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedYellowNebular_Textures/RedYellowNebular_front.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedYellowNebular_Textures/RedYellowNebular_front.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedYellowNebular_Textures/RedYellowNebular_left.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedYellowNebular_Textures/RedYellowNebular_left.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedYellowNebular_Textures/RedYellowNebular_right.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedYellowNebular_Textures/RedYellowNebular_right.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedYellowNebular_Textures/RedYellowNebular_top.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3Skyboxes2/Skybox_RedYellowNebular_Textures/RedYellowNebular_top.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/CASPlugin.androidlib/res/raw/cas_settings16s.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/CASPlugin.androidlib/res/raw/cas_settings16s.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/FirebaseCrashlytics.androidlib/res/values/crashlytics_build_id.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/FirebaseCrashlytics.androidlib/res/values/crashlytics_build_id.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sounds/soundClip_Main_bg.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sounds/soundClip_Main_bg.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/skybox/skybox.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/skybox/skybox.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CleverAdsSolutions/UserConsentUI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CleverAdsSolutions/UserConsentUI.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Editor/AuthDependencies.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Firebase/Editor/AuthDependencies.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Editor/AuthDependencies.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Firebase/Editor/AuthDependencies.xml.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Editor/DatabaseDependencies.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Firebase/Editor/DatabaseDependencies.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Editor/DatabaseDependencies.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Firebase/Editor/DatabaseDependencies.xml.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Editor/FirebaseAuth_version-8.7.0_manifest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Editor/FirebaseAuth_version-8.7.0_manifest.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Editor/FirebaseDatabase_version-8.7.0_manifest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Editor/FirebaseDatabase_version-8.7.0_manifest.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/Firebase.Auth.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Firebase/Plugins/Firebase.Auth.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/Firebase.Auth.dll.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Firebase/Plugins/Firebase.Auth.dll.mdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/Firebase.Auth.dll.mdb.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Firebase/Plugins/Firebase.Auth.dll.mdb.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/Firebase.Auth.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Firebase/Plugins/Firebase.Auth.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/Firebase.Database.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Firebase/Plugins/Firebase.Database.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/Firebase.Database.dll.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Firebase/Plugins/Firebase.Database.dll.mdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/Firebase.Database.dll.mdb.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Firebase/Plugins/Firebase.Database.dll.mdb.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/Firebase.Database.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Firebase/Plugins/Firebase.Database.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/x86_64/FirebaseCppAuth.bundle" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Firebase/Plugins/x86_64/FirebaseCppAuth.bundle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/x86_64/FirebaseCppAuth.bundle.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Firebase/Plugins/x86_64/FirebaseCppAuth.bundle.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/x86_64/FirebaseCppAuth.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Firebase/Plugins/x86_64/FirebaseCppAuth.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/x86_64/FirebaseCppAuth.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Firebase/Plugins/x86_64/FirebaseCppAuth.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/x86_64/FirebaseCppAuth.so" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Firebase/Plugins/x86_64/FirebaseCppAuth.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/x86_64/FirebaseCppAuth.so.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Firebase/Plugins/x86_64/FirebaseCppAuth.so.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/x86_64/FirebaseCppDatabase.bundle" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Firebase/Plugins/x86_64/FirebaseCppDatabase.bundle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/x86_64/FirebaseCppDatabase.bundle.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Firebase/Plugins/x86_64/FirebaseCppDatabase.bundle.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/x86_64/FirebaseCppDatabase.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Firebase/Plugins/x86_64/FirebaseCppDatabase.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/x86_64/FirebaseCppDatabase.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Firebase/Plugins/x86_64/FirebaseCppDatabase.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/x86_64/FirebaseCppDatabase.so" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Firebase/Plugins/x86_64/FirebaseCppDatabase.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/x86_64/FirebaseCppDatabase.so.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Firebase/Plugins/x86_64/FirebaseCppDatabase.so.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-auth-unity/8.7.0.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-auth-unity/8.7.0/firebase-auth-unity-8.7.0.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-auth-unity/8.7.0/firebase-auth-unity-8.7.0.pom.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-auth-unity/8.7.0/firebase-auth-unity-8.7.0.srcaar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-auth-unity/8.7.0/firebase-auth-unity-8.7.0.srcaar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-auth-unity/maven-metadata.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-auth-unity/maven-metadata.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-auth-unity/maven-metadata.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-auth-unity/maven-metadata.xml.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-database-unity/8.7.0.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-database-unity/8.7.0/firebase-database-unity-8.7.0.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-database-unity/8.7.0/firebase-database-unity-8.7.0.pom.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-database-unity/8.7.0/firebase-database-unity-8.7.0.srcaar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-database-unity/8.7.0/firebase-database-unity-8.7.0.srcaar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-database-unity/maven-metadata.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-database-unity/maven-metadata.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-database-unity/maven-metadata.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-database-unity/maven-metadata.xml.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-auth-unity/8.7.0.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-auth-unity/8.7.0/firebase-auth-unity-8.7.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-auth-unity/8.7.0/firebase-auth-unity-8.7.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-auth-unity/8.7.0/firebase-auth-unity-8.7.0.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-auth-unity/8.7.0/firebase-auth-unity-8.7.0.pom.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-database-unity/8.7.0.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-database-unity/8.7.0/firebase-database-unity-8.7.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-database-unity/8.7.0/firebase-database-unity-8.7.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-database-unity/8.7.0/firebase-database-unity-8.7.0.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-database-unity/8.7.0/firebase-database-unity-8.7.0.pom.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-messaging-unity/8.7.0.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-messaging-unity/8.7.0/firebase-messaging-unity-8.7.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-messaging-unity/8.7.0/firebase-messaging-unity-8.7.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-messaging-unity/8.7.0/firebase-messaging-unity-8.7.0.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-messaging-unity/8.7.0/firebase-messaging-unity-8.7.0.pom.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/mainTemplate.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/mainTemplate.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/3dScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/3dScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/3dScene/mushroom_for_JaneProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/3dScene/mushroom_for_JaneProfile.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mushroom.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Mushroom.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PostEffects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PostEffects.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/GameManagerSo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/GameManagerSo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP-HighQuality.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRP-HighQuality.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/anim_resourses/anim/Loss_hp/loss_hp.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/anim_resourses/anim/Loss_hp/loss_hp.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/AndroidLogcatSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/AndroidLogcatSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AdsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AdsManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FirebaseAnalytics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FirebaseAnalytics.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/LeaderBoardManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/LeaderBoardManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UImanager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UImanager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/AndroidResolverDependencies.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/AndroidResolverDependencies.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +100,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/adsManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AdsManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.cleversolutions.ads.consent.unity@7fa606968d/Runtime/UserConsentUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FirebaseAnalytics.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.cleversolutions.ads.consent.unity@7fa606968d/Runtime/UserConsentRequest.cs" root0="SKIP_HIGHLIGHTING" />
@@ -108,6 +112,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SO/mushroomsSkinsSO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.cleversolutions.ads.consent.unity@7fa606968d/Runtime/AudienceDefinitionUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PostEffects.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SO/leaderboardManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraRoll.cs" root0="FORCE_HIGHLIGHTING" />
@@ -124,7 +129,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/SO/MushroomController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/mushroomsSkinsSO.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SO/mushroomsSkinsSO.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AdsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SO/leaderboardManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Android/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TesterAI.cs" />
@@ -133,15 +137,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/skillsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraRoll.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/adsManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UImanager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameGuide.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FirebaseAnalytics.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SO/GameManagerSo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PostEffects.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Mushroom.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AdsManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FirebaseAnalytics.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UImanager.cs" />
       </list>
     </option>
   </component>
@@ -238,6 +243,8 @@
       <workItem from="1644755582194" duration="766000" />
       <workItem from="1644826739927" duration="9064000" />
       <workItem from="1644915396779" duration="5615000" />
+      <workItem from="1645358823894" duration="761000" />
+      <workItem from="1645445426899" duration="3264000" />
     </task>
     <servers />
   </component>

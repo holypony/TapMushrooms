@@ -87,6 +87,7 @@ public class UImanager : MonoBehaviour
             {
                 leadersTexts[i].text = leaderboardSo.LeadersList[i];
             }
+            Debug.Log("leaderboardSo.TotalPlayers from UI" + leaderboardSo.TotalPlayers);
             textTotalPlayers.text = "Total players: " + leaderboardSo.TotalPlayers;
             leaderboardSo.Value = false;
         }
@@ -143,7 +144,7 @@ public class UImanager : MonoBehaviour
     private IEnumerator gameOverRoutine()
     {
         yield return new WaitForSeconds(0.5f);
-        textTotalPlayers.text = "Total players: ";
+        //textTotalPlayers.text = "Total players: ";
 
         textCurrentScore.text = "Score: " + gameSo.Score;
 

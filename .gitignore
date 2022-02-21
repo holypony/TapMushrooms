@@ -34,7 +34,7 @@ ExportedObj/
 sysinfo.txt
 
 #firebase dll
-FirebaseCppApp-8_7_0.so
+FirebaseCppApp-8_8_0.so
 
 # Builds
 *.apk

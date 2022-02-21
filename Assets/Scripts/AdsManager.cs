@@ -4,7 +4,7 @@ using CAS;
 using System.Collections.Generic;
 using CAS.UserConsent;
 
-public class adsManager : MonoBehaviour
+public class AdsManager : MonoBehaviour
 {
     IMediationManager manager;
     

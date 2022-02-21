@@ -324,6 +324,7 @@ public class FirebaseAnalytics : MonoBehaviour
                     leaderboardSo.LeadersList.Add(i + ". " + bestScore + " Your score");
                 }
             }
+            Debug.Log(i);
             leaderboardSo.TotalPlayers = i;
             leaderboardSo.Value = true;
         }

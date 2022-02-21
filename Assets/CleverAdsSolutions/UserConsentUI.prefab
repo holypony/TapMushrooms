@@ -195,7 +195,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 48348063199003340, guid: 7d5e0316681d1474ab5f043167c4a559, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 48348063205091771, guid: 7d5e0316681d1474ab5f043167c4a559, type: 3}
       propertyPath: m_AnchorMax.y
@@ -264,6 +264,18 @@ PrefabInstance:
     - target: {fileID: 48348064575477786, guid: 7d5e0316681d1474ab5f043167c4a559, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1286008295262243720, guid: 7d5e0316681d1474ab5f043167c4a559, type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 4709767384041771285, guid: 7d5e0316681d1474ab5f043167c4a559, type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378617394146771416, guid: 7d5e0316681d1474ab5f043167c4a559, type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 6378617394226191200, guid: 7d5e0316681d1474ab5f043167c4a559, type: 3}
       propertyPath: m_Pivot.x
@@ -356,6 +368,10 @@ PrefabInstance:
     - target: {fileID: 6378617394226191215, guid: 7d5e0316681d1474ab5f043167c4a559, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378617394430952949, guid: 7d5e0316681d1474ab5f043167c4a559, type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 6378617395247725606, guid: 7d5e0316681d1474ab5f043167c4a559, type: 3}
       propertyPath: m_Color.b
@@ -471,7 +487,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6725184885053005357, guid: 7d5e0316681d1474ab5f043167c4a559, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 12.812134
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 8115628680030793671, guid: 7d5e0316681d1474ab5f043167c4a559, type: 3}
       propertyPath: m_AnchorMax.y

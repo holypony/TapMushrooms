@@ -12,4 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cbe09ecad5fd454aa4489714a59b58c, type: 3}
   m_Name: LeaderBoardManager
   m_EditorClassIdentifier: 
-  LeadersList: []
+  LeadersList:
+  - 1. 79460
+  - 2. 69030
+  - 3. 43890
+  - 4. 22650
+  - 5. 19030
+  - 66. 470 Your score
+  _value: 0
+  totalPlayer: 115
+  totalGamePlayed: 0
+  username: mushroom5923
