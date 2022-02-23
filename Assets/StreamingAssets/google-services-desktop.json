@@ -15,7 +15,15 @@
       },
       "oauth_client": [
         {
-          "client_id": "276560292292-q4m4pao5fvfhfphf45nrmcognn6c104b.apps.googleusercontent.com",
+          "client_id": "276560292292-tosgqdjt0hh0vcmtrpacul9108ar4ls5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tapmushrooms",
+            "certificate_hash": "207043b3af6404fe707a6734fa625ebd138b3c8e"
+          }
+        },
+        {
+          "client_id": "276560292292-7dfsv30sgh8r8ebf36eq3ggos7isukaf.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
@@ -28,7 +36,7 @@
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "276560292292-q4m4pao5fvfhfphf45nrmcognn6c104b.apps.googleusercontent.com",
+              "client_id": "276560292292-7dfsv30sgh8r8ebf36eq3ggos7isukaf.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "22a0a620dd0d7ece",
         "name": "com.tapmushrooms",
-        "processId": 12794,
+        "processId": 18391,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -11,55 +11,43 @@
         {
             "deviceId": "22a0a620dd0d7ece",
             "name": "com.sec.android.app.launcher",
-            "processId": 1911,
-            "exited": false
-        },
-        {
-            "deviceId": "22a0a620dd0d7ece",
-            "name": "org.telegram.messenger",
-            "processId": 23210,
-            "exited": true
-        },
-        {
-            "deviceId": "22a0a620dd0d7ece",
-            "name": "com.tapmushrooms",
-            "processId": 17241,
-            "exited": true
-        },
-        {
-            "deviceId": "22a0a620dd0d7ece",
-            "name": "com.tapmushrooms",
-            "processId": 24093,
-            "exited": true
-        },
-        {
-            "deviceId": "22a0a620dd0d7ece",
-            "name": "com.tapmushrooms",
-            "processId": 3304,
-            "exited": true
-        },
-        {
-            "deviceId": "22a0a620dd0d7ece",
-            "name": "com.tapmushrooms",
-            "processId": 21835,
-            "exited": true
-        },
-        {
-            "deviceId": "22a0a620dd0d7ece",
-            "name": "com.tapmushrooms",
-            "processId": 5496,
+            "processId": 3388,
             "exited": false
         },
         {
             "deviceId": "22a0a620dd0d7ece",
             "name": "com.tapmushrooms",
-            "processId": 5875,
-            "exited": false
+            "processId": 14366,
+            "exited": true
         },
         {
             "deviceId": "22a0a620dd0d7ece",
             "name": "com.tapmushrooms",
-            "processId": 12794,
+            "processId": 14407,
+            "exited": true
+        },
+        {
+            "deviceId": "22a0a620dd0d7ece",
+            "name": "com.tapmushrooms",
+            "processId": 14561,
+            "exited": true
+        },
+        {
+            "deviceId": "22a0a620dd0d7ece",
+            "name": "com.tapmushrooms",
+            "processId": 3356,
+            "exited": true
+        },
+        {
+            "deviceId": "22a0a620dd0d7ece",
+            "name": "com.tapmushrooms",
+            "processId": 9308,
+            "exited": true
+        },
+        {
+            "deviceId": "22a0a620dd0d7ece",
+            "name": "com.tapmushrooms",
+            "processId": 18391,
             "exited": false
         }
     ],
@@ -113,7 +101,7 @@
         "MemoryGroup": 2,
         "Behavior": 0
     },
-    "m_Filter": "",
+    "m_Filter": "Firebase",
     "m_FilterIsRegularExpression": false,
     "m_SymbolPaths": []
 }

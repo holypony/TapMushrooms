@@ -1,24 +1,28 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEngine.UI;
 using Firebase.Auth;
 using Firebase;
 using Firebase.Database;
 using UnityEngine;
 using System.Linq;
+using System.Threading.Tasks;
 using Random = UnityEngine.Random;
-
+using Google;
 public class FirebaseAnalytics : MonoBehaviour
 {
     
     [SerializeField] private GameManagerSo gameSo;
     [SerializeField] private leaderboardManager leaderboardSo;
-
+    private String webClientId  = "276560292292-7dfsv30sgh8r8ebf36eq3ggos7isukaf.apps.googleusercontent.com";
     private DatabaseReference reference;
     private FirebaseAuth auth;
     private FirebaseUser newUser;
     private DependencyStatus dependencyStatus;
-    
+    private GoogleSignInConfiguration configuration;
+
     public static FirebaseAnalytics instance;
     private void Awake()
     {
@@ -33,6 +37,8 @@ public class FirebaseAnalytics : MonoBehaviour
 
     private void Start()
     {
+        configuration = new GoogleSignInConfiguration { WebClientId = webClientId, RequestEmail = true, RequestIdToken = true };
+        
         FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(task =>
         {
             dependencyStatus = task.Result;
@@ -48,6 +54,68 @@ public class FirebaseAnalytics : MonoBehaviour
         });
     }
 
+    public void SignInWithGoogle() { OnSignIn(); }
+    
+    private void OnSignIn()
+    {
+        GoogleSignIn.Configuration = configuration;
+        GoogleSignIn.Configuration.UseGameSignIn = false;
+        GoogleSignIn.Configuration.RequestIdToken = true;
+        //AddToInformation("Calling SignIn");
+
+        GoogleSignIn.DefaultInstance.SignIn().ContinueWith(OnAuthenticationFinished);
+    }
+    
+    internal void OnAuthenticationFinished(Task<GoogleSignInUser> task)
+    {
+        if (task.IsFaulted)
+        {
+            using (IEnumerator<Exception> enumerator = task.Exception.InnerExceptions.GetEnumerator())
+            {
+                if (enumerator.MoveNext())
+                {
+                    GoogleSignIn.SignInException error = (GoogleSignIn.SignInException)enumerator.Current;
+                    Debug.Log("Got Error: " + error.Status + " " + error.Message);
+                }
+                else
+                {
+                    Debug.Log("Got Unexpected Exception?!?" + task.Exception);
+                }
+            }
+        }
+        else if (task.IsCanceled)
+        {
+            Debug.Log("Canceled");
+        }
+        else
+        {
+            Debug.Log("Welcome: " + task.Result.DisplayName + "!");
+            Debug.Log("Email = " + task.Result.Email);
+            Debug.Log("Google ID Token = " + task.Result.IdToken);
+            Debug.Log("Email = " + task.Result.Email);
+            SignInWithGoogleOnFirebase(task.Result.IdToken);
+        }
+    }
+    
+    private void SignInWithGoogleOnFirebase(string idToken)
+    {
+        Credential credential = GoogleAuthProvider.GetCredential(idToken, null);
+
+        auth.SignInWithCredentialAsync(credential).ContinueWith(task =>
+        {
+            AggregateException ex = task.Exception;
+            if (ex != null)
+            {
+                if (ex.InnerExceptions[0] is FirebaseException inner && (inner.ErrorCode != 0))
+                    Debug.Log("\nError code = " + inner.ErrorCode + " Message = " + inner.Message);
+            }
+            else
+            {
+                newUser = task.Result;
+                Debug.Log("Sign In Successful.");
+            }
+        });
+    }
     private void OnEnable()
     {
         Firebase.Messaging.FirebaseMessaging.TokenReceived += OnTokenReceived;
@@ -71,7 +139,23 @@ public class FirebaseAnalytics : MonoBehaviour
 
         auth = FirebaseAuth.DefaultInstance;
         reference = FirebaseDatabase.DefaultInstance.RootReference;
-        anonymousAuth();
+        
+        newUser = auth.CurrentUser;
+        if (newUser != null)
+        {
+            string name = newUser.DisplayName;
+            string email = newUser.Email;
+            System.Uri photo_url = newUser.PhotoUrl;
+            // The user's Id, unique to the Firebase project.
+            // Do NOT use this value to authenticate with your backend server, if you
+            // have one; use User.TokenAsync() instead.
+            string uid = newUser.UserId;
+        }
+        else
+        {
+            anonymousAuth(); 
+        }
+        //Debug.Log("Firebase ____ email" + newUser.Email);
     }
 
     private void anonymousAuth()
@@ -92,8 +176,14 @@ public class FirebaseAnalytics : MonoBehaviour
         });
     }
     
+    
     public void StartGameButton()
     {
+        if (newUser == null)
+        {
+            //anonymousAuth();
+        }
+        
         if(reference == null) return;
         UpdateUserLastOnline();
         StartCoroutine(CheckUserName());
